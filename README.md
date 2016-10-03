@@ -1,8 +1,8 @@
 # README
 
-![Build Status](https://codeship.com/projects/<814f2f40-6ba7-0134-6c7a-6efe74dd2a57>/status?branch=master)
-![Code Climate](https://codeclimate.com/github/<cemple89>/<scoop_d>.png)
-![Coverage Status](https://coveralls.io/repos/<cemple89>/<scoop_d>/badge.png)
+![Build Status](https://codeship.com/projects/814f2f40-6ba7-0134-6c7a-6efe74dd2a57/status?branch=master)
+![Code Climate](https://codeclimate.com/github/cemple89/scoop_d.png)
+![Coverage Status](https://coveralls.io/repos/cemple89/scoop_d/badge.png)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
