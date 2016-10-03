@@ -1,5 +1,7 @@
 require 'json'
 
+# https://www.yelp.com/developers/api_console
+
 bos_location_data = File.read("bos_locations.json")
 bos_location_data_sorted = JSON.parse(bos_location_data)
 camb_location_data = File.read("camb_locations.json")
