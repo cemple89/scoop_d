@@ -1,0 +1,1033 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.06728920000000471,
+            "longitude_delta": 0.07018439999998805
+        },
+        "center": {
+            "latitude": 42.3727189,
+            "longitude": -71.10754299999999
+        }
+    },
+    "total": 123,
+    "businesses": [
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/toscaninis-ice-cream-cambridge-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 1255,
+            "name": "Toscanini's Ice Cream",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/toscaninis-ice-cream-cambridge-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Bakeries",
+                    "bakeries"
+                ]
+            ],
+            "menu_date_updated": 1472586465,
+            "phone": "6174915877",
+            "snippet_text": "Toscanini's could make poop-flavored ice cream and it would probably be good. Fact.\n\nThe khulfee (cardamom nut) is some of the best ice cream I've ever had,...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/LKqbP9WJTVsYvfWfduCZrw/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/saI33aUcGn8xk9wmdF8evQ/ms.jpg",
+            "display_phone": "+1-617-491-5877",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "toscaninis-ice-cream-cambridge-3",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "899 Main St",
+                    "Cambridge, MA 02139"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "02139",
+                "country_code": "US",
+                "address": [
+                    "899 Main St"
+                ],
+                "coordinate": {
+                    "latitude": 42.363497054497,
+                    "longitude": -71.099057350739
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/christinas-homemade-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 682,
+            "name": "Christina's Homemade Ice Cream",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/christinas-homemade-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "menu_date_updated": 1472533536,
+            "phone": "6174927021",
+            "snippet_text": "Omy. The texture and quality of this ice cream is on point!\n\nI got the green tea flavor and it was exactly what I wanted! I will definitely come back here...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/QJf8UVbkgkBsYYsFmbeJCw/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/45HmWYTqOYe_LeJIJ9FW3g/ms.jpg",
+            "display_phone": "+1-617-492-7021",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "christinas-homemade-ice-cream-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "1255 Cambridge St",
+                    "Inman Square",
+                    "Cambridge, MA 02139"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Inman Square"
+                ],
+                "postal_code": "02139",
+                "country_code": "US",
+                "address": [
+                    "1255 Cambridge St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3735642129033,
+                    "longitude": -71.0983584498918
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/berryline-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 552,
+            "name": "BerryLine",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/berryline-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "menu_date_updated": 1472612356,
+            "phone": "6178683500",
+            "snippet_text": "I can go on about this place for hours. I've been a huge fan for probably 6 years and now that I don't live in Boston I literally have cravings for berry...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ACklF8JPn8y-o6EIVQ0NbA/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/PJWX9Yofu6iu5eIiIi_9Tg/ms.jpg",
+            "display_phone": "+1-617-868-3500",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "berryline-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "3 Arrow St",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "3 Arrow St"
+                ],
+                "coordinate": {
+                    "latitude": 42.37117,
+                    "longitude": -71.1146
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/jp-licks-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 367,
+            "name": "JP Licks",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/jp-licks-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Kosher",
+                    "kosher"
+                ]
+            ],
+            "phone": "6174921001",
+            "snippet_text": "JP Licks makes me wish I lived in Boston. A couple of notes: \n\n- JP Licks serves both soft serve and ice cream but we prefer their ice cream. They also sell...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/OoXlxs_J6beYTrKhehq09w/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/U_KMwxmdJBc1OvablvCAVg/ms.jpg",
+            "display_phone": "+1-617-492-1001",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "id": "jp-licks-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "1312 Massachusetts Ave",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "1312 Massachusetts Ave"
+                ],
+                "coordinate": {
+                    "latitude": 42.37289,
+                    "longitude": -71.11751
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/berryline-cambridge-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 215,
+            "name": "BerryLine",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/berryline-cambridge-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "phone": "6174923555",
+            "snippet_text": "I've finally found soft serve tart frozen yogurt! There's ice cream and gelato and scooped sweet frozen yogurt everywhere in Boston which is great but...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/1khSyAbzw7S-pp5xeG7eJQ/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/uK9m6kxk-mUN7qDpV68Caw/ms.jpg",
+            "display_phone": "+1-617-492-3555",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "berryline-cambridge-2",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "1668 Massachusetts Ave",
+                    "Porter Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Porter Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "1668 Massachusetts Ave"
+                ],
+                "coordinate": {
+                    "latitude": 42.382132537452,
+                    "longitude": -71.119909164422
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/lizzys-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 158,
+            "name": "Lizzy's Ice Cream",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/lizzys-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "phone": "6173542911",
+            "snippet_text": "Waaaay better than the inconsistent, melty stuff I've gotten at Toscannini's! \n\nIf you like your ice cream so hard you literally have to bite off chucks and...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IXQ_Vk05YtTfXq-uPVro7Q/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/7z45xXFGVIpLIzqOv93zTg/ms.jpg",
+            "display_phone": "+1-617-354-2911",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "lizzys-ice-cream-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "29 Church St",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "29 Church St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3744892109017,
+                    "longitude": -71.1201211285006
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/frozen-yogi-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 19,
+            "name": "Frozen Yogi",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/frozen-yogi-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Indian",
+                    "indpak"
+                ],
+                [
+                    "Pizza",
+                    "pizza"
+                ]
+            ],
+            "phone": "6174976144",
+            "snippet_text": "This place is phenomenal. Definitely try their naan pizza -- it's tasty, made to order and not like anything you've ever had before. They have great...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/J5q7Yxx5Mw3MyhDZ5-b5-Q/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/xctn6DP9RLj_d3JU0ckjWg/ms.jpg",
+            "display_phone": "+1-617-497-6144",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "id": "frozen-yogi-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "80 River St",
+                    "Central Square",
+                    "Cambridge, MA 02139"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Central Square"
+                ],
+                "postal_code": "02139",
+                "country_code": "US",
+                "address": [
+                    "80 River St"
+                ],
+                "coordinate": {
+                    "latitude": 42.364109,
+                    "longitude": -71.1074982
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/honeycomb-creamery-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 9,
+            "name": "Honeycomb Creamery",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/honeycomb-creamery-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Food Delivery Services",
+                    "fooddeliveryservices"
+                ]
+            ],
+            "snippet_text": "Found their pints at Pemberton Farms and got the Salty Honey. The flavour was delicious, really unique and reminded me of a local Indian dessert that is...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/786YJW19OmKFxPaBJOMfuw/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/DAXDRAIhfBnDE8wrUkuSiQ/ms.jpg",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "honeycomb-creamery-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "1702 Massachusetts Ave",
+                    "Porter Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Porter Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "1702 Massachusetts Ave"
+                ],
+                "coordinate": {
+                    "latitude": 42.3831977844238,
+                    "longitude": -71.1198577880859
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.0,
+            "mobile_url": "https://m.yelp.com/biz/emack-and-bolios-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+            "review_count": 76,
+            "name": "Emack & Bolio's Ice Cream",
+            "rating_img_url_small": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+            "url": "https://www.yelp.com/biz/emack-and-bolios-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "menu_date_updated": 1472595155,
+            "phone": "6174921907",
+            "snippet_text": "I know you get hosed at pretty much all ice cream places but when the craving hits you suck it up and pay up. beautiful day why not end it with something...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/FTPoQq03gAp5aTwidPs-ow/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/-SfK1QyMyzL5PcEozr01rw/ms.jpg",
+            "display_phone": "+1-617-492-1907",
+            "rating_img_url_large": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
+            "menu_provider": "single_platform",
+            "id": "emack-and-bolios-ice-cream-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "23 White St",
+                    "Porter Square",
+                    "Cambridge, MA 02140"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Porter Square"
+                ],
+                "postal_code": "02140",
+                "country_code": "US",
+                "address": [
+                    "23 White St"
+                ],
+                "coordinate": {
+                    "latitude": 42.388840901267,
+                    "longitude": -71.119047438832
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/boston-tea-stop-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 402,
+            "name": "Boston Tea Stop",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/boston-tea-stop-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Juice Bars & Smoothies",
+                    "juicebars"
+                ],
+                [
+                    "Bubble Tea",
+                    "bubbletea"
+                ]
+            ],
+            "phone": "6179450017",
+            "snippet_text": "I often drop by this place to get a slush or snow on a hot summer day. They offer a wide variety of flavors and can add extra bubbles for 40 cents! \nThey...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/A95Mc0YOwv5qTHv2cEkGlg/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/Cc9jB3wdmiEiDuLexsHZrQ/ms.jpg",
+            "display_phone": "+1-617-945-0017",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "boston-tea-stop-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "54 Jfk St",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "54 Jfk St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3718298384495,
+                    "longitude": -71.1206388473511
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/pinkberry-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 115,
+            "name": "Pinkberry",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/pinkberry-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "menu_date_updated": 1475217873,
+            "phone": "6175470573",
+            "snippet_text": "I gave this place 4 stars because the employees literally look annoyed the entire time. I mean, I would be annoyed too if I had to deal with customers who...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/rNYka_2cFa88_z_RN0mRxQ/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/ReSWhZ8YtvokC7MCgaoluA/ms.jpg",
+            "display_phone": "+1-617-547-0573",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "menu_provider": "single_platform",
+            "id": "pinkberry-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "1380 Massachusetts Ave",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "1380 Massachusetts Ave"
+                ],
+                "coordinate": {
+                    "latitude": 42.3733349189598,
+                    "longitude": -71.1190511688471
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/ben-and-jerrys-cambridge-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 33,
+            "name": "Ben & Jerry's",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/ben-and-jerrys-cambridge-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "menu_date_updated": 1472923053,
+            "phone": "6178642828",
+            "snippet_text": "I love Ben and Jerry's free cone day. Every year, they designate a day (usually near the middle of April) during which all B&J's stores nationwide provide...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/xpmV4keO6yqJW2g9og7nXw/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/g-bvoXTe_yKloF1QN7sYZw/ms.jpg",
+            "display_phone": "+1-617-864-2828",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "menu_provider": "single_platform",
+            "id": "ben-and-jerrys-cambridge-3",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "36 JFK St",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "36 JFK St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3726501,
+                    "longitude": -71.1197329
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/tipping-cow-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 24,
+            "name": "Tipping Cow",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/tipping-cow-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "snippet_text": "We live near by and decided to walk over to check them out.  We've walked over a few times since!  The ice cream is simply delicious!  I really can't say...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/fFW6bPNTYBzWX-7K40Bzdg/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/sg-Qkefu-CrVXpKNoddtPA/ms.jpg",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "tipping-cow-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "415 Medford St",
+                    "Somerville, MA 02145"
+                ],
+                "geo_accuracy": 8.0,
+                "postal_code": "02145",
+                "country_code": "US",
+                "address": [
+                    "415 Medford St"
+                ],
+                "coordinate": {
+                    "latitude": 42.39158,
+                    "longitude": -71.09944
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/the-scoop-n-scootery-arlington?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 78,
+            "name": "The Scoop N Scootery",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/the-scoop-n-scootery-arlington?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Caterers",
+                    "catering"
+                ]
+            ],
+            "menu_date_updated": 1474893814,
+            "phone": "6173948634",
+            "snippet_text": "So I know what you're thinking, \"how can they deliver sundaes? They're gonna be melted!\"\n\nWRONG!\n\nOrdered a huge sundae on a Wednesday night. Arrived...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XNUJcqyqe9wq7-0Oy3dhDA/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/2TINYBquiFC-SKiDC3kqZg/ms.jpg",
+            "display_phone": "+1-617-394-8634",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "the-scoop-n-scootery-arlington",
+            "is_closed": false,
+            "location": {
+                "city": "Arlington",
+                "display_address": [
+                    "112 Massachusetts Ave",
+                    "North Cambridge",
+                    "Arlington, MA 02474"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "North Cambridge",
+                    "East Arlington"
+                ],
+                "postal_code": "02474",
+                "country_code": "US",
+                "address": [
+                    "112 Massachusetts Ave"
+                ],
+                "coordinate": {
+                    "latitude": 42.4033049,
+                    "longitude": -71.139445
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/j-p-licks-boston-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 112,
+            "name": "J.P. Licks",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/j-p-licks-boston-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Kosher",
+                    "kosher"
+                ]
+            ],
+            "menu_date_updated": 1472779248,
+            "phone": "8572335805",
+            "snippet_text": "I got sundae with three toppings. I chose vanilla flavor with chocolate chips and walnuts and banana slices. Banana was not in the list so the shopper gave...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/9ao8QaXJnxfvFeORtf7_zg/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/nfoI_q63fWiRnDJ7_PZVFA/ms.jpg",
+            "display_phone": "+1-857-233-5805",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "menu_provider": "single_platform",
+            "id": "j-p-licks-boston-3",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Hemenway St & Massachusetts Ave",
+                "city": "Boston",
+                "display_address": [
+                    "1106 Boylston St",
+                    "Boston, MA 02215"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "02215",
+                "country_code": "US",
+                "address": [
+                    "1106 Boylston St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3470193,
+                    "longitude": -71.0887018
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/cookie-monstah-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 192,
+            "name": "Cookie Monstah",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/cookie-monstah-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Bakeries",
+                    "bakeries"
+                ],
+                [
+                    "Food Trucks",
+                    "foodtrucks"
+                ]
+            ],
+            "phone": "6176156595",
+            "snippet_text": "The double chocolate cookie had ruined me for all other cookies (think: buttery, fudgy, and all the right kinds of crumbling), and the Green Monster (:...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9ES6wXYsSSE4oLJ8cXzwag/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/7z45xXFGVIpLIzqOv93zTg/ms.jpg",
+            "display_phone": "+1-617-615-6595",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "cookie-monstah-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "Back Bay",
+                    "Boston, MA 02108"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Back Bay"
+                ],
+                "postal_code": "02108",
+                "country_code": "US",
+                "address": [],
+                "coordinate": {
+                    "latitude": 42.3496590195132,
+                    "longitude": -71.0772496351285
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/shake-shack-cambridge-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 272,
+            "name": "Shake Shack",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/shake-shack-cambridge-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Burgers",
+                    "burgers"
+                ],
+                [
+                    "American (Traditional)",
+                    "tradamerican"
+                ]
+            ],
+            "menu_date_updated": 1472841577,
+            "phone": "6177588495",
+            "snippet_text": "Had my first Shake Shack experience here - and mentioned that to the shift lead who was ringing me up. I told him I wanted to compare to In-N-Out (my...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/oa-d7XbPENrtZsNGpfkG2Q/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/F7Qj0qB0dp0eo5JsiWW3zA/ms.jpg",
+            "display_phone": "+1-617-758-8495",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "menu_provider": "single_platform",
+            "id": "shake-shack-cambridge-2",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "92 Winthrop St",
+                    "Harvard Square",
+                    "Cambridge, MA 02138"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Harvard Square"
+                ],
+                "postal_code": "02138",
+                "country_code": "US",
+                "address": [
+                    "92 Winthrop St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3722616,
+                    "longitude": -71.1209004
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/fomu-allston-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 351,
+            "name": "FoMu",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/fomu-allston-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Vegan",
+                    "vegan"
+                ]
+            ],
+            "phone": "6179033276",
+            "snippet_text": "If you're one of those people who hates everything vegan, it's impossible to hate this place. \n\nThe ice cream is made with coconut milk and tastes awesome....",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VdjrrAEdNVDoPnGwaxvtcg/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/O7aqSx7sDVs7GoQPYBYHMg/ms.jpg",
+            "display_phone": "+1-617-903-3276",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "fomu-allston-3",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Beacon St & Hano St",
+                "city": "Allston",
+                "display_address": [
+                    "481 Cambridge St",
+                    "Allston/Brighton",
+                    "Allston, MA 02134"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Allston/Brighton"
+                ],
+                "postal_code": "02134",
+                "country_code": "US",
+                "address": [
+                    "481 Cambridge St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3538588,
+                    "longitude": -71.1370967
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/amorino-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 215,
+            "name": "Amorino",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/amorino-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Gelato",
+                    "gelato"
+                ]
+            ],
+            "menu_date_updated": 1472872845,
+            "phone": "6175853185",
+            "snippet_text": "Ok, ok, I didn't get that ubiquitous flower gelato cone everyone is raving about. But I did get three flavors in a cup that were basically Italy in a cup......",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/q1ijIpzEErX-q77SnzoMuA/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/Je0yyd63CqvOB36XNUdcPQ/ms.jpg",
+            "display_phone": "+1-617-585-3185",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "amorino-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Gloucester St & Fairfield St",
+                "city": "Boston",
+                "display_address": [
+                    "249 Newbury St",
+                    "Back Bay",
+                    "Boston, MA 02116"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Back Bay"
+                ],
+                "postal_code": "02116",
+                "country_code": "US",
+                "address": [
+                    "249 Newbury St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3497657775879,
+                    "longitude": -71.0828094482422
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/fomu-boston-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 54,
+            "name": "FoMu",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/fomu-boston-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Bakeries",
+                    "bakeries"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "6179827955",
+            "snippet_text": "I hate the fact that I actually fortunately snagged one of the few remaining housemade Choco Tacos a few Tuesdays ago, because now all other food tastes...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/I4OqLq6BQQAFTitfamKx8A/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/0Byb1I2GvUtKVSaNM-Ip6g/ms.jpg",
+            "display_phone": "+1-617-982-7955",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "fomu-boston-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Pembroke St & Brookline St",
+                "city": "Boston",
+                "display_address": [
+                    "655 Tremont St",
+                    "South End",
+                    "Boston, MA 02118"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "South End"
+                ],
+                "postal_code": "02118",
+                "country_code": "US",
+                "address": [
+                    "655 Tremont St"
+                ],
+                "coordinate": {
+                    "latitude": 42.342132,
+                    "longitude": -71.075637
+                },
+                "state_code": "MA"
+            }
+        }
+    ]
+}
