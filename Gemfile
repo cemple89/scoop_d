@@ -17,8 +17,11 @@ end
 
 group :test do
   gem 'launchy', require: false
+  gem 'coveralls', require: false
 end
 
 group :production do
   gem 'rails_12factor'
 end
+
+
