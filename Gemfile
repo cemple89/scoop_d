@@ -1,7 +1,7 @@
 source 'https://rubygems.org/'
 
 ruby "2.3.1"
-gem 'httpclient'
+# gem 'httpclient'
 gem 'json'
 gem 'rails', '~> 5'
 gem 'pg', '~> 0.15'

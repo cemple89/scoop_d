@@ -1,4 +1,11 @@
 class Location < ActiveRecord::Base
+
+  NEIGHBORHOODS = ["Downtown", "Back Bay", "South End", "Seaport", "Southie", "Roxbury", "Dorchester",
+                  "Beacon Hill", "Allston", "Brighton", "Mission Hill", "Jamaica Plain", "Kenmore", "North End",
+                  "West End", "Fenway", "Kendall", "Central", "Harvard", "Porter", "Davis", "Inman", "Union", "Coolidge Corner",
+                  "Clevelend Circle", "Dudley"]
+
+
   has_many :locationreviews
   has_many :reviews, through: :locationreviews
 

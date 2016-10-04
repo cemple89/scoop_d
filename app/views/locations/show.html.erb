@@ -1,0 +1,13 @@
+<h1><%= @location.name %></h1><br>
+
+<% @reviews.each do |review| %>
+  <%= review.rating %>
+  <%= review.body %>
+  <% review.comments.each do |comment| %>
+    <%= comment.body %><br>
+  <% end %>
+  <%= render '/comments/form' %>
+<% end %>
+
+<%= link_to 'Add a Review', new_location_review_path(@location) %><br>
+<%= link_to 'Back to Locations', locations_path %>

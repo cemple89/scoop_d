@@ -1,0 +1,36 @@
+class LocationsController < ApplicationController
+
+
+  def index
+    @locations = Location.all
+  end
+
+  def new
+    @location = Location.new
+    @neighborhood_collection = Location::NEIGHBORHOODS
+  end
+
+  def create
+    @location = Location.new(location_params)
+    if @location.save
+      redirect_to location_path(@location)
+      flash[:notice] = "Location added successfully"
+    else
+      flash[:notice] = @location.errors.full_messages.join(", ")
+      render :new
+    end
+  end
+
+  def show
+    @location = Location.find(params[:id])
+    @reviews = @location.reviews
+  end
+
+
+
+ private
+
+ def location_params
+   params.require(:location).permit(:name, :address, :city, :state, :zip_code, :neighborhood, :phone_number, :url)
+ end
+end
