@@ -29,8 +29,4 @@ feature "Unauthorized can signup" do
 
     expect(page).to have_content("Signed in as test_user@gmail.com")
   end
-
-  scenario "Logged in User can log out from button in header" do
-
-  end
 end
