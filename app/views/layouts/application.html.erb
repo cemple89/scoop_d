@@ -12,18 +12,17 @@
   </head>
 
   <body>
-
-    <div id="wrapper">
-      <nav class="menu">
+      <nav class="menu titlenav">
         <h1 class="name"><i class="fi-widget"></i> Scoop_d </a></h1>
         <ul class="inline-list hide-for-small-only account-action">
           <% if current_user %>
-            <li>Signed in as <%= current_user.email %></a></li>
+            <li style="color:white">Signed in as <%= current_user.email %></a></li>
+            <li> <%= button_to "Sign Out", destroy_user_session_path, method: :delete %></li>
           <% end %>
         </ul>
         <a class="account hide-for-medium-up" href="#" data-reveal-id="myModal"><i class="fi-unlock"></i></a>
       </nav>
-    </div>
+
 
     <%= yield %>
 
