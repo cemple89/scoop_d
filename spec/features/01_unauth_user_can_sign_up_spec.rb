@@ -2,12 +2,12 @@ require 'spec_helper'
 require 'rails_helper'
 
 feature "Unauthorized can signup" do
-  let(:user) do
-    User.create(
-      email: "test_user",
-      password: "scooped"
-    )
-  end
+  # let(:user) do
+  #     User.create(
+  #       email: "test_user@gmail.com",
+  #       password: "scooped"
+  #     )
+  # end
 
   scenario "User sees signup button in header" do
     visit '/'
@@ -26,6 +26,14 @@ feature "Unauthorized can signup" do
   scenario "User enters information and signs up" do
     visit '/'
     click_link ("Sign up")
+
+    fill_in "Email", with: "test_user@gmail.com"
+    fill_in "Password", with: "scooped"
+    fill_in "Password confirmation", with: "scooped"
+
+    click_button ("Sign up")
+
+    expect(page).to have_content("Signed in as test_user@gmail.com")
   end
 
   scenario "Logged in User can log out from button in header" do
