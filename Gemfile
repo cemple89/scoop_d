@@ -1,6 +1,7 @@
 source 'https://rubygems.org/'
 
 ruby "2.3.1"
+gem 'foundation-rails'
 gem 'devise'
 gem 'httpclient'
 gem 'json'
