@@ -37,12 +37,30 @@
 }
 
 .field {
+  font-family: Arial;
   display: inline-block;
+  padding:10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color:grey;
 }
 
 #signup {
   display: inline-block;
   float:right;
+}
+
+.signup_form {
+  display: inline-block;
+  float:right;
+  background: #ffaaa5;
+  padding:20px;
+  margin-top:240px;
+  width:10%;
+  border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+  margin-right:20px;
+  text-align: center;
 }
 
 body {
