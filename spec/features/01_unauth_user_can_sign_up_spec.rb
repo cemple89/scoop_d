@@ -2,12 +2,6 @@ require 'spec_helper'
 require 'rails_helper'
 
 feature "Unauthorized can signup" do
-  # let(:user) do
-  #     User.create(
-  #       email: "test_user@gmail.com",
-  #       password: "scooped"
-  #     )
-  # end
 
   scenario "User sees signup button in header" do
     visit '/'
