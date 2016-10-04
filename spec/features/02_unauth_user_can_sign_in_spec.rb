@@ -33,4 +33,14 @@ feature "Unauthorized can login" do
 
     expect(page).to have_button ("Log In")
   end
+
+  scenario "User enters incorrect password and cannot login" do
+    visit '/'
+    fill_in "Email", with: user.email
+    fill_in "Password", with: "scoop"
+    click_button ("Log In")
+
+    expect(page).to_not have_content("Signed in as #{user.email}")
+  end
+
 end
