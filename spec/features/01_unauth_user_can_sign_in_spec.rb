@@ -16,7 +16,7 @@ feature "Unauthorized can login" do
     visit '/'
     click_link ("Login")
 
-    sign_in_as username
+    sign_in user
     expect(page).to have_content("test_user successfully signed in!")
   end
 
