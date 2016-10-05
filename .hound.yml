@@ -4,7 +4,7 @@ AllCops:
   #DisplayCopNames: true
 
 Ruby:
-  config: .rubocop.yml
+  config_file: .rubocop.yml
 
 AccessorMethodName:
   Enabled: false
