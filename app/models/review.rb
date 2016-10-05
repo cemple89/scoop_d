@@ -7,7 +7,6 @@ class Review < ActiveRecord::Base
             [5, "five scoops"]
           ]
 
-  has_many :comments
   belongs_to :location
   belongs_to :user
 
