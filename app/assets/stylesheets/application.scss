@@ -1,36 +1,43 @@
+$dark-pink: #ffaaa5;
+$light-pink: #ff8b94;
+$white: #ffffff;
+$shadow-grey: #dddddd;
+$black: #111111;
+
+
 .loginnav {
   display: inline-block;
   float: right;
-  background: #ffaaa5;
+  background: $dark-pink;
   padding: 20px;
-  margin-top: 140px;
   width: 25%;
+  z-index: 99;
   border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
   margin-right: 20px;
 }
 
 .top_bar {
-  background: #ff8b94;
+  background: $light-pink;
+  box-shadow: 0px -1px 10px 2px $black;
   float: left;
-  position: absolute;
+  z-index: 1;
   width: 100%;
-  box-shadow: 0px -1px 10px 2px black;
 }
 
 .name {
-  padding-left: 50px;
-  font-weight: lighter;
-  color: #FFFFFF;
-  font-size: 40px;
-  font-family: 'Pacifico', cursive;
-  text-shadow: 5px 5px 5px #111111;
-  letter-spacing: 2px;
+  color: $white;
   display: inline-block;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-left: 50px;
+  text-shadow: 5px 5px 5px $black;
 }
 
 .login_name {
-  background: #ff8b94;
+  background: $light-pink;
   display: inline-block;
   float: right;
   margin: 50px;
@@ -42,18 +49,18 @@
   padding: 10px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #DDDDDD;
+  color: $black;
 }
 
-.signup_form {
+.signup-form {
   display: inline-block;
   float: right;
-  background: #ffaaa5;
+  background: $dark-pink;
   padding: 20px;
   margin-top: 140px;
   width: 10%;
   border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   margin-right: 20px;
   text-align: center;
 }
