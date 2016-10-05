@@ -1,4 +1,6 @@
 require 'rails_helper'
+# frozen_string_literal: true
+
 
 feature 'users can add reviews for locations' do
   let(:user) do
