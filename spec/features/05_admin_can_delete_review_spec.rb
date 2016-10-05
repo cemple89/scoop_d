@@ -18,19 +18,19 @@ feature "Admin can delete review" do
 
   let!(:location) do
     Location.create(
-      name: "Pinkberry"
-      address: "Harvard Square"
-      city: "Cambridge"
-      state: "Massachussetts"
+      name: "Pinkberry",
+      address: "Harvard Square",
+      city: "Cambridge",
+      state: "Massachussetts",
       zip_code: "02138"
     )
   end
 
   let!(:review) do
     Review.create(
-      user_id: user2.id
-      rating: 3
-      body: "This was adequate."
+      user_id: user2.id,
+      rating: 3,
+      body: "This was adequate.",
       flavor: "Strawberry"
     )
   end
