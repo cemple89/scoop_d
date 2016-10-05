@@ -32,7 +32,7 @@ feature 'Unauthorized can login' do
     click_button 'Log In'
     click_button 'Sign Out'
 
-    expect(page).to have_button ('Log In')
+    expect(page).to have_button 'Log In'
   end
 
   scenario 'User enters incorrect password and cannot login' do

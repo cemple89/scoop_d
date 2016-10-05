@@ -38,14 +38,14 @@ feature 'users sees a list of locations' do
     expect(page).to have_content 'New Location Form'
   end
   scenario 'clicks link and is taken to show page for given restaurant' do
-    Location.create(
+    toscaninis = Location.create(
       name: 'Toscanini\'s',
       address: '25 Main Street',
       city: 'Cambridge',
       state: 'MA',
       zip_code: '02139',
       neighborhood: 'Central'
-                  )
+                                )
 
     visit '/'
     fill_in 'Email', with: user.email
