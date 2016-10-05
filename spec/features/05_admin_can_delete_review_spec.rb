@@ -35,8 +35,6 @@ feature "Admin can delete review" do
     )
   end
 
-
-
   scenario "Admin can delete review" do
     visit '/'
     sign_in_as_user

@@ -1,84 +1,69 @@
-.row {
-  max-width: 100%; }
+$dark-pink: #ffaaa5;
+$light-pink: #ff8b94;
+$white: #ffffff;
+$shadow-grey: #dddddd;
+$black: #111111;
 
-.menu {
-  background-color: #292c2f;
-  padding: 1.5rem 3rem;
-  height: auto;
-  display: inline-block;
-}
-  .menu .inline-list {
-    text-align: center; }
-    .menu .inline-list li {
-      float: none;
-      display: inline-block; }
-    .menu .inline-list a {
-      color: #fff;
-      padding-bottom: 0.5rem; }
-      .menu .inline-list a:hover {
-        color: #87d37c;
-        transition: all .3s ease-in-out; }
-    .menu .inline-list .active a {
-      color: #87d37c; }
-  .menu .account {
-    position: absolute;
-    top: 3%;
-    right: 3%; }
-    .menu .account a, .menu .account i {
-      color: #fff; }
-  @media only screen and (min-width: 40.063em) {
-    .menu {
-      height: 5rem; }
-      .menu .inline-list {
-        float: left;
-        margin: 0 0 0 1.5rem; }
-      .menu a:hover {
-        border-bottom: 2px solid #87d37c; } }
-  .menu .account-action {
-    float: right;
-    margin: -.75rem 0 0 0; }
-    .menu .account-action li {
-      margin-left: .2rem; }
-    .menu .account-action a {
-      padding: 0.75rem 1rem; }
-    .menu .account-action a.signup {
-      font-weight: bold;
-      background-color: #3d4146;
-      border-radius: 3px; }
-
-.name {
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin: 0 0 1rem 0;
-  color: #fff; }
-  .name i {
-    color: #87d37c;
-    margin-right: 0.5rem; }
-  @media only screen and (min-width: 40.063em) {
-    .name {
-      float: left; } }
 
 .loginnav {
   display: inline-block;
-  background: green;
-  float:left;
-  width:25%;
+  float: right;
+  background: $dark-pink;
+  padding: 20px;
+  width: 25%;
+  z-index: 99;
+  border-radius: 8px;
+  margin-right: 20px;
 }
 
-.titlenav {
-  float:left;
-  width:60%;
+.top-bar {
+  background: $light-pink;
+  box-shadow: 0 -1px 10px 2px $black;
+  float: left;
+  width: 100%;
+  z-index: 1;
+}
+
+.name {
+  color: $white;
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-left: 50px;
+  text-shadow: 5px 5px 5px $black;
+}
+
+.login-name {
+  background: $light-pink;
+  display: inline-block;
+  float: right;
+  margin: 50px;
 }
 
 .field {
+  color: $black;
   display: inline-block;
+  font-family: Arial;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
 }
 
-.actions {
+.signup-form {
+  background: $dark-pink;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  margin-top: 140px;
+  padding: 20px;
+  text-align: center;
+  width: 10%;
 }
 
-#signup {
-  display: inline-block;
-  float:right;
+body {
+  margin: 0;
 }
