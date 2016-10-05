@@ -2,6 +2,7 @@ AllCops:
   Exclude:
     - db/schema.rb
   #DisplayCopNames: true
+
 AccessorMethodName:
   Enabled: false
 
@@ -172,7 +173,7 @@ RaiseArgs:
 RegexpLiteral:
   Enabled: false
 
-ruby:
+Ruby:
   config_file: .rubocop.yml
 
 SelfAssignment:
