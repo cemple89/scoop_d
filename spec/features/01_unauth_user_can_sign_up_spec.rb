@@ -1,6 +1,6 @@
-# frozen_string_literal: true
 require 'spec_helper'
 require 'rails_helper'
+# frozen_string_literal: true
 
 feature 'Unauthorized can signup' do
 
@@ -60,7 +60,7 @@ feature 'Unauthorized can signup' do
     click_button 'Sign up'
 
     expect(page).to have_content(
-    'Password confirmation doesn\'t match Password'
+      'Password confirmation doesn\'t match Password'
     )
   end
 
@@ -75,7 +75,7 @@ feature 'Unauthorized can signup' do
     click_button 'Sign up'
 
     expect(page).to have_content(
-    'Password is too short (minimum is 6 characters)'
+      'Password is too short (minimum is 6 characters)'
     )
   end
 end

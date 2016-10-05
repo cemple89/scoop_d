@@ -15,7 +15,7 @@ feature 'users can add reviews for locations' do
       city: 'Somerville',
       state: 'MA',
       zip_code: '02143'
-      )
+                                          )
     visit '/'
 
     fill_in 'Email', with: user.email
@@ -52,7 +52,7 @@ feature 'users can add reviews for locations' do
       city: 'Somerville',
       state: 'MA',
       zip_code: '02143'
-      )
+                                        )
 
     visit location_path(forge_ice_cream_bar)
 
