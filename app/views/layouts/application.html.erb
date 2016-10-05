@@ -12,6 +12,9 @@
   </head>
 
   <body>
+      <% flash.each do |key, value| %>
+        <div class="flash <%= key %>"><%= value %></div>
+      <% end %>
       <nav class="menu titlenav">
         <h1 class="name"><i class="fi-widget"></i> Scoop_d </a></h1>
         <ul class="inline-list hide-for-small-only account-action">
