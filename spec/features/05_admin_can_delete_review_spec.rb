@@ -40,7 +40,6 @@ feature 'Admin can delete review' do
     sign_in_as_user
     visit '/locations/#{location.id}/#{review.id}' # change if routes different
     click_button(review.id)  # make button id "review.id"
-
     expect(page).to_not have_content(review.flavor)
   end
 
@@ -48,9 +47,6 @@ feature 'Admin can delete review' do
     visit '/'
     sign_in_as_user2
     visit '/locations/#{location.id}/#{review.id}'
-
     expect(page).to_not have_button(review.id)
   end
-
-
 end

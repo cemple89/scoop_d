@@ -18,7 +18,7 @@ feature 'Authorized user can be designated as admin after login' do
   scenario 'Undesignated user logs in, not registered as admin' do
     user = User.create(
       email: 'testemail@gmail.com',
-      password: 'testtest',
+      password: 'testtest'
     )
     visit '/'
     fill_in 'Email', with: 'testemail@gmail.com'
