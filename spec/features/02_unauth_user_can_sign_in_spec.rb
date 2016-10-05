@@ -20,7 +20,7 @@ feature 'Unauthorized can login' do
     fill_in 'Password', with: user.password
     click_button ('Log In')
 
-    expect(page).to have_content('Signed in as #{user.email}')
+    expect(page).to have_content("Signed in as #{user.email}")
   end
 
 
@@ -40,7 +40,7 @@ feature 'Unauthorized can login' do
     fill_in 'Password', with: 'scoop'
     click_button ('Log In')
 
-    expect(page).to_not have_content('Signed in as #{user.email}')
+    expect(page).to_not have_content("Signed in as #{user.email}")
   end
 
 end

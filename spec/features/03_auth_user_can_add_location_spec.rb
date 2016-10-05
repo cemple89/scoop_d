@@ -10,11 +10,10 @@ feature 'authorized user can add a location' do
   end
 
   scenario 'user adds new location successfully' do
-
     visit '/'
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
-    click_button ('Log In')
+    click_button 'Log In'
     visit new_location_path
     expect(page).to have_content 'New Location Form'
 
@@ -23,7 +22,7 @@ feature 'authorized user can add a location' do
     fill_in 'City', with: 'Cambridge'
     fill_in 'State', with: 'Massachusetts'
     fill_in 'Zip Code', with: '02111'
-    select('Harvard', :from => 'Neighborhood')
+    select('Harvard', from: 'Neighborhood')
     fill_in 'Phone', with: '617-555-1234'
     fill_in 'url', with: 'www.jplicks.com'
 
@@ -45,7 +44,8 @@ feature 'authorized user can add a location' do
     expect(page).to have_content 'City can\'t be blank'
     expect(page).to have_content 'State can\'t be blank'
     expect(page).to have_content 'Zip code can\'t be blank'
-    expect(page).to have_content 'Zip code is the wrong length (should be 5 characters)'
+    expect(page).to have_content
+    'Zip code is the wrong length (should be 5 characters)'
     expect(page).to have_content 'Zip code is not a number'
   end
 end
