@@ -1,6 +1,4 @@
 require 'rails_helper'
-# frozen_string_literal: true
-
 
 feature 'users sees a list of locations' do
   let(:user) do
