@@ -1,0 +1,17 @@
+<%= form_for [@location, @review] do |q| %>
+  <div class="row">
+    <%= q.label :flavor, "Flavor" %>
+    <%= q.text_field :flavor %>
+  </div>
+  <div class="row">
+    <%= q.label :quantity, "Rating" %>
+    <%= q.collection_radio_buttons :rating, @rating_collection, :first, :last %>
+  </div>
+  <div class="row">
+    <%= q.label :body, "Extra Scoop" %>
+    <%= q.text_field :body %>
+  </div>
+  <div class="actions">
+    <%= q.submit "Add Review" %>
+  </div>
+<% end %>
