@@ -3,7 +3,7 @@ AllCops:
     - db/schema.rb
   #DisplayCopNames: true
 
-ruby:
+Ruby:
   config: .rubocop.yml
 
 AccessorMethodName:
