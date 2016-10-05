@@ -18,7 +18,7 @@
           <h1>Scoopd</h1>
       </div>
       <% if current_user %>
-        <div class="login_name">
+        <div class="login-name">
           <h4>Signed in as <%= current_user.email %></a></h4>
           <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
         </div>
