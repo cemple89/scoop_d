@@ -3,13 +3,17 @@ AllCops:
     - db/schema.rb
     - db/
   #DisplayCopNames: true
-Style/Documentation:
+Style/DocumentationMethod:
   Enabled: false
 
-Documentation:
+DocumentationMethod:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
+   SupportedStyles:
+    # `when_needed` will add the frozen string literal comment to files
+    # only when the `TargetRubyVersion` is set to 2.3+.
+    - when_needed
   Enabled: false
 
 FrozenStringLiteralComment:
