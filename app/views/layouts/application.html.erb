@@ -22,9 +22,9 @@
         </ul>
         <a class="account hide-for-medium-up" href="#" data-reveal-id="myModal"><i class="fi-unlock"></i></a>
       </nav>
-
-
+      <% flash.each do |key, value| %>
+        <%= value %>
+      <% end %>
     <%= yield %>
-
   </body>
 </html>

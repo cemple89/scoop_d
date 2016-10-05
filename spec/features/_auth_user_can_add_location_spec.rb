@@ -1,8 +1,20 @@
 require 'rails_helper'
+require 'spec_helper'
 
 feature "authorized user can add a location" do
+  let(:user) do
+    User.create(
+      email: "test_user@gmail.com",
+      password: "scooped"
+    )
+  end
+
   scenario "user adds new location successfully" do
 
+    visit "/"
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.password
+    click_button ("Log In")
     visit new_location_path
     expect(page).to have_content "New Location Form"
 
