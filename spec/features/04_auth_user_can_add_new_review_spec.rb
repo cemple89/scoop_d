@@ -8,9 +8,13 @@ feature 'users can add reviews for locations' do
     )
   end
   scenario 'adds a review for a location successfully' do
-    forge_ice_cream_bar = Location.create
-    (name: 'Forge Ice Cream Bar', address: '626 Somerville Ave.',
-     city: 'Somerville', state: 'MA', zip_code: '02143')
+    forge_ice_cream_bar = Location.create(
+      name: 'Forge Ice Cream Bar',
+      address: '626 Somerville Ave.',
+      city: 'Somerville',
+      state: 'MA',
+      zip_code: '02143'
+      )
     visit '/'
 
     fill_in 'Email', with: user.email
@@ -41,9 +45,13 @@ feature 'users can add reviews for locations' do
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
     click_button 'Log In'
-    forge_ice_cream_bar = Location.create
-    (name: 'Forge Ice Cream Bar', address: '626 Somerville Ave.',
-     city: 'Somerville', state: 'MA', zip_code: '02143')
+    forge_ice_cream_bar = Location.create(
+      name: 'Forge Ice Cream Bar',
+      address: '626 Somerville Ave.',
+      city: 'Somerville',
+      state: 'MA',
+      zip_code: '02143'
+      )
 
     visit location_path(forge_ice_cream_bar)
 
