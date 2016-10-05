@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @cemple89
- Watch 180
-  Star 6,824
-  Fork 1,004 bbatsov/rubocop
- Code  Issues 130  Pull requests 6  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathrubocop/config/default.yml
-f122024  9 days ago
-@scottmatthewman scottmatthewman Add support for StyleGuideBaseURL and update rules
-70 contributors @bbatsov @jonas054 @alexdowad @rrosenblum @bquorning @Drenmi @geniou @tamird @hannestyden @palkan @panthomakos @tjwp @pocke @daviddavis @jawshooah @zuazo @kevinjalbert @carhartl @yujinakayama @agrimm @marxarelli @yous @sds @vrthra @sdeframond @scottmatthewman and others
-RawBlameHistory
-1292 lines (1159 sloc)  37.2 KB
 # This is the default configuration file. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
 
@@ -23,6 +6,10 @@ inherit_from:
   - disabled.yml
 
 # Common configuration.
+
+Documentation:
+  Enabled: false
+
 AllCops:
   # Include common Ruby source files.
   Include:
