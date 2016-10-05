@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <div class="top-bar row">
       <div class="name">
           <h1>Scoopd</h1>
@@ -23,6 +24,11 @@
         </div>
       <% end %>
     </div>
+    
+    <% flash.each do |key, value| %>
+      <%= value %>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

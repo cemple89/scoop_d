@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161005133307) do
+=======
+ActiveRecord::Schema.define(version: 20161005174456) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,15 +28,6 @@ ActiveRecord::Schema.define(version: 20161005133307) do
     t.datetime "updated_at", null: false
     t.index ["review_id"], name: "index_comments_on_review_id", using: :btree
     t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
-  end
-
-  create_table "locationreviews", force: :cascade do |t|
-    t.integer  "location_id", null: false
-    t.integer  "review_id",   null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["location_id"], name: "index_locationreviews_on_location_id", using: :btree
-    t.index ["review_id"], name: "index_locationreviews_on_review_id", using: :btree
   end
 
   create_table "locations", force: :cascade do |t|
@@ -49,12 +44,14 @@ ActiveRecord::Schema.define(version: 20161005133307) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "rating",     null: false
+    t.integer  "user_id",     null: false
+    t.integer  "rating",      null: false
     t.text     "body"
-    t.string   "flavor",     null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "flavor",      null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "location_id", null: false
+    t.index ["location_id"], name: "index_reviews_on_location_id", using: :btree
     t.index ["user_id"], name: "index_reviews_on_user_id", using: :btree
   end
 
