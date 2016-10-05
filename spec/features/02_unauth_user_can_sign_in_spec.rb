@@ -24,12 +24,7 @@ feature 'Unauthorized can login' do
     expect(page).to have_content("Signed in as #{user.email}")
   end
 
-<<<<<<< HEAD
-
   scenario 'Logged in User can log out from button in header' do
-=======
-  scenario "Logged in User can log out from button in header" do
->>>>>>> master
     visit '/'
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
