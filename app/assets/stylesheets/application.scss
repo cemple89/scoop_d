@@ -1,68 +1,63 @@
 .loginnav {
   display: inline-block;
-  float:right;
+  float: right;
   background: #ffaaa5;
-  padding:20px;
-  margin-top:140px;
-  width:25%;
+  padding: 20px;
+  margin-top: 140px;
+  width: 25%;
   border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 .top_bar {
   background: #ff8b94;
-  float:left;
-  position:absolute;
-  width:100%;
+  float: left;
+  position: absolute;
+  width: 100%;
   box-shadow: 0px -1px 10px 2px black;
 }
 
 .name {
-  padding-left:50px;
+  padding-left: 50px;
   font-weight: lighter;
-  color:white;
+  color: #FFFFFF;
   font-size: 40px;
   font-family: 'Pacifico', cursive;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px #111111;
   letter-spacing: 2px;
   display: inline-block;
 }
 
 .login_name {
   background: #ff8b94;
-  display:inline-block;
-  float:right;
-  margin:50px;
+  display: inline-block;
+  float: right;
+  margin: 50px;
 }
 
 .field {
   font-family: Arial;
   display: inline-block;
-  padding:10px;
+  padding: 10px;
   letter-spacing: 1px;
   font-weight: bold;
-  color:grey;
-}
-
-#signup {
-  display: inline-block;
-  float:right;
+  color: #DDDDDD;
 }
 
 .signup_form {
   display: inline-block;
-  float:right;
+  float: right;
   background: #ffaaa5;
-  padding:20px;
-  margin-top:140px;
-  width:10%;
+  padding: 20px;
+  margin-top: 140px;
+  width: 10%;
   border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
-  margin-right:20px;
+  margin-right: 20px;
   text-align: center;
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
