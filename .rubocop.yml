@@ -32,7 +32,8 @@ AllCops:
     - '**/Fastfile'
     - '**/*Fastfile'
   Exclude:
-    - 'vendor/**/*'
+    - db/schema.rb
+    - config/initializers/devise.rb
   # Default formatter will be used if no -f/--format option is given.
   DefaultFormatter: progress
   # Cop names are not displayed in offense messages by default. Change behavior
