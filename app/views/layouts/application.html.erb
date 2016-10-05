@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-
-    <%= stylesheet_link_tag    "application" %>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
+<<<<<<< HEAD
       <nav class="menu titlenav">
         <h1 class="name"><i class="fi-widget"></i> Scoop_d </a></h1>
         <ul class="inline-list hide-for-small-only account-action">
@@ -25,6 +26,21 @@
       <% flash.each do |key, value| %>
         <%= value %>
       <% end %>
+=======
+    <div class="top-bar row">
+      <div class="name">
+          <!-- <img src="http://res.cloudinary.com/ld9ihwdpf/image/upload/v1475613671/scoopd_vvkr0z.png"> -->
+          <h1>Scoopd</h1>
+      </div>
+      <% if current_user %>
+        <div class="login-name">
+          <h4>Signed in as <%= current_user.email %></a></h4>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
+        </div>
+      <% end %>
+    </div>
+
+>>>>>>> master
     <%= yield %>
   </body>
 </html>
