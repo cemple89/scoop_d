@@ -1,12 +1,16 @@
 <h1><%= @location.name %></h1><br>
+<h2><%= @location.neighborhood %></h2><br>
 
+<h3><%= @location.address %><br>
+<%= @location.city %>, <%= @location.state %> <%= @location.zip_code %></h3><br>
+
+<h2>Reviews for <%= @location.name %></h2>
 <% @reviews.each do |review| %>
-  <% @current_review = review %>
-  <%= review.rating %>
-  <%= review.body %>
-    <% review.comments.each do |comment| %>
-      <%= comment.body %><br>
-    <% end %>
+  <%= review.rating %> Scoops<br>
+  <%= review.flavor %>
+  <br>
+  <em><%= review.body %></em>
+  <br><br>
 <% end %>
 
 <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
