@@ -45,8 +45,8 @@ feature 'authorized user can add a location' do
     expect(page).to have_content 'City can\'t be blank'
     expect(page).to have_content 'State can\'t be blank'
     expect(page).to have_content 'Zip code can\'t be blank'
-    expect(page).to have_content
-    'Zip code is the wrong length (should be 5 characters)'
+    expect(page).to have_content 'Zip code is the wrong
+    length (should be 5 characters)'
     expect(page).to have_content 'Zip code is not a number'
   end
 end
