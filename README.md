@@ -28,3 +28,5 @@ Things you may want to cover:
 * ...
 # Scoop D
 Your app description, here.
+
+* Hound should now be added
