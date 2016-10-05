@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Review < ActiveRecord::Base
   has_many :locationreviews
   has_many :locations, through: :locationreviews
