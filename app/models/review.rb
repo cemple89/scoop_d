@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Review < ActiveRecord::Base
 
   RATINGS = [[1, "one scoop"],

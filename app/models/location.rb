@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Location < ActiveRecord::Base
 
   NEIGHBORHOODS = ["", "Downtown", "Back Bay", "South End", "Seaport", "Southie", "Roxbury", "Dorchester",
