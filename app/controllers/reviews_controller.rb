@@ -33,25 +33,27 @@ class ReviewsController < ApplicationController
   end
 
 
-def edit
-  @review = Review.find(params[:id])
-end
-
-def update
-  @review = Review.find(params[:id])
-  @review.update_attributes(review_params)
-  if @review.save
-    redirect_to location_path(@review.location)
-  else
-    render action: 'edit'
+  def edit
+    @review = Review.find(params[:id])
   end
-end
 
-def destroy
-  @review = Review.find(params[:id])
-  @review.destroy
-  redirect_to location_path(@review.location)
-end
+  def update
+    @review = Review.find(params[:id])
+    @review.update_attributes(review_params)
+    if @review.save
+      redirect_to location_path(@review.location)
+    else
+      render action: 'edit'
+    end
+  end
+
+  def destroy
+    if current_user.admin?
+      @review = Review.find(params[:id])
+      @review.destroy
+      redirect_to location_path(@review.location)
+    end
+  end
 
   private
 

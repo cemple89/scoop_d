@@ -32,22 +32,27 @@ feature 'Admin can delete review' do
       user_id: user2.id,
       rating: 3,
       body: 'This was adequate.',
-      flavor: 'Strawberry'
+      flavor: 'Strawberry',
+      location_id: location.id
     )
   end
 
   scenario 'Admin can delete review' do
     visit '/'
-    sign_in_as_user
-    visit '/locations/#{location.id}/#{review.id}' # change if routes different
-    click_button(review.id)  # make button id "review.id"
+    fill_in 'Email', with: user.email
+    fill_in 'Password', with: user.password
+    click_button('Log In')
+    click_link('Pinkberry') # change if routes different
+    click_link(review.id)  # make button id "review.id"
     expect(page).to_not have_content(review.flavor)
   end
 
   scenario 'Non-admin user cannot delete review' do
     visit '/'
-    sign_in_as_user2
-    visit '/locations/#{location.id}/#{review.id}'
-    expect(page).to_not have_button(review.id)
+    fill_in 'Email', with: user2.email
+    fill_in 'Password', with: user2.password
+    click_button('Log In')
+    click_link('Pinkberry')
+    expect(page).to_not have_link(review.id)
   end
 end

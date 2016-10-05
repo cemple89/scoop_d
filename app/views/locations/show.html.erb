@@ -11,6 +11,9 @@
   <br>
   <em><%= review.body %></em>
   <br><br>
+  <% if current_user.admin? %>
+    <li> <%= link_to 'Delete Review', location_review_path(review.id), { method: :delete, id: review.id }%> </li>
+  <% end %>
 <% end %>
 
 <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
