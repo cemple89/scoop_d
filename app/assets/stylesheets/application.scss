@@ -13,16 +13,16 @@ $black: #111111;
   width: 25%;
   z-index: 99;
   border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   margin-right: 20px;
 }
 
-.top_bar {
+.top-bar {
   background: $light-pink;
   box-shadow: 0px -1px 10px 2px $black;
   float: left;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
 }
 
 .name {
@@ -44,25 +44,25 @@ $black: #111111;
 }
 
 .field {
-  font-family: Arial;
-  display: inline-block;
-  padding: 10px;
-  letter-spacing: 1px;
-  font-weight: bold;
   color: $black;
+  display: inline-block;
+  font-family: Arial;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
 }
 
 .signup-form {
+  background: $dark-pink;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   display: inline-block;
   float: right;
-  background: $dark-pink;
-  padding: 20px;
-  margin-top: 140px;
-  width: 10%;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
   margin-right: 20px;
+  margin-top: 140px;
+  padding: 20px;
   text-align: center;
+  width: 10%;
 }
 
 body {
