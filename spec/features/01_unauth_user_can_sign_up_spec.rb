@@ -59,8 +59,9 @@ feature 'Unauthorized can signup' do
 
     click_button 'Sign up'
 
-    expect(page).to have_content('Password confirmation doesn\'t
-    match Password')
+    expect(page).to have_content(
+    'Password confirmation doesn\'t match Password'
+    )
   end
 
   scenario 'User enters a password that is too short' do
@@ -73,7 +74,8 @@ feature 'Unauthorized can signup' do
 
     click_button 'Sign up'
 
-    expect(page).to have_content('Password is too short
-    (minimum is 6 characters)')
+    expect(page).to have_content(
+    'Password is too short (minimum is 6 characters)'
+    )
   end
 end
