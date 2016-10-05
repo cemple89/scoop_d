@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
 
   def new
-    @review = Review.find(params[:review_id])
+    @review = Review.find(:review_id)
+    @location = Location.find(params[:id])
     @comment = Comment.new
   end
 
@@ -11,13 +12,14 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @review = Review.find(params[:review_id])
+    @reviews = Review.all
+    @review = @location.reviews.find(params[:review_id])
     @comment = @review.comments.new(comment_params)
     if @comment.save
       flash[:notice] = "Comment added successfully."
       redirect_to location_review_path(@review)
     else
-      flash[:notice] = @comments.errors.full_messages.join(", ")
+      flash[:notice] = @comment.errors.full_messages.join(", ")
       render 'locations/show'
     end
   end

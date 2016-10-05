@@ -34,15 +34,18 @@ feature "authorized user can add a location" do
   end
 
   scenario "visitor does not provide proper information for a location" do
-    visit new_location_path
-
+    visit "/"
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.password
+    click_button "Log In"
+    click_link "Add New Location"
     click_button "Add Location"
     expect(page).to have_content "Name can't be blank"
     expect(page).to have_content "Address can't be blank"
     expect(page).to have_content "City can't be blank"
     expect(page).to have_content "State can't be blank"
-    expect(page).to have_content "Zip can't be blank"
-    expect(page).to have_content "Zip is the wrong length (should be 5 characters)"
-    expect(page).to have_content "Zip is not a number"
+    expect(page).to have_content "Zip code can't be blank"
+    expect(page).to have_content "Zip code is the wrong length (should be 5 characters)"
+    expect(page).to have_content "Zip code is not a number"
   end
 end

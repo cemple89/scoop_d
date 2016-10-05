@@ -14,7 +14,14 @@ class ReviewsController < ApplicationController
 
   def create
     @location = Location.find(params[:location_id])
-    @review = @location.reviews.new(review_params)
+    @reviews = @location.reviews
+    @review = @location.reviews.new(
+      user: current_user,
+      flavor: params[:review][:flavor],
+      rating: params[:review][:rating],
+      body: params[:review][:body],
+      location: @location
+    )
     if @review.save
       flash[:notice] = "Review added successfully."
       redirect_to location_path(@location)
@@ -48,6 +55,6 @@ end
   private
 
   def review_params
-    params.require(:review).permit(:user_id, :flavor, :rating, :body)
+    params.require(:review).permit(:current_user, :flavor, :rating, :body)
   end
 end

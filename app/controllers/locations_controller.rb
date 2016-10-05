@@ -1,5 +1,6 @@
-class LocationsController < ApplicationController
+require 'pry'
 
+class LocationsController < ApplicationController
 
   def index
     @locations = Location.all
@@ -11,6 +12,7 @@ class LocationsController < ApplicationController
   end
 
   def create
+    @neighborhood_collection = Location::NEIGHBORHOODS
     @location = Location.new(location_params)
     if @location.save
       redirect_to location_path(@location)
