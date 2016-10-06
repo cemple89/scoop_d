@@ -69,6 +69,9 @@ def upvote
       vote.update_attribute(:user_id, current_user.id)
       redirect_to location_path(@review.location)
     end
+  else userdownvote.nil?
+    userupvote.delete
+    redirect_to location_path(@review.location)
   end
 end
 
@@ -89,6 +92,9 @@ def downvote
       vote.update_attribute(:count, -1)
       redirect_to location_path(@review.location)
     end
+  else userupvote.nil?
+    userdownvote.delete
+    redirect_to location_path(@review.location)
   end
 end
 
