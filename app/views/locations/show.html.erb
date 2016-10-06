@@ -1,0 +1,23 @@
+<h1><%= @location.name %></h1><br>
+<h2><%= @location.neighborhood %></h2><br>
+
+<h3><%= @location.address %><br>
+<%= @location.city %>, <%= @location.state %> <%= @location.zip_code %></h3><br>
+
+<h2>Reviews for <%= @location.name %></h2>
+<% @reviews.each do |review| %>
+  <%= Review::RATINGS[review.rating - 1][1] %><br>
+  <%= review.flavor %>
+  <br>
+  <em><%= review.body %></em>
+  <% if review.user_id == current_user.id && !review.id.nil? %>
+    <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id), { method: :delete, id: review.id} %></li>
+  <% end %>
+  <% if current_user.id == review.user_id && !review.id.nil? %>
+    <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id}%></li>
+  <% end %>
+  <br><br>
+<% end %>
+
+<%= link_to 'Add a Review', new_location_review_path(@location) %><br>
+<%= link_to 'Back to Locations', locations_path %>

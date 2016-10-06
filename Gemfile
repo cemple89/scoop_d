@@ -1,10 +1,13 @@
+# frozen_string_literal: true
 source 'https://rubygems.org/'
 
 ruby "2.3.1"
+
 gem 'foundation-rails'
 gem 'devise'
 gem 'httpclient'
 gem 'json'
+gem 'rubocop'
 gem 'rails', '~> 5'
 gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
