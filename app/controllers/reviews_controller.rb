@@ -35,6 +35,8 @@ class ReviewsController < ApplicationController
 
 def edit
   @review = Review.find(params[:id])
+  @location = @review.location
+  @rating_collection = Review::RATINGS
 end
 
 def update
@@ -49,13 +51,15 @@ end
 
 def destroy
   @review = Review.find(params[:id])
-  @review.destroy
-  redirect_to location_path(@review.location)
+  if @review.user_id == current_user.id
+    @review.destroy
+    redirect_to location_path(@review.location)
+  end
 end
 
   private
 
   def review_params
-    params.require(:review).permit(:current_user, :flavor, :rating, :body)
+    params.require(:review).permit(:current_user, :flavor, :rating, :body, :location_id, :review_id)
   end
 end

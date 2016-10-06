@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 class Review < ActiveRecord::Base
   RATINGS = [
-    [1, 'one scoop'],
-    [2, 'two scoops'],
-    [3, 'three scoops'],
-    [4, 'four scoops'],
-    [5, 'five scoops']
+    [1, 'scoop'],
+    [2, 'scoops'],
+    [3, 'scoops'],
+    [4, 'scoops'],
+    [5, 'scoops']
             ]
 
   belongs_to :location
