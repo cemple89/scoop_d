@@ -10,11 +10,7 @@
   <%= review.flavor %>
   <br>
   <em><%= review.body %></em>
-<<<<<<< HEAD
   <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
-=======
-  <% if review.user_id == current_user.id && !review.id.nil? %>
->>>>>>> master
     <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id), { method: :delete, id: review.id} %></li>
   <% end %>
   <% if current_user.id == review.user_id && !review.id.nil? %>
