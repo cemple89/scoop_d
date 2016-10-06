@@ -30,3 +30,4 @@ Things you may want to cover:
 Your app description, here.
 
 * Hound should now be added
+* tests failing?
