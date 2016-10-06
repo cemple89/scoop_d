@@ -47,22 +47,24 @@ feature 'User can delete own review' do
    )
  end
 
- scenario 'User can delete own review' do
+ scenario 'User can edit own review' do
    visit '/'
    fill_in 'Email', with: user.email
    fill_in 'Password', with: user.password
    click_button('Log In')
    click_link('Pinkberry')
-   click_link('Delete ' + review.flavor + ' review')
-   expect(page).to_not have_content(review.flavor)
+   click_link('Edit ' + review.flavor + ' review')
+   fill_in "Flavor", with: "Chocolate"
+   click_button("Add Review")
+   expect(page).to have_content("Chocolate")
  end
 
- scenario 'User cannot delete another user\'s review' do
+ scenario 'User cannot dedit another user\'s review' do
    visit '/'
    fill_in 'Email', with: user.email
    fill_in 'Password', with: user.password
    click_button('Log In')
    click_link('Pinkberry')
-   expect(page).to_not have_link('Delete ' + review2.flavor + ' review')
+   expect(page).to_not have_link('Edit ' + review2.flavor + ' review')
  end
 end

@@ -11,10 +11,10 @@
   <br>
   <em><%= review.body %></em>
   <% if review.user_id == current_user.id && !review.id.nil? %>
-    <li><%= link_to 'Delete Review', location_review_path(@location.id), { method: :delete, id: review.id} %></li>
+    <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id), { method: :delete, id: review.id} %></li>
   <% end %>
   <% if current_user.id == review.user_id && !review.id.nil? %>
-    <li><%= link_to 'Edit Review', edit_location_review_path(@location, review)%></li>
+    <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id}%></li>
   <% end %>
   <br><br>
 <% end %>
