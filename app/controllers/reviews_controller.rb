@@ -32,8 +32,6 @@ class ReviewsController < ApplicationController
     end
   end
 
-
-<<<<<<< HEAD
   def edit
     @review = Review.find(params[:id])
   end
