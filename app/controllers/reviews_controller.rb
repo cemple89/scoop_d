@@ -69,18 +69,26 @@ def upvote
       vote.update_attribute(:user_id, current_user.id)
       redirect_to location_path(@review.location)
     end
-  else
   end
 end
 
 def downvote
   @review = Review.find(params[:id])
-  uservote = Vote.find_by(count: -1,review_id: @review.id, user_id: current_user.id)
-  if uservote.nil?
-    vote = @review.votes.create
-    vote.update_attribute(:user_id, current_user.id)
-    vote.update_attribute(:count, -1)
-    redirect_to location_path(@review.location)
+  userdownvote = Vote.find_by(count: -1,review_id: @review.id, user_id: current_user.id)
+  userupvote = Vote.find_by(count: 1,review_id: @review.id, user_id: current_user.id)
+  if userdownvote.nil?
+    if userupvote.nil?
+      vote = @review.votes.create
+      vote.update_attribute(:user_id, current_user.id)
+      vote.update_attribute(:count, -1)
+      redirect_to location_path(@review.location)
+    else
+      userupvote.delete
+      vote = @review.votes.create
+      vote.update_attribute(:user_id, current_user.id)
+      vote.update_attribute(:count, -1)
+      redirect_to location_path(@review.location)
+    end
   end
 end
 
