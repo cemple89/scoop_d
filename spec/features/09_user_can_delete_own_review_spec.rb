@@ -13,6 +13,7 @@ feature 'User can delete own review' do
   end
 
  scenario 'User can delete own review' do
+   populate_db
    visit '/'
    fill_in 'Email', with: @user1.email
    fill_in 'Password', with: @user1.password
@@ -23,6 +24,7 @@ feature 'User can delete own review' do
  end
 
  scenario 'User cannot delete another user\'s review' do
+   populate_db
    visit '/'
    fill_in 'Email', with: @user1.email
    fill_in 'Password', with: @user1.password
