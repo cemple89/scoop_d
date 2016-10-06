@@ -8,10 +8,11 @@
 
 <h2>Reviews for <%= @location.name %></h2>
 <% @reviews.each do |review| %>
-  <%= review.rating %> Scoops<br>
+  <%= Review::RATINGS[review.rating - 1][1] %><br>
   <%= review.flavor %>
   <br>
   <em><%= review.body %></em>
+
   <% @vote = Vote.find_by(review_id: review.id, user_id: current_user.id)  %>
   <% unless @vote.nil? %>
     <% if @vote.count == 1 %>
@@ -28,8 +29,16 @@
   <i class="fa fa-thumbs-o-up" id=<%=@upvote%> aria-hidden="true"></i><%= button_to '+1', upvote_review_path(review), method: :post %>
   <i class="fa fa-thumbs-o-down" id=<%=@downvote%> aria-hidden="true"></i><%= button_to '-1', downvote_review_path(review), method: :post %>
   <br><br>
-
-
+  <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
+    <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id), { method: :delete, id: review.id} %></li>
+  <% end %>
+  <% if current_user.id == review.user_id && !review.id.nil? %>
+    <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id}%></li>
+  <% end %>
+  <br><br>
+  <% if current_user.admin? %>
+    <li> <%= link_to 'Delete Review', location_review_path(review.id), { method: :delete, id: review.id }%> </li>
+  <% end %>
 <% end %>
 
 <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
