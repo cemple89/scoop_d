@@ -1,13 +1,14 @@
 # frozen_string_literal: true
 require 'spec_helper'
 require 'rails_helper'
+require 'factory_girl_rails'
 
 feature 'Unauthorized can login' do
 
   let(:populate_db) do
     @user1 = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
     @location1 = FactoryGirl.create(:location)
     @location2 = FactoryGirl.create(:location)
     @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)

@@ -22,3 +22,6 @@
 
 
 config/application.yml
+app/models/locationreview.rb
+
+db/JSON_data/JSON_parse.rb
