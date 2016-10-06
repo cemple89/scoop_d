@@ -24,7 +24,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
-    @reviews = @location.reviews
+    @reviews = @location.reviews.order("votes ASC")
   end
 
 
