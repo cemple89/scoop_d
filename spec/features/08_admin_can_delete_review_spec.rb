@@ -17,6 +17,13 @@ feature 'Admin can delete review' do
     )
   end
 
+  let!(:user3) do
+    User.create(
+      email: 'testemail34@gmail.com',
+      password: 'alsoscooped34'
+    )
+  end
+
   let!(:location) do
     Location.create(
       name: 'Pinkberry',
@@ -42,17 +49,17 @@ feature 'Admin can delete review' do
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
     click_button('Log In')
-    click_link('Pinkberry') # change if routes different
-    click_link(review.id)  # make button id "review.id"
+    click_link('Pinkberry')
+    click_link('Delete ' + review.flavor + ' review')
     expect(page).to_not have_content(review.flavor)
   end
 
   scenario 'Non-admin user cannot delete review' do
     visit '/'
-    fill_in 'Email', with: user2.email
-    fill_in 'Password', with: user2.password
+    fill_in 'Email', with: user3.email
+    fill_in 'Password', with: user3.password
     click_button('Log In')
     click_link('Pinkberry')
-    expect(page).to_not have_link(review.id)
+    expect(page).to_not have_link('Delete ' + review.flavor + ' review')
   end
 end

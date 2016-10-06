@@ -50,6 +50,7 @@ def update
   else
     render action: 'edit'
   end
+end
 
 def destroy
   @review = Review.find(params[:id])
