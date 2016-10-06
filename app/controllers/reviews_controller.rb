@@ -53,8 +53,38 @@ def destroy
   redirect_to location_path(@review.location)
 end
 
-  private
+def upvote
+  @review = Review.find(params[:id])
+  userupvote = Vote.find_by(count: 1,review_id: @review.id, user_id: current_user.id)
+  userdownvote = Vote.find_by(count: -1,review_id: @review.id, user_id: current_user.id)
+  # if current_user already voted on review
+  if userupvote.nil?
+    if userdownvote.nil?
+      vote = @review.votes.create
+      vote.update_attribute(:user_id, current_user.id)
+      redirect_to location_path(@review.location)
+    else
+      userdownvote.delete
+      vote = @review.votes.create
+      vote.update_attribute(:user_id, current_user.id)
+      redirect_to location_path(@review.location)
+    end
+  else
+  end
+end
 
+def downvote
+  @review = Review.find(params[:id])
+  uservote = Vote.find_by(count: -1,review_id: @review.id, user_id: current_user.id)
+  if uservote.nil?
+    vote = @review.votes.create
+    vote.update_attribute(:user_id, current_user.id)
+    vote.update_attribute(:count, -1)
+    redirect_to location_path(@review.location)
+  end
+end
+
+  private
   def review_params
     params.require(:review).permit(:current_user, :flavor, :rating, :body)
   end

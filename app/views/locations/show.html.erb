@@ -10,7 +10,10 @@
   <%= review.flavor %>
   <br>
   <em><%= review.body %></em>
+  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i><%= button_to '+1', upvote_review_path(review), method: :post %>
+  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i><%= button_to '-1', downvote_review_path(review), method: :post %>
   <br><br>
+
 
 <% end %>
 

@@ -1,9 +1,0 @@
-class VotesController < ApplicationController
-
-
-
-
-
-
-
-end
