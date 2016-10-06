@@ -3,10 +3,6 @@ require 'pry'
 
 class ReviewsController < ApplicationController
 
-  def index
-    @reviews = Review.all
-  end
-
   def new
     @location = Location.find(params[:location_id])
     @review = Review.new
@@ -32,7 +28,6 @@ class ReviewsController < ApplicationController
     end
   end
 
-
 def edit
   @review = Review.find(params[:id])
   @location = @review.location
@@ -51,7 +46,8 @@ end
 
 def destroy
   @review = Review.find(params[:id])
-  if @review.user_id == current_user.id || current_user.admin?
+  binding.pry
+  if @review.user == current_user || current_user.admin?
     @review.destroy
     redirect_to location_path(@review.location)
   end

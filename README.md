@@ -4,6 +4,9 @@
 ![Code Climate](https://codeclimate.com/github/cemple89/scoop_d.png)
 ![Coverage Status](https://coveralls.io/repos/cemple89/scoop_d/badge.png)
 
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
