@@ -36,27 +36,32 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
   end
 
-  def update
-    @review = Review.find(params[:id])
-    @review.update_attributes(review_params)
-    if @review.save
-      redirect_to location_path(@review.location)
-    else
-      render action: 'edit'
-    end
+def edit
+  @review = Review.find(params[:id])
+  @location = @review.location
+  @rating_collection = Review::RATINGS
+end
+
+def update
+  @review = Review.find(params[:id])
+  @review.update_attributes(review_params)
+  if @review.save
+    redirect_to location_path(@review.location)
+  else
+    render action: 'edit'
   end
 
-  def destroy
-    if current_user.admin?
-      @review = Review.find(params[:id])
-      @review.destroy
-      redirect_to location_path(@review.location)
-    end
+def destroy
+  @review = Review.find(params[:id])
+  if @review.user_id == current_user.id || current_user.admin?
+    @review.destroy
+    redirect_to location_path(@review.location)
   end
+end
 
   private
 
   def review_params
-    params.require(:review).permit(:current_user, :flavor, :rating, :body)
+    params.require(:review).permit(:current_user, :flavor, :rating, :body, :location_id, :review_id)
   end
 end
