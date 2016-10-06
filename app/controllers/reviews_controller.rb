@@ -53,8 +53,11 @@ def update
 
 def destroy
   @review = Review.find(params[:id])
+<<<<<<< HEAD
 
+=======
   if @review.user_id == current_user.id || current_user.admin?
+>>>>>>> master
     @review.destroy
     redirect_to location_path(@review.location)
   end
