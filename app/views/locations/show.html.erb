@@ -6,14 +6,14 @@
 
 <h2>Reviews for <%= @location.name %></h2>
 <% @reviews.each do |review| %>
-  <%= Review::RATINGS[review.rating - 1][0] %> <%= Review::RATINGS[review.rating - 1][1] %><br>
+  <%= Review::RATINGS[review.rating - 1][1] %><br>
   <%= review.flavor %>
   <br>
   <em><%= review.body %></em>
-  <% if review.user_id == current_user.id %>
+  <% if review.user_id == current_user.id && !review.id.nil? %>
     <li><%= link_to 'Delete Review', location_review_path(@location.id), { method: :delete, id: review.id} %></li>
   <% end %>
-  <% if current_user.id == review.user_id %>
+  <% if current_user.id == review.user_id && !review.id.nil? %>
     <li><%= link_to 'Edit Review', edit_location_review_path(@location, review)%></li>
   <% end %>
   <br><br>

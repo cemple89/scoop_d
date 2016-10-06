@@ -35,7 +35,7 @@ feature 'users can add reviews for locations' do
 
     expect(page).to have_content 'Review added successfully'
     expect(page).to have_content forge_ice_cream_bar.name
-    expect(page).to have_content 5
+    expect(page).to have_content 'five scoops'
     expect(page).to have_content 'Rocky Road'
     expect(page).to have_content 'This is a raving review!'
   end
