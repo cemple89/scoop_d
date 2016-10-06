@@ -8,8 +8,9 @@ feature 'Admin can delete review' do
     @admin_user = FactoryGirl.create(:user)
     @location1 = FactoryGirl.create(:location)
     @location2 = FactoryGirl.create(:location)
-    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1, flavor: "Black Raspberry")
-    @review2 = FactoryGirl.create(:review, user: @user2, location: @location1)
+    @review1 = FactoryGirl.create(:review, user: @user2, location: @location1, flavor: "Black Raspberry")
+    @review2 = FactoryGirl.create(:review, user: @user2, location: @location1, flavor: "Black Razzle")
+    @review3 = FactoryGirl.create(:review, user: @user1, location: @location1, flavor: "Green Raspberry")
   end
 
   scenario 'Admin can delete review' do
@@ -30,6 +31,6 @@ feature 'Admin can delete review' do
     fill_in 'Password', with: @user2.password
     click_button('Log In')
     click_link(@location1.name)
-    expect(page).to_not have_link('Delete ' + @review1.flavor + ' review')
+    expect(page).to_not have_link('Delete ' + @review3.flavor + ' review')
   end
 end
