@@ -3,10 +3,6 @@ require 'pry'
 
 class ReviewsController < ApplicationController
 
-  def index
-    @reviews = Review.all
-  end
-
   def new
     @location = Location.find(params[:location_id])
     @review = Review.new
