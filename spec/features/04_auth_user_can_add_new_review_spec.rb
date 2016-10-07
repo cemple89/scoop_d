@@ -2,30 +2,26 @@
 require 'rails_helper'
 
 feature 'users can add reviews for locations' do
-  let(:user) do
-    User.create(
-      email: 'test_user@gmail.com',
-      password: 'scooped'
-    )
+  before(:each) do
+    @user1 = FactoryGirl.create(:user)
+    @user2 = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
+    @location1 = FactoryGirl.create(:location)
+    @location2 = FactoryGirl.create(:location)
+    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
   end
+
   scenario 'adds a review for a location successfully' do
-    forge_ice_cream_bar = Location.create(
-      name: 'Forge Ice Cream Bar',
-      address: '626 Somerville Ave.',
-      city: 'Somerville',
-      state: 'MA',
-      zip_code: '02143'
-                                          )
     visit '/'
 
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
+    fill_in 'Email', with: @user1.email
+    fill_in 'Password', with: @user1.password
 
     click_button 'Log In'
-    visit location_path(forge_ice_cream_bar)
+    visit location_path(@location1)
     click_link 'Add a Review'
 
-    expect(page).to have_content 'Review Form for Forge Ice Cream Bar'
+    expect(page).to have_content "Review Form for #{@location1.name}"
 
     choose 'five scoops'
 
@@ -34,7 +30,7 @@ feature 'users can add reviews for locations' do
     click_button 'Add Review'
 
     expect(page).to have_content 'Review added successfully'
-    expect(page).to have_content forge_ice_cream_bar.name
+    expect(page).to have_content @location1.name
     expect(page).to have_content 'five scoops'
     expect(page).to have_content 'Rocky Road'
     expect(page).to have_content 'This is a raving review!'
@@ -43,21 +39,14 @@ feature 'users can add reviews for locations' do
   scenario 'adds a review for a location unsuccessfully' do
     visit '/'
 
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
+    fill_in 'Email', with: @user1.email
+    fill_in 'Password', with: @user1.password
     click_button 'Log In'
-    forge_ice_cream_bar = Location.create(
-      name: 'Forge Ice Cream Bar',
-      address: '626 Somerville Ave.',
-      city: 'Somerville',
-      state: 'MA',
-      zip_code: '02143'
-                                          )
 
-    visit location_path(forge_ice_cream_bar)
+    visit location_path(@location1)
 
     click_link 'Add a Review'
-    expect(page).to have_content 'Review Form for Forge Ice Cream Bar'
+    expect(page).to have_content 'Review Form for ' + @location1.name
     choose('five scoops')
 
     click_button 'Add Review'

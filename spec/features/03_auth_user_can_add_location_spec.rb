@@ -3,17 +3,19 @@ require 'rails_helper'
 require 'spec_helper'
 
 feature 'authorized user can add a location' do
-  let(:user) do
-    User.create(
-      email: 'test_user@gmail.com',
-      password: 'scooped'
-    )
+  before(:each) do
+    @user1 = FactoryGirl.create(:user)
+    @user2 = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
+    @location1 = FactoryGirl.create(:location)
+    @location2 = FactoryGirl.create(:location)
+    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
   end
 
   scenario 'user adds new location successfully' do
     visit '/'
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
+    fill_in 'Email', with: @user1.email
+    fill_in 'Password', with: @user1.password
     click_button 'Log In'
     visit new_location_path
     expect(page).to have_content 'New Location Form'
@@ -35,8 +37,8 @@ feature 'authorized user can add a location' do
 
   scenario 'visitor does not provide proper information for a location' do
     visit '/'
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
+    fill_in 'Email', with: @user1.email
+    fill_in 'Password', with: @user1.password
     click_button 'Log In'
     click_link 'Add New Location'
     click_button 'Add Location'

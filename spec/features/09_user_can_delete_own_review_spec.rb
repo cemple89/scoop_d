@@ -2,67 +2,32 @@
 require 'rails_helper'
 
 feature 'User can delete own review' do
-
- let!(:user) do
-   User.create(
-     email: 'testemail@gmail.com',
-     password: 'alsoscooped'
-   )
- end
-
- let!(:user2) do
-   User.create(
-     email: 'testemail2@gmail.com',
-     password: 'alsoscooped2'
-   )
- end
-
- let!(:location) do
-   Location.create(
-     name: 'Pinkberry',
-     address: 'Harvard Square',
-     city: 'Cambridge',
-     state: 'Massachussetts',
-     zip_code: '02138'
-   )
- end
-
- let!(:review) do
-   Review.create(
-     user_id: user.id,
-     rating: 3,
-     body: 'This was adequate.',
-     flavor: 'Strawberry',
-     location_id: location.id
-   )
- end
-
- let!(:review2) do
-   Review.create(
-     user_id: user2.id,
-     rating: 2,
-     body: 'Awful',
-     flavor: 'Vanilla',
-     location_id: location.id
-   )
- end
+  before(:each) do
+    @user1 = FactoryGirl.create(:user)
+    @user2 = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
+    @location1 = FactoryGirl.create(:location)
+    @location2 = FactoryGirl.create(:location)
+    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
+    @review2 = FactoryGirl.create(:review, user: @user2, location: @location1)
+  end
 
  scenario 'User can delete own review' do
    visit '/'
-   fill_in 'Email', with: user.email
-   fill_in 'Password', with: user.password
+   fill_in 'Email', with: @user1.email
+   fill_in 'Password', with: @user1.password
    click_button('Log In')
-   click_link('Pinkberry')
-   click_link('Delete ' + review.flavor + ' review')
-   expect(page).to_not have_content(review.flavor)
+   click_link(@location1.name)
+   click_link('Delete ' + @review1.flavor + ' review')
+   expect(page).to_not have_content(@review1.flavor)
  end
 
  scenario 'User cannot delete another user\'s review' do
    visit '/'
-   fill_in 'Email', with: user.email
-   fill_in 'Password', with: user.password
+   fill_in 'Email', with: @user1.email
+   fill_in 'Password', with: @user1.password
    click_button('Log In')
-   click_link('Pinkberry')
-   expect(page).to_not have_link('Delete ' + review2.flavor + ' review')
+   click_link(@location1.name)
+   expect(page).to_not have_link('Delete ' + @review2.flavor + ' review')
  end
 end
