@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     @user.save!
     # @uploader.store!(params[:image])
     # @image = @user.store!(image_params)
-    render :edit
+    redirect_to root_path
   end
 
   def destroy

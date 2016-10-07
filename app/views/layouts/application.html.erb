@@ -23,7 +23,7 @@
           <% if current_user.image.url == nil %>
             <%= link_to "Add Image", edit_user_path(current_user) %>
           <% else %>
-            <%= image_tag current_user.image, class:"image-cropper" %>
+            <%= image_tag current_user.image, class:"image-cropper", id:"user-image" %>
           <% end %>
           <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
         </div>
