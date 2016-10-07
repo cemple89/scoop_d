@@ -1,6 +1,6 @@
 <%= form_for @user, html: { multipart: true } do |f| %>
   </div>
-  <div class="field">
+  <div class="field" id="image-file">
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </div>
