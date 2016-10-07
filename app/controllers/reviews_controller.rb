@@ -46,7 +46,8 @@ end
 
 def destroy
   @review = Review.find(params[:id])
-  if @review.user_id == current_user.id || current_user.admin?
+  binding.pry
+  if @review.user == current_user || current_user.admin?
     @review.destroy
     redirect_to location_path(@review.location)
   end
