@@ -70,6 +70,8 @@ $black: #111111;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 5px 5px 5px $black;
 }
 
 img {
