@@ -3,17 +3,16 @@ require 'rails_helper'
 require 'spec_helper'
 
 feature 'authorized user can add a location' do
-  let(:populate_db) do
+  before(:each) do
     @user1 = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
     @location1 = FactoryGirl.create(:location)
     @location2 = FactoryGirl.create(:location)
     @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
   end
 
   scenario 'user adds new location successfully' do
-    populate_db
     visit '/'
     fill_in 'Email', with: @user1.email
     fill_in 'Password', with: @user1.password
@@ -37,7 +36,6 @@ feature 'authorized user can add a location' do
   end
 
   scenario 'visitor does not provide proper information for a location' do
-    populate_db
     visit '/'
     fill_in 'Email', with: @user1.email
     fill_in 'Password', with: @user1.password

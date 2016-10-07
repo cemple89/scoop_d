@@ -2,10 +2,10 @@
 require 'rails_helper'
 
 feature 'User can delete own review' do
-  let(:populate_db) do
+  before(:each) do
     @user1 = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
     @location1 = FactoryGirl.create(:location)
     @location2 = FactoryGirl.create(:location)
     @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
@@ -13,7 +13,6 @@ feature 'User can delete own review' do
   end
 
  scenario 'User can edit own review' do
-   populate_db
    visit '/'
    fill_in 'Email', with: @user1.email
    fill_in 'Password', with: @user1.password
@@ -26,7 +25,6 @@ feature 'User can delete own review' do
  end
 
  scenario 'User cannot dedit another user\'s review' do
-   populate_db
    visit '/'
    fill_in 'Email', with: @user1.email
    fill_in 'Password', with: @user1.password

@@ -5,7 +5,7 @@ require 'factory_girl_rails'
 
 feature 'Unauthorized can login' do
 
-  let(:populate_db) do
+  before(:each) do
     @user1 = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
     @admin_user = FactoryGirl.create(:user, admin: true)
@@ -20,7 +20,6 @@ feature 'Unauthorized can login' do
   end
 
   scenario 'User can click login button and login' do
-    populate_db
     visit '/'
     fill_in 'Email', with: @user1.email
     fill_in 'Password', with: @user1.password
@@ -30,7 +29,6 @@ feature 'Unauthorized can login' do
   end
 
   scenario 'Logged in User can log out from button in header' do
-    populate_db
     visit '/'
     fill_in 'Email', with: @user1.email
     fill_in 'Password', with: @user1.password
@@ -41,7 +39,6 @@ feature 'Unauthorized can login' do
   end
 
   scenario 'User enters incorrect password and cannot login' do
-    populate_db
     visit '/'
     fill_in 'Email', with: @user1.email
     fill_in 'Password', with: 'scoop'
