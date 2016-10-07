@@ -10,5 +10,5 @@ CarrierWave.configure do |config|
       region: 'us-west-2'
   }
   config.fog_directory  = "scoopduserimages"
-  config.fog_public     = false
+  config.fog_public     = true
 end

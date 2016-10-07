@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = current_user
+    @image = @user.image
   end
 
   def update
