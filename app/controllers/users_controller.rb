@@ -6,6 +6,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = current_user
+  end
+
+  def update
+    @user = current_user
+  end
+
   def destroy
     if current_user.admin?
       @user = User.find(params[:id])
