@@ -2,17 +2,16 @@
 require 'rails_helper'
 
 feature 'users can add reviews for locations' do
-  let(:populate_db) do
+  before(:each) do
     @user1 = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user)
+    @admin_user = FactoryGirl.create(:user, admin: true)
     @location1 = FactoryGirl.create(:location)
     @location2 = FactoryGirl.create(:location)
     @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
   end
 
   scenario 'adds a review for a location successfully' do
-    populate_db
     visit '/'
 
     fill_in 'Email', with: @user1.email
@@ -22,7 +21,7 @@ feature 'users can add reviews for locations' do
     visit location_path(@location1)
     click_link 'Add a Review'
 
-    expect(page).to have_content 'Review Form for ' + @location1.name
+    expect(page).to have_content "Review Form for #{@location1.name}"
 
     choose 'five scoops'
 
@@ -38,7 +37,6 @@ feature 'users can add reviews for locations' do
   end
 
   scenario 'adds a review for a location unsuccessfully' do
-    populate_db
     visit '/'
 
     fill_in 'Email', with: @user1.email
