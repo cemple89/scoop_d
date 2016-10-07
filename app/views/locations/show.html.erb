@@ -26,8 +26,8 @@
       <% @downvote = "" %>
     <% end %>
   <% end %>
-  <i class="fa fa-thumbs-o-up" id=<%=@upvote%> aria-hidden="true"></i><%= button_to '+1', upvote_review_path(review), method: :post %>
-  <i class="fa fa-thumbs-o-down" id=<%=@downvote%> aria-hidden="true"></i><%= button_to '-1', downvote_review_path(review), method: :post %>
+    <i class="fa fa-thumbs-o-up" id=<%="#{@upvote} js-upvote" %> data_user=current_user.id data_review=@review.id data_value = 1 aria-hidden="true"></i><%= button_to '+1', upvote_review_path(review), method: :post %>
+    <i class="fa fa-thumbs-o-down" id=<%=@downvote %> data_user=current_user.id data_review=@review.id data_value = -1 aria-hidden="true"></i><%= button_to '-1', downvote_review_path(review), method: :post %>
   <br><br>
   <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
     <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id, review), { method: :delete, id: review.id} %></li>

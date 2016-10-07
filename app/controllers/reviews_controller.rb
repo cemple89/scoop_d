@@ -63,15 +63,27 @@ def upvote
       vote = @review.votes.create
       vote.update_attribute(:user_id, current_user.id)
       redirect_to location_path(@review.location)
+      # respond_to do |format|
+      #   format.html {redirect_to :location_path(@review.location)}
+      #   format.json { render json: { ???? }}
+      # end
     else
       userdownvote.delete
       vote = @review.votes.create
       vote.update_attribute(:user_id, current_user.id)
       redirect_to location_path(@review.location)
+      # respond_to do |format|
+      #   format.html {redirect_to :location_path(@review.location)}
+      #   format.json { render json: { ???? }}
+      # end
     end
   else userdownvote.nil?
     userupvote.delete
     redirect_to location_path(@review.location)
+    # respond_to do |format|
+    #   format.html {redirect_to :location_path(@review.location)}
+    #   format.json { render json: { ???? }}
+    # end
   end
 end
 
@@ -85,18 +97,31 @@ def downvote
       vote.update_attribute(:user_id, current_user.id)
       vote.update_attribute(:count, -1)
       redirect_to location_path(@review.location)
+      # respond_to do |format|
+      #   format.html {redirect_to :redirect_to location_path(@review.location)}
+      #   format.json { render json: { ???? }}
+      # end
     else
       userupvote.delete
       vote = @review.votes.create
       vote.update_attribute(:user_id, current_user.id)
       vote.update_attribute(:count, -1)
       redirect_to location_path(@review.location)
+      # respond_to do |format|
+      #   format.html {redirect_to :???}
+      #   format.json { render json: { ???? }}
+      # end
     end
   else userupvote.nil?
     userdownvote.delete
     redirect_to location_path(@review.location)
+    # respond_to do |format|
+    #   format.html {redirect_to :???}
+    #   format.json { render json: { ???? }}
+    # end
   end
 end
+
 
   private
   def review_params

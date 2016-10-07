@@ -1,3 +1,4 @@
+require 'pry'
 # frozen_string_literal: true
 class LocationsController < ApplicationController
 
@@ -24,7 +25,17 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
-    @reviews = @location.reviews.order("votes ASC")
+    @reviews = @location.reviews
+    @reviews.each do |review|
+      sum = 0
+      votes = []
+      votes = Vote.where(review_id: review.id)
+      votes.each do |vote|
+        sum += vote.count
+      end
+      review.update_attribute(:total, sum)
+    end
+    @reviews = @location.reviews.order(total: :desc)
   end
 
 
