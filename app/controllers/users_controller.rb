@@ -9,14 +9,15 @@ class UsersController < ApplicationController
 
   def edit
     @user = current_user
-    @uploader = ImageUploader.new
-    @user_image = params
   end
 
   def update
-    binding.pry
     @user = current_user
-    @uploader.store!()
+    @user.image = params[:user][:image]
+    @user.save!
+    # @uploader.store!(params[:image])
+    # @image = @user.store!(image_params)
+    render :edit
   end
 
   def destroy
@@ -26,11 +27,5 @@ class UsersController < ApplicationController
       flash[:notice] = 'User was successfully deleted'
       redirect_to users_path
     end
-  end
-
-  private
-
-  def image_params
-    params.require(:image_params).permit(:id, :url)
   end
 end
