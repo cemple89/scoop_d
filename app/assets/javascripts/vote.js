@@ -1,31 +1,46 @@
 $(document).ready(function() {
 
-  $('.fa-thumbs-o-up').on('click', 'a', function(event){
+  $('.js-upvote').on('click', function(event){
     event.preventDefault();
 
-    $.ajax({
+    var self = $(this),
+        location = self.data('location'),
+        review = self.data('review'),
+        count = self.data('value'),
+        user = self.data('user');
+
+    var up_request = $.ajax({
       method: "POST",
-      URL: '/location/review$(id)/upvote'
+      data: {review_id: review, location_id: location, count: count},
+      URL: '/locations/`$(location)`/reviews/`$(review)`/vote'
     });
 
-    request.done(function(data) {
-      // what goes here?!?!?!?
-    })
+    // up_request.done(function(data) {
+    //   // what goes here?!?!?!?
+    // })
   });
 
 
-  $('.fa-thumbs-o-down').on('click', 'a', function(event){
-    event.preventDefault();
-    // we also know stuff goes here
-
-    $.ajax({
-      method: "POST",
-      URL: '/location/review$(id)/downvote'
-    });
-
-    request.done(function(data) {
-      // what goes here?!?!?!?
-    })
-  });
+  // $('.js-downvote').on('click', function(event){
+  //   event.preventDefault();
+  //   var self = $(this),
+  //       review = self.data('review'),
+  //       count = self.data('value'),
+  //       user = self.data('user');
+  //
+  //   console.log(review)
+  //   console.log(user)
+  //   console.log(count)
+  //   console.log("test data")
+  //
+  //   var down_request = $.ajax({
+  //     method: "POST",
+  //     URL: '/location/review$(id)/downvote'
+  //   });
+  //
+  //   down_request.done(function(data) {
+  //     // what goes here?!?!?!?
+  //   })
+  // });
 
 });

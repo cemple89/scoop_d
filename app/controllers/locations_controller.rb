@@ -38,8 +38,6 @@ class LocationsController < ApplicationController
     @reviews = @location.reviews.order(total: :desc)
   end
 
-
-
  private
 
  def location_params
