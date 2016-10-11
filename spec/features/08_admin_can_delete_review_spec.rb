@@ -1,65 +1,33 @@
 # frozen_string_literal: true
 require 'rails_helper'
+describe 'Admin can ' do
 
-feature 'Admin can delete review' do
-  let(:user) do
-    User.create(
-      email: 'sophieheller1@gmail.com',
-      password: 'scooped',
-      admin: true
-    )
-  end
+  let!(:user_1) { create(:user) }
+  let!(:user_2) { create(:user) }
+  let!(:admin_user) { create(:user, admin: true) }
+  let!(:location_1) { create(:location) }
+  let!(:review_1) { create(:review, user: user_1, location: location_1) }
+  let!(:review_2) { create(:review, user: user_2, location: location_1) }
 
-  let!(:user2) do
-    User.create(
-      email: 'testemail@gmail.com',
-      password: 'alsoscooped'
-    )
-  end
+  feature 'delete review' do
 
-  let!(:user3) do
-    User.create(
-      email: 'testemail34@gmail.com',
-      password: 'alsoscooped34'
-    )
-  end
+    scenario 'Admin can delete review' do
+      visit '/'
+      fill_in 'Email', with: admin_user.email
+      fill_in 'Password', with: admin_user.password
+      click_button('Log In')
+      click_link(location_1.name)
+      click_link('Delete ' + review_2.flavor + ' review')
+      expect(page).to_not have_content(review_2.flavor)
+    end
 
-  let!(:location) do
-    Location.create(
-      name: 'Pinkberry',
-      address: 'Harvard Square',
-      city: 'Cambridge',
-      state: 'Massachussetts',
-      zip_code: '02138'
-    )
-  end
-
-  let!(:review) do
-    Review.create(
-      user_id: user2.id,
-      rating: 3,
-      body: 'This was adequate.',
-      flavor: 'Strawberry',
-      location_id: location.id
-    )
-  end
-
-  scenario 'Admin can delete review' do
-    visit '/'
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
-    click_button('Log In')
-    click_link('Pinkberry')
-    click_link('Delete ' + review.flavor + ' review')
-    expect(page).to_not have_content(review.flavor)
-  end
-
-  scenario 'Non-admin user cannot delete review' do
-    visit '/'
-    fill_in 'Email', with: user3.email
-    fill_in 'Password', with: user3.password
-    click_button('Log In')
-    click_link('Pinkberry')
-    expect(page).to_not have_link('Delete ' + review.flavor + ' review')
+    scenario 'Non-admin user cannot delete review' do
+      visit '/'
+      fill_in 'Email', with: user_2.email
+      fill_in 'Password', with: user_2.password
+      click_button('Log In')
+      click_link(location_1.name)
+      expect(page).to_not have_link('Delete ' + review_1.flavor + ' review')
+    end
   end
 end
