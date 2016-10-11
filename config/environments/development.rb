@@ -55,8 +55,8 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # frozen_string_literal: true
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
+  config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.sendmail_settings = {
     address: 'smtp.gmail.com',
     port: 587,
     domain: "http://localhost:3000",
