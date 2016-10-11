@@ -53,7 +53,7 @@ feature 'User receives email about reviewed item' do
     )
   end
 
-  scenario 'User receives review email' do
+  scenario 'Actionmailer sends emails to correct recipients' do
     visit '/'
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
@@ -73,5 +73,8 @@ feature 'User receives email about reviewed item' do
 
     expect(page).to have_content 'Review added successfully'
     expect(ActionMailer::Base.deliveries.count).to eq(1)
+    expect(ActionMailer::Base.deliveries.first.to).to eq([user2.email])
   end
+
+
 end
