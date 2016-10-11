@@ -1,70 +1,34 @@
 # frozen_string_literal: true
 require 'rails_helper'
+describe 'User can ' do
 
-feature 'User can delete own review' do
+  let!(:user_1) { create(:user) }
+  let!(:user_2) { create(:user) }
+  let!(:location_1) { create(:location) }
+  let!(:review_1) { create(:review, user: user_1, location: location_1) }
+  let!(:review_2) { create(:review, user: user_2, location: location_1) }
 
- let!(:user) do
-   User.create(
-     email: 'testemail@gmail.com',
-     password: 'alsoscooped'
-   )
- end
+  feature 'edit own review' do
 
- let!(:user2) do
-   User.create(
-     email: 'testemail2@gmail.com',
-     password: 'alsoscooped2'
-   )
- end
+   scenario 'User can edit own review' do
+     visit '/'
+     fill_in 'Email', with: user_1.email
+     fill_in 'Password', with: user_1.password
+     click_button('Log In')
+     click_link(location_1.name)
+     click_link('Edit ' + review_1.flavor + ' review')
+     fill_in "Flavor", with: "Chocolate"
+     click_button("Add Review")
+     expect(page).to have_content("Chocolate")
+   end
 
- let!(:location) do
-   Location.create(
-     name: 'Pinkberry',
-     address: 'Harvard Square',
-     city: 'Cambridge',
-     state: 'Massachussetts',
-     zip_code: '02138'
-   )
- end
-
- let!(:review) do
-   Review.create(
-     user_id: user.id,
-     rating: 3,
-     body: 'This was adequate.',
-     flavor: 'Strawberry',
-     location_id: location.id
-   )
- end
-
- let!(:review2) do
-   Review.create(
-     user_id: user2.id,
-     rating: 2,
-     body: 'Awful',
-     flavor: 'Vanilla',
-     location_id: location.id
-   )
- end
-
- scenario 'User can edit own review' do
-   visit '/'
-   fill_in 'Email', with: user.email
-   fill_in 'Password', with: user.password
-   click_button('Log In')
-   click_link('Pinkberry')
-   click_link('Edit ' + review.flavor + ' review')
-   fill_in "Flavor", with: "Chocolate"
-   click_button("Add Review")
-   expect(page).to have_content("Chocolate")
- end
-
- scenario 'User cannot dedit another user\'s review' do
-   visit '/'
-   fill_in 'Email', with: user.email
-   fill_in 'Password', with: user.password
-   click_button('Log In')
-   click_link('Pinkberry')
-   expect(page).to_not have_link('Edit ' + review2.flavor + ' review')
- end
+   scenario 'User cannot dedit another user\'s review' do
+     visit '/'
+     fill_in 'Email', with: user_1.email
+     fill_in 'Password', with: user_1.password
+     click_button('Log In')
+     click_link(location_1.name)
+     expect(page).to_not have_link('Edit ' + review_2.flavor + ' review')
+   end
+  end
 end
