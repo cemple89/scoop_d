@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'pry'
 
 class ReviewsController < ApplicationController
 
@@ -12,6 +11,12 @@ class ReviewsController < ApplicationController
   def create
     @location = Location.find(params[:location_id])
     @reviews = @location.reviews
+    @location_review_users = []
+    if !@reviews.empty?
+      @reviews.each do |review|
+        @location_review_users << review.user
+      end
+    end
     @review = @location.reviews.new(
       user: current_user,
       flavor: params[:review][:flavor],
@@ -21,6 +26,9 @@ class ReviewsController < ApplicationController
     )
     if @review.save
       flash[:notice] = "Review added successfully."
+      @location_review_users.each do |user|
+        ReviewMailer.review_email(user, @review).deliver
+      end
       redirect_to location_path(@location)
     else
       flash[:notice] = @review.errors.full_messages.join(", ")
