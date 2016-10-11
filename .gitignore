@@ -17,7 +17,7 @@
 .byebug_history
 
 .env
-/config/.application.yml
+/config/application.yml
 
 /coverage
 
