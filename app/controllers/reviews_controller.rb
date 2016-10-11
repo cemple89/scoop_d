@@ -14,11 +14,12 @@ class ReviewsController < ApplicationController
     @location_review_users = []
     if !@reviews.empty?
       @reviews.each do |review|
-        if review.user != current_user #|| !@location_review_users.include?(current_user)
+        if review.user != current_user
           @location_review_users << review.user
         end
       end
     end
+    @location_review_users.uniq!
     @review = @location.reviews.new(
       user: current_user,
       flavor: params[:review][:flavor],
