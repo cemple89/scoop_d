@@ -74,6 +74,7 @@ feature 'User receives email about reviewed item' do
     expect(page).to have_content 'Review added successfully'
     expect(ActionMailer::Base.deliveries.count).to eq(1)
     expect(ActionMailer::Base.deliveries.first.to).to eq([user2.email])
+    expect(ActionMailer::Base.deliveries.first.subject).to eq('New Scoop from Scoop\'d')
   end
 
 

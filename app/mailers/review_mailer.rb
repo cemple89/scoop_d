@@ -4,6 +4,6 @@ class ReviewMailer < ApplicationMailer
   def review_email(user, review)
     @user = user
     @review = review
-    mail(to: @user.email, subject: 'Review Email')
+    mail(to: @user.email, subject: 'New Scoop from Scoop\'d')
   end
 end
