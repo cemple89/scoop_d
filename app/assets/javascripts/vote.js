@@ -8,6 +8,7 @@ $(document).ready(function() {
         review = self.data('review'),
         count = self.data('value'),
         user = self.data('user');
+    var down_thumb = $('#js-downvote-'+review);
 
     var up_request = $.ajax({
       method: "POST",
@@ -16,7 +17,13 @@ $(document).ready(function() {
     });
 
     up_request.done(function(data) {
-      self.css('color', 'green')
+      if (data === null) {
+        down_thumb.css('color', 'black');
+        self.css('color', 'black');
+      } else {
+        down_thumb.css('color', 'black');
+        self.css('color', 'green');
+      }
     })
   });
 
@@ -36,7 +43,11 @@ $(document).ready(function() {
     });
 
     down_request.done(function(data) {
-      self.css('color', 'red')
+      if (data === null) {
+        self.css('color', 'black')
+      } else {
+        self.css('color', 'red')
+      }
     })
   });
 
