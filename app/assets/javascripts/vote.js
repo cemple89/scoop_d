@@ -15,9 +15,9 @@ $(document).ready(function() {
       URL: '/locations/`$(location)`/reviews/`$(review)`/vote'
     });
 
-    // up_request.done(function(data) {
-    //   // what goes here?!?!?!?
-    // })
+    up_request.done(function(data) {
+      self.css('color', 'green')
+    })
   });
 
 

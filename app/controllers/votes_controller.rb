@@ -1,24 +1,25 @@
 require 'pry'
 class VotesController < ApplicationController
 
-  def new
-    @vote = Vote.new
-  end
-
   def create
-    user = current_user.id
+    user = current_user
     review = Review.find(params[:review_id])
     value = params[:count]
-    vote = Vote.find(review: review, user: user)
+    vote = Vote.find_by(review: review.id, user: user.id)
+
     if vote.present?
       vote.destroy
     end
-    Vote.create(
+
+    @vote = Vote.create(
       user: user,
       review: review,
       count: value
     )
-    redirect_to location_path(@review.location)
+
+    respond_to do |format|
+      format.json {render :json => @vote }
+    end
   end
 
 end
