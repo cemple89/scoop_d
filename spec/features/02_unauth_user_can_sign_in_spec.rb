@@ -3,51 +3,44 @@ require 'spec_helper'
 require 'rails_helper'
 require 'factory_girl_rails'
 
-feature 'Unauthorized can login' do
+describe 'Unauth user can sign in' do
 
-  let(:populate_db) do
-    @user1 = FactoryGirl.create(:user)
-    @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user, admin: true)
-    @location1 = FactoryGirl.create(:location)
-    @location2 = FactoryGirl.create(:location)
-    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
+  let!(:user_1) { create(:user) }
+
+  feature 'Unauthorized can login' do
+
+    scenario 'User sees login button in header' do
+      visit '/'
+      expect(page).to have_button 'Log In'
+    end
+
+    scenario 'User can click login button and login' do
+      visit '/'
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: user_1.password
+      click_button 'Log In'
+
+      expect(page).to have_content("Signed in as #{user_1.email}")
+    end
+
+    scenario 'Logged in User can log out from button in header' do
+      visit '/'
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: user_1.password
+      click_button 'Log In'
+      click_button 'Sign Out'
+
+      expect(page).to have_button 'Log In'
+    end
+
+    scenario 'User enters incorrect password and cannot login' do
+      visit '/'
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: 'scoop'
+      click_button 'Log In'
+
+      expect(page).to_not have_content("Signed in as #{user_1.email}")
+    end
+
   end
-
-  scenario 'User sees login button in header' do
-    visit '/'
-    expect(page).to have_button 'Log In'
-  end
-
-  scenario 'User can click login button and login' do
-    populate_db
-    visit '/'
-    fill_in 'Email', with: @user1.email
-    fill_in 'Password', with: @user1.password
-    click_button 'Log In'
-
-    expect(page).to have_content("Signed in as #{@user1.email}")
-  end
-
-  scenario 'Logged in User can log out from button in header' do
-    populate_db
-    visit '/'
-    fill_in 'Email', with: @user1.email
-    fill_in 'Password', with: @user1.password
-    click_button 'Log In'
-    click_button 'Sign Out'
-
-    expect(page).to have_button 'Log In'
-  end
-
-  scenario 'User enters incorrect password and cannot login' do
-    populate_db
-    visit '/'
-    fill_in 'Email', with: @user1.email
-    fill_in 'Password', with: 'scoop'
-    click_button 'Log In'
-
-    expect(page).to_not have_content("Signed in as #{@user1.email}")
-  end
-
 end

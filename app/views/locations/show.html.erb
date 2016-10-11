@@ -17,9 +17,6 @@
     <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id }%></li>
   <% end %>
   <br><br>
-  <% if current_user.admin? %>
-    <li> <%= link_to 'Delete Review', location_review_path(review.id), { method: :delete, id: review.id }%> </li>
-  <% end %>
 <% end %>
 
 <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
