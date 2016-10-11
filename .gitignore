@@ -25,9 +25,5 @@ app/models/locationreview.rb
 
 db/JSON_data/JSON_parse.rb
 
-<<<<<<< HEAD
-# Ignore application configuration
-/config/application.yml
-=======
+
 config/application.yml
->>>>>>> master
