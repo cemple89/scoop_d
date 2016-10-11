@@ -1,33 +1,33 @@
 # frozen_string_literal: true
 require 'rails_helper'
+describe 'Admin can ' do
 
-feature 'Admin can delete review' do
-  before(:each) do
-    @user1 = FactoryGirl.create(:user)
-    @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user, admin: true)
-    @location1 = FactoryGirl.create(:location)
-    @location2 = FactoryGirl.create(:location)
-    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
-    @review2 = FactoryGirl.create(:review, user: @user2, location: @location1)
-  end
+  let!(:user_1) { create(:user) }
+  let!(:user_2) { create(:user) }
+  let!(:admin_user) { create(:user, admin: true) }
+  let!(:location_1) { create(:location) }
+  let!(:review_1) { create(:review, user: user_1, location: location_1) }
+  let!(:review_2) { create(:review, user: user_2, location: location_1) }
 
-  scenario 'Admin can delete review' do
-    visit '/'
-    fill_in 'Email', with: @admin_user.email
-    fill_in 'Password', with: @admin_user.password
-    click_button('Log In')
-    click_link(@location1.name)
-    click_link('Delete ' + @review2.flavor + ' review')
-    expect(page).to_not have_content(@review2.flavor)
-  end
+  feature 'delete review' do
 
-  scenario 'Non-admin user cannot delete review' do
-    visit '/'
-    fill_in 'Email', with: @user2.email
-    fill_in 'Password', with: @user2.password
-    click_button('Log In')
-    click_link(@location1.name)
-    expect(page).to_not have_link('Delete ' + @review1.flavor + ' review')
+    scenario 'Admin can delete review' do
+      visit '/'
+      fill_in 'Email', with: admin_user.email
+      fill_in 'Password', with: admin_user.password
+      click_button('Log In')
+      click_link(location_1.name)
+      click_link('Delete ' + review_2.flavor + ' review')
+      expect(page).to_not have_content(review_2.flavor)
+    end
+
+    scenario 'Non-admin user cannot delete review' do
+      visit '/'
+      fill_in 'Email', with: user_2.email
+      fill_in 'Password', with: user_2.password
+      click_button('Log In')
+      click_link(location_1.name)
+      expect(page).to_not have_link('Delete ' + review_1.flavor + ' review')
+    end
   end
 end

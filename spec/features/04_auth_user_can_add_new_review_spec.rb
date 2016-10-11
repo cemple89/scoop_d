@@ -1,56 +1,54 @@
 # frozen_string_literal: true
 require 'rails_helper'
 
-feature 'users can add reviews for locations' do
-  before(:each) do
-    @user1 = FactoryGirl.create(:user)
-    @user2 = FactoryGirl.create(:user)
-    @admin_user = FactoryGirl.create(:user, admin: true)
-    @location1 = FactoryGirl.create(:location)
-    @location2 = FactoryGirl.create(:location)
-    @review1 = FactoryGirl.create(:review, user: @user1, location: @location1)
-  end
+describe 'User can' do
 
-  scenario 'adds a review for a location successfully' do
-    visit '/'
+  let!(:user_1) { create(:user) }
+  let!(:location_1) { create(:location) }
 
-    fill_in 'Email', with: @user1.email
-    fill_in 'Password', with: @user1.password
+  feature 'add reviews for locations' do
 
-    click_button 'Log In'
-    visit location_path(@location1)
-    click_link 'Add a Review'
+    scenario 'adds a review for a location successfully' do
+      visit '/'
 
-    expect(page).to have_content "Review Form for #{@location1.name}"
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: user_1.password
 
-    choose 'five scoops'
+      click_button 'Log In'
+      visit location_path(location_1)
+      click_link 'Add a Review'
 
-    fill_in 'Extra Scoop', with: 'This is a raving review!'
-    fill_in 'Flavor', with: 'Rocky Road'
-    click_button 'Add Review'
+      expect(page).to have_content "Review Form for #{location_1.name}"
 
-    expect(page).to have_content 'Review added successfully'
-    expect(page).to have_content @location1.name
-    expect(page).to have_content 'five scoops'
-    expect(page).to have_content 'Rocky Road'
-    expect(page).to have_content 'This is a raving review!'
-  end
+      choose 'five scoops'
 
-  scenario 'adds a review for a location unsuccessfully' do
-    visit '/'
+      fill_in 'Extra Scoop', with: 'This is a raving review!'
+      fill_in 'Flavor', with: 'Rocky Road'
+      click_button 'Add Review'
 
-    fill_in 'Email', with: @user1.email
-    fill_in 'Password', with: @user1.password
-    click_button 'Log In'
+      expect(page).to have_content 'Review added successfully'
+      expect(page).to have_content location_1.name
+      expect(page).to have_content 'five scoops'
+      expect(page).to have_content 'Rocky Road'
+      expect(page).to have_content 'This is a raving review!'
+    end
 
-    visit location_path(@location1)
+    scenario 'adds a review for a location unsuccessfully' do
+      visit '/'
 
-    click_link 'Add a Review'
-    expect(page).to have_content 'Review Form for ' + @location1.name
-    choose('five scoops')
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: user_1.password
+      click_button 'Log In'
 
-    click_button 'Add Review'
+      visit location_path(location_1)
 
-    expect(page).to have_content 'Flavor can\'t be blank'
+      click_link 'Add a Review'
+      expect(page).to have_content 'Review Form for ' + location_1.name
+      choose('five scoops')
+
+      click_button 'Add Review'
+
+      expect(page).to have_content 'Flavor can\'t be blank'
+    end
   end
 end
