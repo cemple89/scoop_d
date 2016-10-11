@@ -14,7 +14,9 @@ class ReviewsController < ApplicationController
     @location_review_users = []
     if !@reviews.empty?
       @reviews.each do |review|
-        @location_review_users << review.user
+        if review.user != current_user #|| !@location_review_users.include?(current_user)
+          @location_review_users << review.user
+        end
       end
     end
     @review = @location.reviews.new(
@@ -54,7 +56,6 @@ end
 
 def destroy
   @review = Review.find(params[:id])
-  binding.pry
   if @review.user == current_user || current_user.admin?
     @review.destroy
     redirect_to location_path(@review.location)
