@@ -2,6 +2,13 @@
 require 'rails_helper'
 
 feature 'User receives email about reviewed item' do
+
+  before(:each) do
+    ActionMailer::Base.delivery_method = :test
+    ActionMailer::Base.perform_deliveries = true
+    ActionMailer::Base.deliveries = []
+  end
+
   let!(:user) do
     User.create(
       email: 'testemail@gmail.com',
@@ -65,6 +72,6 @@ feature 'User receives email about reviewed item' do
     click_button 'Add Review'
 
     expect(page).to have_content 'Review added successfully'
-    expect(ActionMailer::Base.deliver.count).to eq(1)
+    expect(ActionMailer::Base.deliveries.count).to eq(1)
   end
 end
