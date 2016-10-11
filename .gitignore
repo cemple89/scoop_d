@@ -17,7 +17,7 @@
 .byebug_history
 
 .env
-
+/config/.application.yml
 /coverage
 
 app/models/locationreview.rb
