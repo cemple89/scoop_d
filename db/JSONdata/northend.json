@@ -1,0 +1,1022 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.028385148535477356,
+            "longitude_delta": 0.05002924864135139
+        },
+        "center": {
+            "latitude": 42.3625613597566,
+            "longitude": -71.05450906756425
+        }
+    },
+    "total": 27,
+    "businesses": [
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/mikes-pastry-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 4559,
+            "name": "Mike's Pastry",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/mikes-pastry-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Bakeries",
+                    "bakeries"
+                ],
+                [
+                    "Patisserie/Cake Shop",
+                    "cakeshop"
+                ]
+            ],
+            "menu_date_updated": 1472586310,
+            "phone": "6177423050",
+            "snippet_text": "Fast service, friendly people. Always a good start. Had a hard time finding something to order, though -- that's only because everything looked so damned...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/iPK8wzf5QhE8FJMOmp-YTw/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/PejljMlMqEvbptL75OCMzw/ms.jpg",
+            "display_phone": "+1-617-742-3050",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "mikes-pastry-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Wesley Pl & Lathrop Pl",
+                "city": "Boston",
+                "display_address": [
+                    "300 Hanover St",
+                    "North End",
+                    "Boston, MA 02113"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "North End"
+                ],
+                "postal_code": "02113",
+                "country_code": "US",
+                "address": [
+                    "300 Hanover St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3642084860954,
+                    "longitude": -71.0542717160405
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 2.5,
+            "mobile_url": "https://m.yelp.com/biz/gigi-gelateria-boston-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c7fb9aff59f9/ico/stars/v1/stars_2_half.png",
+            "review_count": 202,
+            "name": "Gigi Gelateria",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/8e8633e5f8f0/ico/stars/v1/stars_small_2_half.png",
+            "url": "https://www.yelp.com/biz/gigi-gelateria-boston-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Gelato",
+                    "gelato"
+                ]
+            ],
+            "phone": "6177204243",
+            "snippet_text": "CASH ONLY!! There was a decent selection of gelato flavors as well as cannoli flavors. There are a couple tables, but this is a hole in the wall place so I...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/IwbR--ULbpTMNgrEk2FPCw/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/9m8mCRe-12lDWObducxG-Q/ms.jpg",
+            "display_phone": "+1-617-720-4243",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/d63e3add9901/ico/stars/v1/stars_large_2_half.png",
+            "id": "gigi-gelateria-boston-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Richmond St & Wesley Pl",
+                "city": "Boston",
+                "display_address": [
+                    "272 Hanover St",
+                    "North End",
+                    "Boston, MA 02113"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "North End"
+                ],
+                "postal_code": "02113",
+                "country_code": "US",
+                "address": [
+                    "272 Hanover St"
+                ],
+                "coordinate": {
+                    "latitude": 42.36384,
+                    "longitude": -71.05471
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/dip-it-sweet-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 3,
+            "name": "Dip It Sweet",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/dip-it-sweet-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "snippet_text": "Ok so the place does look like you opened up the window and started to sell ice cream out of the first floor of your house but the lady running it is nice,...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Ug5M6nH5cSXhOStTfs666A/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/n9G-oPY97ZkdDbYuslYz-A/ms.jpg",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "dip-it-sweet-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Cooper St & Stillman St",
+                "city": "Boston",
+                "display_address": [
+                    "94 Endicott St",
+                    "North End",
+                    "Boston, MA 02113"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "North End"
+                ],
+                "postal_code": "02113",
+                "country_code": "US",
+                "address": [
+                    "94 Endicott St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3642012476921,
+                    "longitude": -71.057355478406
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/ghirardelli-ice-cream-and-chocolate-shop-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 45,
+            "name": "Ghirardelli Ice Cream & Chocolate Shop",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/ghirardelli-ice-cream-and-chocolate-shop-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Chocolatiers & Shops",
+                    "chocolate"
+                ]
+            ],
+            "menu_date_updated": 1472625068,
+            "phone": "6177224169",
+            "snippet_text": "There's not a lot of ice cream parlor (besides B&J) that has cookies n' cream ice cream that I would define as authentic. If you've never had their C n' C...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/9arK-vSIKlFnKX0TylzO2g/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/M-Pu3H86GJmzLgzUEy1Aww/ms.jpg",
+            "display_phone": "+1-617-722-4169",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "ghirardelli-ice-cream-and-chocolate-shop-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "Faneuil Hall Market",
+                    "6 North Market",
+                    "Ste N2053",
+                    "Boston, MA 02109"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "02109",
+                "country_code": "US",
+                "address": [
+                    "Faneuil Hall Market",
+                    "6 North Market",
+                    "Ste N2053"
+                ],
+                "coordinate": {
+                    "latitude": 42.3604608894368,
+                    "longitude": -71.0552702078568
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/caffe-lil-italy-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 37,
+            "name": "Caffe Lil Italy",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/caffe-lil-italy-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Breakfast & Brunch",
+                    "breakfast_brunch"
+                ]
+            ],
+            "phone": "6172271303",
+            "snippet_text": "Had an amazing blueberry muffin from here. It was soft and moist, not too sweet, and not flaky or dry at all. Randomly stopped here, and so glad we did!",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ZITM1HAxiFBv8Z-cwsIB5g/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/oVO4nkHfI9tTSe-2ecrTqg/ms.jpg",
+            "display_phone": "+1-617-227-1303",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "caffe-lil-italy-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Jerusalem Pl & Hull St",
+                "city": "Boston",
+                "display_address": [
+                    "178 Salem St",
+                    "North End",
+                    "Boston, MA 02113"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "North End"
+                ],
+                "postal_code": "02113",
+                "country_code": "US",
+                "address": [
+                    "178 Salem St"
+                ],
+                "coordinate": {
+                    "latitude": 42.36656,
+                    "longitude": -71.05485
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/j-p-licks-boston-5?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 116,
+            "name": "J.P. Licks",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/j-p-licks-boston-5?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Kosher",
+                    "kosher"
+                ]
+            ],
+            "menu_date_updated": 1472755874,
+            "phone": "8572332771",
+            "snippet_text": "awesome ice cream- really creamy and really big portions. good value for good quality stuff. \n\nthe rum and raisin isn't rummy enough, only downside!",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/LgqZ561mp5_YWkhBoEIw7Q/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/Fgf0HuEsaCps_qY0Xy8m0Q/ms.jpg",
+            "display_phone": "+1-857-233-2771",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "menu_provider": "single_platform",
+            "id": "j-p-licks-boston-5",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "150 Charles St",
+                    "Beacon Hill",
+                    "Boston, MA 02114"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Beacon Hill"
+                ],
+                "postal_code": "02114",
+                "country_code": "US",
+                "address": [
+                    "150 Charles St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3599606752396,
+                    "longitude": -71.0708469897509
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/crescent-ridge-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 6,
+            "name": "Crescent Ridge",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/crescent-ridge-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "snippet_text": "Everyone knows of ice cream, and many of us have been eating it our whole lives. This often means that one shop's ice cream may taste similar to another,...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/MeSgRsAalmM4CSSdgq1Nlw/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/q46s3w6lpTVWsIEh7kUcLg/ms.jpg",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "crescent-ridge-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "The Boston Public Market",
+                    "100 Hanover St",
+                    "Boston, MA 02108"
+                ],
+                "geo_accuracy": 8.0,
+                "postal_code": "02108",
+                "country_code": "US",
+                "address": [
+                    "The Boston Public Market",
+                    "100 Hanover St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3619511,
+                    "longitude": -71.057115
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 2.5,
+            "mobile_url": "https://m.yelp.com/biz/emack-and-bolios-charlestown?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c7fb9aff59f9/ico/stars/v1/stars_2_half.png",
+            "review_count": 38,
+            "name": "Emack & Bolio's",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/8e8633e5f8f0/ico/stars/v1/stars_small_2_half.png",
+            "url": "https://www.yelp.com/biz/emack-and-bolios-charlestown?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "phone": "6173373571",
+            "snippet_text": "$12.41 for two, single scoop waffle cones...good lord at the tourist prices. \n\nAnd they weren't even 'big' scoops...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Dr85adNlTo722RU-gew7Ag/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/FXID6YJ5NzftXxqC35Dmpg/ms.jpg",
+            "display_phone": "+1-617-337-3571",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/d63e3add9901/ico/stars/v1/stars_large_2_half.png",
+            "id": "emack-and-bolios-charlestown",
+            "is_closed": false,
+            "location": {
+                "city": "Charlestown",
+                "display_address": [
+                    "100 City Square",
+                    "Charlestown",
+                    "Charlestown, MA 02129"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Charlestown"
+                ],
+                "postal_code": "02129",
+                "country_code": "US",
+                "address": [
+                    "100 City Square"
+                ],
+                "coordinate": {
+                    "latitude": 42.371488049063,
+                    "longitude": -71.06125568559601
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/fort-point-market-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 21,
+            "name": "Fort Point Market",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/fort-point-market-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Beer, Wine & Spirits",
+                    "beer_and_wine"
+                ],
+                [
+                    "Grocery",
+                    "grocery"
+                ]
+            ],
+            "phone": "6174269988",
+            "snippet_text": "Between Ft Point Market and Trillium next door this is the craft beer mecca of Boston. \n\nBest beer selection in Boston bar none.",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/EoJMz2Ib0Va0jqTZ1kWZ_g/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/wwk6GY2zxb7Ub033URCnUg/ms.jpg",
+            "display_phone": "+1-617-426-9988",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "fort-point-market-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Pittsburgh St & Thomson Pl",
+                "city": "Boston",
+                "display_address": [
+                    "369 Congress St",
+                    "Waterfront",
+                    "Boston, MA 02210"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Waterfront",
+                    "South Boston"
+                ],
+                "postal_code": "02210",
+                "country_code": "US",
+                "address": [
+                    "369 Congress St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3498116,
+                    "longitude": -71.0480423
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/pinkberry-boston-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 26,
+            "name": "Pinkberry",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/pinkberry-boston-3?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "phone": "8572399597",
+            "snippet_text": "Let me start by saying I love pinkberry. Last time I came to this location the guy working behind the counter had an accident cup and gave it to me for free...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/tKTXvwCo7ytnhOd3vleYZg/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/189f2ca1fe8c/assets/img/default_avatars/user_medium_square.png",
+            "display_phone": "+1-857-239-9597",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "id": "pinkberry-boston-3",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "700 Atlantic Ave",
+                    "Ste 105",
+                    "Waterfront",
+                    "Boston, MA 02110"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Waterfront",
+                    "South Boston"
+                ],
+                "postal_code": "02110",
+                "country_code": "US",
+                "address": [
+                    "700 Atlantic Ave",
+                    "Ste 105"
+                ],
+                "coordinate": {
+                    "latitude": 42.3510953038931,
+                    "longitude": -71.0561759769917
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/helados-julis-frozen-dessert-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 7,
+            "name": "Helados Juli's Frozen Dessert",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/helados-julis-frozen-dessert-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Desserts",
+                    "desserts"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "phone": "6174353558",
+            "snippet_text": "Took my kids here and they loved it. The ice cream is great, and they have lots of fruit-filled desserts I've yet to try. The obleas con arequipe was...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/xM6tbFAADhChW9Pt4pBJKg/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/tCF-dEX1n4GJ2wyZD-JoEg/ms.jpg",
+            "display_phone": "+1-617-435-3558",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "helados-julis-frozen-dessert-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Chelsea St & Bremen St",
+                "city": "Boston",
+                "display_address": [
+                    "8 Brooks St",
+                    "East Boston",
+                    "Boston, MA 02128"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "East Boston"
+                ],
+                "postal_code": "02128",
+                "country_code": "US",
+                "address": [
+                    "8 Brooks St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3754637,
+                    "longitude": -71.0317685
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.0,
+            "mobile_url": "https://m.yelp.com/biz/sprinkles-ice-cream-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+            "review_count": 36,
+            "name": "Sprinkles Ice Cream",
+            "rating_img_url_small": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+            "url": "https://www.yelp.com/biz/sprinkles-ice-cream-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "phone": "6173670569",
+            "snippet_text": "I feel like I have to chime in to balance out some of the negative reviews of this ice cream shop. The ice cream is very good, and I can see myself making a...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/vY_NsYqGHldDNzdt0rargg/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/x1xrNceb6PnTYX3eluBmRQ/ms.jpg",
+            "display_phone": "+1-617-367-0569",
+            "rating_img_url_large": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
+            "id": "sprinkles-ice-cream-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "Faneuil Hall Marketplace",
+                    "120 Faneuil Hall Marketplace",
+                    "Downtown",
+                    "Boston, MA 02228"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Downtown"
+                ],
+                "postal_code": "02228",
+                "country_code": "US",
+                "address": [
+                    "Faneuil Hall Marketplace",
+                    "120 Faneuil Hall Marketplace"
+                ],
+                "coordinate": {
+                    "latitude": 42.358015878188,
+                    "longitude": -71.0594196931152
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/shake-shack-boston-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 18,
+            "name": "Shake Shack",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/shake-shack-boston-2?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Hot Dogs",
+                    "hotdog"
+                ],
+                [
+                    "Burgers",
+                    "burgers"
+                ]
+            ],
+            "phone": "6173374699",
+            "snippet_text": "A walking distance Shack Burger? My initial thought is woohoo but the heart burn from the 1600+ calories is *curses*.\n\nThere's only street parking and most...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/T4TJy7UuNubXnGyMp2tU2g/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/l5D7N3ep4wyd5oPgOWeQJA/ms.jpg",
+            "display_phone": "+1-617-337-4699",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "shake-shack-boston-2",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Northern Ave",
+                "city": "Boston",
+                "display_address": [
+                    "77 Seaport Blvd",
+                    "Waterfront",
+                    "Boston, MA 02210"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Waterfront",
+                    "South Boston"
+                ],
+                "postal_code": "02210",
+                "country_code": "US",
+                "address": [
+                    "77 Seaport Blvd"
+                ],
+                "coordinate": {
+                    "latitude": 42.3512850701809,
+                    "longitude": -71.0445895045996
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/cookie-monstah-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 192,
+            "name": "Cookie Monstah",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/cookie-monstah-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Bakeries",
+                    "bakeries"
+                ],
+                [
+                    "Food Trucks",
+                    "foodtrucks"
+                ]
+            ],
+            "phone": "6176156595",
+            "snippet_text": "The double chocolate cookie had ruined me for all other cookies (think: buttery, fudgy, and all the right kinds of crumbling), and the Green Monster (:...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9ES6wXYsSSE4oLJ8cXzwag/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/7z45xXFGVIpLIzqOv93zTg/ms.jpg",
+            "display_phone": "+1-617-615-6595",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "cookie-monstah-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "Back Bay",
+                    "Boston, MA 02108"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Back Bay"
+                ],
+                "postal_code": "02108",
+                "country_code": "US",
+                "address": [],
+                "coordinate": {
+                    "latitude": 42.3496590195132,
+                    "longitude": -71.0772496351285
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/jennifers-frosty-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 11,
+            "name": "Jennifer's Frosty",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/jennifers-frosty-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "snippet_text": "Best ice cream from the funniest guy. \nHe remembers his customers and really enjoys what he does. He is awesome and I always look forward to or...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Ay8-xcICx-3lVT6lHYXa3w/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/d6Ahf3Z1fdb3tVPeoLManA/ms.jpg",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "jennifers-frosty-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "Back Bay",
+                    "Boston, MA 02116"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Back Bay"
+                ],
+                "postal_code": "02116",
+                "country_code": "US",
+                "address": [],
+                "coordinate": {
+                    "latitude": 42.352018652008,
+                    "longitude": -71.0702650766275
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.0,
+            "mobile_url": "https://m.yelp.com/biz/orange-leaf-frozen-yogurt-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+            "review_count": 19,
+            "name": "Orange Leaf Frozen Yogurt",
+            "rating_img_url_small": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+            "url": "https://www.yelp.com/biz/orange-leaf-frozen-yogurt-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Desserts",
+                    "desserts"
+                ],
+                [
+                    "Do-It-Yourself Food",
+                    "diyfood"
+                ]
+            ],
+            "menu_date_updated": 1472870280,
+            "phone": "6179364093",
+            "snippet_text": "Stopped in here on a nice warm Sunday afternoon to be greeted by a smiling young woman named Michelle. She asked if we had ever been there before, and I...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/onMsM4UQs55Ngii0TlODVA/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/v4rHUEXF-0kNw8Epu8ML_w/ms.jpg",
+            "display_phone": "+1-617-936-4093",
+            "rating_img_url_large": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
+            "menu_provider": "single_platform",
+            "id": "orange-leaf-frozen-yogurt-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "145 Tremont Street",
+                    "Boston, MA 02111"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "02111",
+                "country_code": "US",
+                "address": [
+                    "145 Tremont Street"
+                ],
+                "coordinate": {
+                    "latitude": 42.354226321138,
+                    "longitude": -71.0639277704193
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/emack-and-bolios-boston-4?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 15,
+            "name": "Emack & Bolios",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/emack-and-bolios-boston-4?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "snippet_text": "I scream.  You scream. We all scream for Ice Cream.\n\nWhile E&B at North Station doesn't really bring me back to my youth, the staff and owner make my visit...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/gM70Ds5O7_gIzuEZCcZSyA/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/7WXM00qKJzv83sh-1BpuSQ/ms.jpg",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "emack-and-bolios-boston-4",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "North Station",
+                    "West End",
+                    "Boston, MA 02114"
+                ],
+                "geo_accuracy": 5.0,
+                "neighborhoods": [
+                    "West End"
+                ],
+                "postal_code": "02114",
+                "country_code": "US",
+                "address": [
+                    "North Station"
+                ],
+                "coordinate": {
+                    "latitude": 42.3631172180176,
+                    "longitude": -71.0669860839844
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/jimmys-ice-cream-truck-charlestown?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 1,
+            "name": "Jimmy's Ice Cream Truck",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/jimmys-ice-cream-truck-charlestown?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "phone": "7274176683",
+            "snippet_text": "Nothing like walking the Freedom Trail's Charlestown leg and discovering this seemingly ghetto ice cream truck with \"ICE COLD WADDA\" drawn in crayon on the...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/wcVrURjlvwSA8hOk-Du0hg/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/CoDnnjtcj1mXvHP6Pw7l2g/ms.jpg",
+            "display_phone": "+1-727-417-6683",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "id": "jimmys-ice-cream-truck-charlestown",
+            "is_closed": false,
+            "location": {
+                "city": "Charlestown",
+                "display_address": [
+                    "Freedom Trl",
+                    "Charlestown",
+                    "Charlestown, MA 02129"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Charlestown"
+                ],
+                "postal_code": "02129",
+                "country_code": "US",
+                "address": [
+                    "Freedom Trl"
+                ],
+                "coordinate": {
+                    "latitude": 42.3748121605008,
+                    "longitude": -71.0601931233231
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 2.5,
+            "mobile_url": "https://m.yelp.com/biz/caffe-bella-vita-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c7fb9aff59f9/ico/stars/v1/stars_2_half.png",
+            "review_count": 143,
+            "name": "Caffe Bella Vita",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/8e8633e5f8f0/ico/stars/v1/stars_small_2_half.png",
+            "url": "https://www.yelp.com/biz/caffe-bella-vita-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ],
+                [
+                    "Sandwiches",
+                    "sandwiches"
+                ]
+            ],
+            "menu_date_updated": 1472581066,
+            "phone": "6177204505",
+            "snippet_text": "Came to Café Bella Vita to study for a midterm exam. I only got a cappacino but the food looked decent and seemed reasonably priced. The waitress had to be...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dJ88FmgKRIDIIzr7MCFOiQ/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/bdPWXmCdnnyUwMo0qA0Dfg/ms.jpg",
+            "display_phone": "+1-617-720-4505",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/d63e3add9901/ico/stars/v1/stars_large_2_half.png",
+            "menu_provider": "single_platform",
+            "id": "caffe-bella-vita-boston",
+            "is_closed": false,
+            "location": {
+                "cross_streets": "Chestnut St & Branch St",
+                "city": "Boston",
+                "display_address": [
+                    "30 Charles St",
+                    "Beacon Hill",
+                    "Boston, MA 02114"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Beacon Hill"
+                ],
+                "postal_code": "02114",
+                "country_code": "US",
+                "address": [
+                    "30 Charles St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3568891971462,
+                    "longitude": -71.0699638974354
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.0,
+            "mobile_url": "https://m.yelp.com/biz/boston-frosty-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+            "review_count": 5,
+            "name": "Boston Frosty",
+            "rating_img_url_small": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+            "url": "https://www.yelp.com/biz/boston-frosty-boston?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Street Vendors",
+                    "streetvendors"
+                ]
+            ],
+            "snippet_text": "I've never seen this truck NOT stationed outside the Boston Commons, which is a good thing. On a hot summer day, you can count on this truck to be there for...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/tTQSKdws9zHGH-C6gzTBRg/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/J1iHkUPOmc2gNm5l-NL4VQ/ms.jpg",
+            "rating_img_url_large": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
+            "id": "boston-frosty-boston",
+            "is_closed": false,
+            "location": {
+                "city": "Boston",
+                "display_address": [
+                    "Boylston St At Arlington St",
+                    "Back Bay",
+                    "Boston, MA 02116"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Back Bay"
+                ],
+                "postal_code": "02116",
+                "country_code": "US",
+                "address": [
+                    "Boylston St At Arlington St"
+                ],
+                "coordinate": {
+                    "latitude": 42.351874,
+                    "longitude": -71.0706664
+                },
+                "state_code": "MA"
+            }
+        }
+    ]
+}
