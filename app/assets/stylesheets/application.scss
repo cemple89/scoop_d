@@ -65,20 +65,20 @@ $black: #111111;
 }
 
 .image-cropper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 5px 5px 5px $black;
+  border: 5px solid $white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px $black;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
 }
 
 img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
 }
 
 body {
