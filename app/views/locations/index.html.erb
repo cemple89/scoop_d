@@ -1,3 +1,4 @@
+<% require 'pry' %>
 <% if current_user.admin? %>
   <%= button_to "Users", users_path, { method: :get } %>
 <% end %>
@@ -7,7 +8,7 @@
 <%= submit_tag 'Search' %>
 <% end %>
 
-<% if @location.nil? %>
+<% if @results.nil? %>
 
     <h1>All Locations</h1>
 
@@ -18,8 +19,8 @@
     </ul>
 <% else %>
     <h2> Search Results: </h2>
-    <% @results.each do |result| %>
-      <li><%= link_to result.name, location%></li>
+    <% @results.each do |location| %>
+      <li><%= link_to location.name, location%></li>
     <% end %>
 <% end %>
 
