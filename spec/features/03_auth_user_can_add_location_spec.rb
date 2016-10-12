@@ -23,7 +23,6 @@ describe 'User can ' do
       fill_in 'Zip Code', with: '02111'
       select('Harvard', from: 'Neighborhood')
       fill_in 'Phone', with: '617-555-1234'
-      fill_in 'url', with: 'www.jplicks.com'
 
       click_button 'Add Location'
 
