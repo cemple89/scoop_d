@@ -28,7 +28,7 @@ describe ImageUploader do
       expect(page).to have_link('Add Image')
     end
 
-    scenario 'User can upload file' do
+    it 'User can upload file' do
       visit '/'
       fill_in 'Email', with: user2.email
       fill_in 'Password', with: user2.password
@@ -40,8 +40,8 @@ describe ImageUploader do
       click_button('Update User')
 
       expect(page).to_not have_link('Add Image')
-
-      expect(page).to have_css('img[src*=doge]')
+      page.find('#user-image')['src'].should have_content('doge.jpg')
+      
     end
   end
 end
