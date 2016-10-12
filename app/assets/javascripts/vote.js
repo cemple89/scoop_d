@@ -16,6 +16,9 @@ $(document).ready(function() {
       URL: '/locations/`$(location)`/reviews/`$(review)`/vote'
     });
 
+    console.log(down_thumb)
+    console.log(self)
+
     up_request.done(function(data) {
       if (data === null) {
         down_thumb.css('color', 'black');
