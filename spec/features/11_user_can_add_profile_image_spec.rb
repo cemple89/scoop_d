@@ -40,8 +40,8 @@ describe ImageUploader do
       click_button('Update User')
 
       expect(page).to_not have_link('Add Image')
-      page.find('#user-image')['src'].should have_content('doge.jpg')
-      
+      expect(page.find('#user-image')['src']).to have_content('doge.jpg')
+
     end
   end
 end
