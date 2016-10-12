@@ -23,8 +23,6 @@
 
 app/models/locationreview.rb
 
-db/JSON_data/JSON_parse.rb
-
 
 # Ignore application configuration
 /config/application.yml
