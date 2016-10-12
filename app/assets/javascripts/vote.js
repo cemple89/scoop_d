@@ -8,7 +8,7 @@ $(document).ready(function() {
         review = self.data('review'),
         count = self.data('value'),
         user = self.data('user');
-    var down_thumb = $('#js-downvote-'+review);
+    var down_thumb = $('#js-downvote-' + review);
 
     var up_request = $.ajax({
       method: "POST",
@@ -35,6 +35,7 @@ $(document).ready(function() {
         review = self.data('review'),
         count = self.data('value'),
         user = self.data('user');
+    var up_thumb = $('#js-upvote-'+review)
 
     var down_request = $.ajax({
       method: "POST",
@@ -44,8 +45,10 @@ $(document).ready(function() {
 
     down_request.done(function(data) {
       if (data === null) {
+        up_thumb.css('color', 'black');
         self.css('color', 'black')
       } else {
+        up_thumb.css('color', 'black');
         self.css('color', 'red')
       }
     })
