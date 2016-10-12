@@ -3,8 +3,8 @@ require 'rails_helper'
 describe 'User sees list of all locations' do
 
   let!(:user_1) { create(:user) }
-  let!(:location_1) { create(:location) }
-  let!(:location_2) { create(:location) }
+  let!(:location_1) { create(:location, user: user_1) }
+  let!(:location_2) { create(:location, user: user_1) }
 
   feature 'users sees a list of locations' do
 

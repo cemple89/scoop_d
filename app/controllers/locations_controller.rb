@@ -18,6 +18,7 @@ class LocationsController < ApplicationController
   def create
     @neighborhood_collection = Location::NEIGHBORHOODS
     @location = Location.new(location_params)
+    @location.user = current_user
     if @location.save
       redirect_to location_path(@location)
       flash[:notice] = "Location added successfully"
@@ -37,7 +38,7 @@ class LocationsController < ApplicationController
  private
 
  def location_params
-   params.require(:location).permit(:name, :address, :city, :state, :zip_code, :neighborhood, :phone_number, :url)
+   params.require(:location).permit(:name, :address, :city, :state, :zip_code, :neighborhood, :phone_number, :url, :user)
  end
 
 end

@@ -32,7 +32,9 @@ class Location < ActiveRecord::Base
                     ]
 
   has_many :reviews
+  belongs_to :user
 
+  validates :user, presence: true
   validates :name, presence: true
   validates :address, presence: true
   validates :city, presence: true
