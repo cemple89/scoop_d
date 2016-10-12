@@ -15,7 +15,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'listen'
 gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
-gem 'rubocop'
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem 'figaro'
+gem 'fog'
+
 group :development, :test do
   gem 'capybara'
   gem 'factory_girl_rails'

@@ -1,9 +1,24 @@
+require 'pry'
 # frozen_string_literal: true
 class UsersController < ApplicationController
   def index
     if current_user.admin?
       @users = User.all
     end
+  end
+
+  def edit
+    @user = current_user
+    @image = @user.image
+  end
+
+  def update
+    @user = current_user
+    @user.image = params[:user][:image]
+    @user.save!
+    # @uploader.store!(params[:image])
+    # @image = @user.store!(image_params)
+    redirect_to root_path
   end
 
   def destroy

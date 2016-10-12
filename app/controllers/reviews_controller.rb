@@ -11,6 +11,15 @@ class ReviewsController < ApplicationController
   def create
     @location = Location.find(params[:location_id])
     @reviews = @location.reviews
+    @location_review_users = []
+    if !@reviews.empty?
+      @reviews.each do |review|
+        if review.user != current_user
+          @location_review_users << review.user
+        end
+      end
+    end
+    @location_review_users.uniq!
     @review = @location.reviews.new(
       user: current_user,
       flavor: params[:review][:flavor],
@@ -20,6 +29,9 @@ class ReviewsController < ApplicationController
     )
     if @review.save
       flash[:notice] = "Review added successfully."
+      @location_review_users.each do |user|
+        ReviewMailer.review_email(user, @review).deliver
+      end
       redirect_to location_path(@location)
     else
       flash[:notice] = @review.errors.full_messages.join(", ")

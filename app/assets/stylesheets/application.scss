@@ -64,6 +64,23 @@ $black: #111111;
   width: 10%;
 }
 
+.image-cropper {
+  border: 5px solid $white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px $black;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+}
+
+img {
+  display: inline;
+  height: 100%;
+  margin: 0 auto;
+  width: auto;
+}
+
 body {
   margin: 0;
 }
