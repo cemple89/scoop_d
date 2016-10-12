@@ -4,7 +4,7 @@ require 'rails_helper'
 describe 'User can' do
 
   let!(:user_1) { create(:user) }
-  let!(:location_1) { create(:location) }
+  let!(:location_1) { create(:location, user: user_1) }
 
   feature 'add reviews for locations' do
 
