@@ -393,10 +393,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   figaro
-<<<<<<< HEAD
   fog
-=======
->>>>>>> master
   foundation-rails
   httpclient
   jquery-rails
