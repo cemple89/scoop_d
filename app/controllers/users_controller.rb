@@ -24,12 +24,16 @@ class UsersController < ApplicationController
   def destroy
     if current_user.admin?
       @user = User.find(params[:id])
-      @locations = Location.find_by(user_id: @user)
-      @locations.update_attribute(:user_id, -1)
-      @reviews = Review.find_by(user_id: @user)
-      @reviews.update_attribute(:user_id, -1)
-      @votes = Vote.find_by(user_id: @user)
-      @votes.destroy
+      @locations = Location.where("user_id = #{@user.id}")
+      @locations.each do |location|
+        location.update_attribute(:user_id, -1)
+      end
+      @reviews = Review.where("user_id = #{@user.id}")
+      @reviews.each do |review|
+        review.update_attribute(:user_id, -1)
+      end
+      # @votes = Vote.where("user_id = #{@user.id}")
+      # @votes.destroy
       @user.destroy
       flash[:notice] = 'User was successfully deleted'
       redirect_to users_path
