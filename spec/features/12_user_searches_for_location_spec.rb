@@ -4,7 +4,7 @@ require 'factory_girl_rails'
 feature 'Authenticated user searches for location' do
   scenario 'searches for location that exists' do
     user = FactoryGirl.create(:user)
-    location = FactoryGirl.create(:location)
+    location = FactoryGirl.create(:location, user: user)
     visit '/'
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
