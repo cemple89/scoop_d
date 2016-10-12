@@ -39,4 +39,8 @@ class Location < ActiveRecord::Base
   validates :state, presence: true
   validates :zip_code, presence: true
   validates :zip_code, numericality: { only_integer: true }, length: { is: 5 }
+
+  def self.search(search)
+    where("name ILIKE ?", "%#{search}%")
+  end
 end

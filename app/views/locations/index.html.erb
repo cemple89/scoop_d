@@ -2,13 +2,31 @@
   <%= button_to "Users", users_path, { method: :get } %>
 <% end %>
 
-<h1>All Locations</h1>
+<%= form_tag(locations_path, :method => 'get', id: 'search-form') do %>
+<%= text_field_tag :search, params[:search], placeholder: 'Search Ice Cream Shops' %>
+<%= submit_tag 'Search' %>
+<% end %>
 
-<ul>
-  <% @locations.each do |location| %>
-    <li><%= link_to location.name, location%></li>
-  <% end %>
-</ul>
+<% if @results.nil? %>
+    <h1>All Ice Cream Shops In Boston / Cambridge Area </h1>
+    <ul>
+      <% @locations.each do |location| %>
+        <li><%= link_to location.name, location%></li>
+      <% end %>
+    </ul>
+<% else %>
+    <h2> Search Results: </h2>
+    <% if @results.empty? %>
+      <p>
+        Sorry, your search yielded no locations. Please add the location below!
+      </p>
+    <% else %>
+      <% @results.each do |location| %>
+        <li><%= link_to location.name, location%></li>
+      <% end %>
+    <% end %>
+    <%= link_to 'Back to Locations', locations_path %>
+<% end %>
 
 
 <%= link_to 'Add New Location', new_location_path, method: :get %>

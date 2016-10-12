@@ -2,7 +2,12 @@
 class LocationsController < ApplicationController
 
   def index
-    @locations = Location.all
+    @locations = Location.all.order('name DESC')
+    if params[:search]
+      @results = Location.search(params[:search]).order('name DESC')
+    else
+      @locations = Location.all.order('name DESC')
+    end
   end
 
   def new
