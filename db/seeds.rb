@@ -27,16 +27,10 @@ Dir.foreach("./db/JSONdata") do |file|
           state: b_key["location"]['state_code'],
           zip_code: b_key["location"]['postal_code'],
           neighborhood: b_key["location"]['neighborhoods'],
-          phone_number: b_key["display_phone"]
+          phone_number: b_key["display_phone"],
+          image_url: b_key["image_url"],
+          user_id: -1
         )
-        puts b_key['name']
-        puts b_key["location"]['address']
-        puts b_key['image_url']
-        puts b_key["location"]['neighborhoods']
-        puts b_key["location"]['city']
-        puts b_key["location"]['state_code']
-        puts b_key["location"]['postal_code']
-        puts '//////\n\n'
       end
     end
   end
