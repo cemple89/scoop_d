@@ -16,11 +16,13 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-/.env
+.env
+/config/.application.yml
 
 /coverage
-
 
 app/models/locationreview.rb
 
 db/JSON_data/JSON_parse.rb
+
+config/application.yml

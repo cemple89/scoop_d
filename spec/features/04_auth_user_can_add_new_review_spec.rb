@@ -1,67 +1,54 @@
 # frozen_string_literal: true
 require 'rails_helper'
 
-feature 'users can add reviews for locations' do
-  let(:user) do
-    User.create(
-      email: 'test_user@gmail.com',
-      password: 'scooped'
-    )
-  end
-  scenario 'adds a review for a location successfully' do
-    forge_ice_cream_bar = Location.create(
-      name: 'Forge Ice Cream Bar',
-      address: '626 Somerville Ave.',
-      city: 'Somerville',
-      state: 'MA',
-      zip_code: '02143'
-                                          )
-    visit '/'
+describe 'User can' do
 
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
+  let!(:user_1) { create(:user) }
+  let!(:location_1) { create(:location) }
 
-    click_button 'Log In'
-    visit location_path(forge_ice_cream_bar)
-    click_link 'Add a Review'
+  feature 'add reviews for locations' do
 
-    expect(page).to have_content 'Review Form for Forge Ice Cream Bar'
+    scenario 'adds a review for a location successfully' do
+      visit '/'
 
-    choose 'five scoops'
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: user_1.password
 
-    fill_in 'Extra Scoop', with: 'This is a raving review!'
-    fill_in 'Flavor', with: 'Rocky Road'
-    click_button 'Add Review'
+      click_button 'Log In'
+      visit location_path(location_1)
+      click_link 'Add a Review'
 
-    expect(page).to have_content 'Review added successfully'
-    expect(page).to have_content forge_ice_cream_bar.name
-    expect(page).to have_content 'five scoops'
-    expect(page).to have_content 'Rocky Road'
-    expect(page).to have_content 'This is a raving review!'
-  end
+      expect(page).to have_content "Review Form for #{location_1.name}"
 
-  scenario 'adds a review for a location unsuccessfully' do
-    visit '/'
+      choose 'five scoops'
 
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
-    click_button 'Log In'
-    forge_ice_cream_bar = Location.create(
-      name: 'Forge Ice Cream Bar',
-      address: '626 Somerville Ave.',
-      city: 'Somerville',
-      state: 'MA',
-      zip_code: '02143'
-                                          )
+      fill_in 'Extra Scoop', with: 'This is a raving review!'
+      fill_in 'Flavor', with: 'Rocky Road'
+      click_button 'Add Review'
 
-    visit location_path(forge_ice_cream_bar)
+      expect(page).to have_content 'Review added successfully'
+      expect(page).to have_content location_1.name
+      expect(page).to have_content 'five scoops'
+      expect(page).to have_content 'Rocky Road'
+      expect(page).to have_content 'This is a raving review!'
+    end
 
-    click_link 'Add a Review'
-    expect(page).to have_content 'Review Form for Forge Ice Cream Bar'
-    choose('five scoops')
+    scenario 'adds a review for a location unsuccessfully' do
+      visit '/'
 
-    click_button 'Add Review'
+      fill_in 'Email', with: user_1.email
+      fill_in 'Password', with: user_1.password
+      click_button 'Log In'
 
-    expect(page).to have_content 'Flavor can\'t be blank'
+      visit location_path(location_1)
+
+      click_link 'Add a Review'
+      expect(page).to have_content 'Review Form for ' + location_1.name
+      choose('five scoops')
+
+      click_button 'Add Review'
+
+      expect(page).to have_content 'Flavor can\'t be blank'
+    end
   end
 end
