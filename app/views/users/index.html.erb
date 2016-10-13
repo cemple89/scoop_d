@@ -3,3 +3,6 @@
 <ul> <% @users.each do |user| %>
   <li> <%= user.email %> <%= button_to 'Delete User', user, { method: :delete, id: user.email }%> </li>
 <% end %> </ul>
+
+
+<%= link_to 'Back', locations_path %>
