@@ -8,20 +8,6 @@ describe 'User sees list of all locations' do
 
   feature 'users sees a list of locations' do
 
-    scenario 'sees a list of locations and link for new location' do
-      visit '/'
-      fill_in 'Email', with: user_1.email
-      fill_in 'Password', with: user_1.password
-      click_button 'Log In'
-      visit locations_path
-
-      expect(page).to have_content location_1.name
-      expect(page).to have_link location_2.name
-
-      click_link 'Add New Location'
-
-      expect(page).to have_content 'New Location Form'
-    end
 
     scenario 'clicks link and is taken to show page for given restaurant' do
       visit '/'
