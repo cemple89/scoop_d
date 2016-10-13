@@ -26,14 +26,19 @@
         <div class="user-image">
           <%= image_tag review.user.image, class:"image-cropper" %>
         </div>
-        Rating: <%= Review::RATINGS[review.rating - 1][1] %><br>
-        Flavor: <%= review.flavor %>
-        <br><br>
-        <em>"<%= review.body %>"</em><br>
-        <%= review.user.email %><br>
-        <% if review.id != nil %>
-          <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
-        <% end %>
+        <div class="review-object-title">
+          Rating: <%= Review::RATINGS[review.rating - 1][1] %><br>
+          Flavor: <%= review.flavor %>
+        </div>
+        <hr>
+        <div class="review-body">
+          <em>"<%= review.body %>"</em>
+          <br><br>
+          <%= review.user.email %><br>
+          <% if review.id != nil %>
+            <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
+          <% end %>
+        </div>
         <div class="review-stats">
           <h4><span id=<%="review-count-#{review.id}"%>><%= @vote_score %></span><span id=<%="sprinkles-#{review.id}"%>> found this review helpful</span></h4>
           <i class= "fa fa-thumbs-o-up fa-2x js-upvote", id=<%="js-upvote-#{review.id}" %> data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
@@ -46,7 +51,7 @@
           <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id }%></li>
         <% end %>
       </div>
-      <br><br>
+      <br>
     <% end %>
 
 

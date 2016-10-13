@@ -22,12 +22,12 @@ $(document).ready(function() {
     up_request.done(function(data) {
       if (data === null) {
         vote_total.html(vote_total_num -= 1);
-        var x =$("<i class='fa fa-times removed'></i>");
+        var x =$("<i class='fa fa-times fa-2x removed'></i>");
         $(vote_sprinkles).append(x);
         x.slideDown(250).delay(2000).slideUp(250);
       } else {
         vote_total.html(vote_total_num += 1);
-        var v =$("<i class='fa fa-cloud-upload added'></i>");
+        var v =$("<i class='fa fa-cloud-upload fa-2x added'></i>");
         $(vote_sprinkles).append(v);
         v.slideDown(250).delay(2000).slideUp(250);
       }
@@ -55,12 +55,12 @@ $(document).ready(function() {
     down_request.done(function(data) {
       if (data === null) {
         vote_total.html(vote_total_num += 1);
-        var y =$("<i class='fa fa-times removed'></i>");
+        var y =$("<i class='fa fa-times fa-2x removed'></i>");
         $(vote_sprinkles).append(y);
         y.slideDown(250).delay(2000).slideUp(250);
       } else {
         vote_total.html(vote_total_num -= 1);
-        var z =$("<i class='fa fa-cloud-download downvoted'></i>");
+        var z =$("<i class='fa fa-cloud-download fa-2x downvoted'></i>");
         $(vote_sprinkles).append(z);
         z.slideDown(250).delay(2000).slideUp(250);
       }

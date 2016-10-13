@@ -232,15 +232,25 @@ a:visited {
 
 .user-image {
   float: left;
-  margin: 40px;
+  margin: 30px;
 }
 
 .review-stats {
   text-align: right;
+  margin-top: 0;
+}
+
+.review-object-title {
+  font-size: 18px;
+}
+
+.review-body {
+  margin: 5px;
+  text-align: left;
 }
 
 .js-upvote {
-  margin: 10px;
+  margin-right: 10px;
   margin-bottom: 0;
 }
 
