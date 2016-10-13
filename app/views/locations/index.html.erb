@@ -2,11 +2,12 @@
   <%= button_to "Users", users_path, { method: :get } %>
 <% end %>
 
-<%= form_tag(locations_path, :method => 'get', id: 'search-form') do %>
-<%= text_field_tag :search, params[:search], placeholder: 'Search Ice Cream Shops' %>
-<%= submit_tag 'Search' %>
-<% end %>
-
+<div class="search-bar">
+  <%= form_tag(locations_path, :method => 'get', id: 'search-form') do %>
+  <%= text_field_tag :search, params[:search], placeholder: 'Search Ice Cream Shops', class:"search-form" %>
+  <%= submit_tag 'Search', class:"search-button" %>
+  <% end %>
+</div>
 <% if @results.nil? %>
     <div id="app"/>
 <% else %>

@@ -3,7 +3,23 @@ $light-pink: #ff8b94;
 $white: #ffffff;
 $shadow-grey: #dddddd;
 $black: #111111;
+$light-green: #dcedc1;
+$dark-green: #a8e6cf;
+$peach: #ffd3b6;
+$charcoal: #323232;
 
+body {
+  margin: 0;
+  background: $dark-pink;
+}
+
+.main-page {
+  margin-left: 50px;
+  margin-right: 50px;
+  background: $peach;
+  box-shadow: 0 -1px 10px 2px $black;
+  padding-bottom: 20px;
+}
 
 .loginnav {
   display: inline-block;
@@ -33,7 +49,7 @@ $black: #111111;
   font-weight: lighter;
   letter-spacing: 2px;
   padding-left: 50px;
-  text-shadow: 5px 5px 5px $black;
+  text-shadow: 1px 1px 1px $black;
 }
 
 .login-name {
@@ -89,8 +105,82 @@ img {
   width: auto;
 }
 
-body {
-  margin: 0;
+.search-bar {
+  text-align: center;
+  background-color: $light-green;
+  padding:20px;
+}
+
+.search-form {
+  width: 40%;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Hind', sans-serif;
+}
+
+.search-button {
+  width: 100px;
+  font-size: 18px;
+  font-family: 'Hind', sans-serif;
+  background: $dark-green;
+  color: $white;
+  border-radius: 5px;
+  text-align: center;
+  padding:5px;
+  text-shadow: .5px .5px .5px $black;
+}
+
+.search-button:hover {
+  background-color: darken($dark-green, 10%);
+}
+
+.locations-title {
+  text-align: center;
+  background: $white;
+  color: $dark-pink;
+  padding: 10px;
+  font-family: 'Hind', sans-serif;
+  margin: 0px;
+}
+
+ul {
+  columns: 2;
+  text-align: center;
+  margin: 5px;
+}
+
+.location-box {
+  background: white;
+  margin: 5px;
+  padding: 10px;
+  width: 80%;
+  font-family: 'Hind', sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: .5px .5px .5px $black;
+}
+
+.location-box:hover {
+  background: lighten($peach, 10%);
+}
+
+.location-box:active {
+  background: lighten($charcoal, 70%);
+}
+
+a {
+  color: $charcoal;
+}
+
+a:visited {
+  color: darken($dark-pink, 5%);
+}
+
+.location-image {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .removed {
