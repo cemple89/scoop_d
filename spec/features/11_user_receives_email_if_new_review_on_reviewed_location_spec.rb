@@ -61,7 +61,7 @@ feature 'User receives email about reviewed item' do
     fill_in 'Password', with: user.password
     click_button('Log In')
 
-    visit '/locations/#{location.id}'
+    visit '/locations/' + location.id.to_s
 
     click_link 'Add a Review'
 

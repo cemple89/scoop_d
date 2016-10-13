@@ -48,7 +48,6 @@ ActiveRecord::Schema.define(version: 20161012181747) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "location_id", null: false
-    t.integer  "total"
     t.index ["location_id"], name: "index_reviews_on_location_id", using: :btree
     t.index ["user_id"], name: "index_reviews_on_user_id", using: :btree
   end
@@ -68,16 +67,6 @@ ActiveRecord::Schema.define(version: 20161012181747) do
     t.string   "image"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-  end
-
-  create_table "votes", force: :cascade do |t|
-    t.integer  "count",      default: 1
-    t.integer  "review_id",              null: false
-    t.integer  "user_id",                null: false
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.index ["review_id"], name: "index_votes_on_review_id", using: :btree
-    t.index ["user_id"], name: "index_votes_on_user_id", using: :btree
   end
 
 end
