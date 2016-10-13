@@ -25,6 +25,7 @@ feature 'User receives email about reviewed item' do
 
   let!(:location) do
     Location.create(
+      id: 22,
       name: 'Pinkberry',
       address: 'Harvard Square',
       city: 'Cambridge',
@@ -60,7 +61,7 @@ feature 'User receives email about reviewed item' do
     fill_in 'Password', with: user.password
     click_button('Log In')
 
-    click_link('Pinkberry')
+    visit '/locations/' + location.id.to_s
 
     click_link 'Add a Review'
 
