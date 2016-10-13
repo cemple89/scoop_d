@@ -3,11 +3,15 @@ require 'pry'
 class LocationsController < ApplicationController
 
   def index
-    @locations = Location.all.order('name DESC')
+    @locations = Location.all.order('name ASC')
     if params[:search]
-      @results = Location.search(params[:search]).order('name DESC')
+      @results = Location.search(params[:search]).order('name ASC')
     else
-      @locations = Location.all.order('name DESC')
+      @locations = Location.all.order('name ASC')
+    end
+    respond_to do |format|
+      format.html
+      format.json { render json: @locations }
     end
   end
 
