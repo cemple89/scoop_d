@@ -15,10 +15,11 @@
   <br>
   <em><%= review.body %></em><br>
   <%= review.user.email %><br>
-  <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
-
+  <% if review.id != nil %>
+    <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
+  <% end %>
     <h4><span id=<%="review-count-#{review.id}"%>><%= @vote_score %></span><span id=<%="sprinkles-#{review.id}"%>> found this review helpful</span></h4>
-    <i class= "fa fa-thumbs-o-up js-upvote", id=<%="js-upvote-#{review.id}" %>, data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
+    <i class= "fa fa-thumbs-o-up js-upvote", id=<%="js-upvote-#{review.id}" %> data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
     <i class="fa fa-thumbs-o-down js-downvote" id=<%="js-downvote-#{review.id}" %>,  data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "-1", aria-hidden="true"></i>
   <br><br>
   <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
