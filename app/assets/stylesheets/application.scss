@@ -7,6 +7,7 @@ $light-green: #dcedc1;
 $dark-green: #a8e6cf;
 $peach: #ffd3b6;
 $charcoal: #323232;
+$ivory: #FDF9F3;
 
 body {
   margin: 0;
@@ -89,13 +90,6 @@ body {
   overflow: hidden;
   position: relative;
   width: 100px;
-}
-
-.location-name {
-  color: $light-pink;
-  margin:0;
-  padding: 20px;
-  text-align: center;
 }
 
 img {
@@ -181,6 +175,73 @@ a:visited {
   float: left;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.location-header {
+  background: $light-green;
+  height: 600px;
+}
+
+.location-name {
+  color: $white;
+  background-color: $dark-green;
+  margin:0;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  text-shadow: .5px .5px .5px $black;
+}
+
+.location-show-image {
+  float: left;
+  margin: 20px;
+  margin-left: 50px;
+}
+
+.location-show-address {
+  float: right;
+  padding: 5px;
+  margin-right: 5%;
+  width: 500px;
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  text-align: right;
+}
+
+.image-actual {
+  width: 150px;
+}
+
+.review-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Hind', sans-serif;
+  color: $light-pink;
+  margin-top: 10px;
+}
+
+.review-object {
+  background: $ivory;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid $charcoal;
+  font-family: 'Hind', sans-serif;
+}
+
+.user-image {
+  float: left;
+  margin: 40px;
+}
+
+.review-stats {
+  text-align: right;
+}
+
+.js-upvote {
+  margin: 10px;
+  margin-bottom: 0;
 }
 
 .removed {
