@@ -31,13 +31,18 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
-    @address = JSON.parse(@location.address)
+    @address = ""
+    if @location.address.class == Array
+      @address = JSON.parse(@location.address)
+      @address = @address.join(", ")
+    else
+      @address = @location.address
+    end
     @neighborhoods = ""
-    if @location.neighborhood != nil
+    if @location.neighborhood != nil && @location.neighborhood.class == Array
       @neighborhoods = JSON.parse(@location.neighborhood)
       @neighborhoods = @neighborhoods.join(", ")
     end
-    @address = @address.join(", ")
     @reviews = @location.reviews
     @reviews.each do |review|
       sum = 0
