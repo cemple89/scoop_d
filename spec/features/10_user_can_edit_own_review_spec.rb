@@ -15,7 +15,7 @@ describe 'User can ' do
      fill_in 'Email', with: user_1.email
      fill_in 'Password', with: user_1.password
      click_button('Log In')
-     visit '/locations/#{location1.id}'
+     visit '/locations/#{location_1.id}'
      click_link('Edit ' + review_1.flavor + ' review')
      fill_in "Flavor", with: "Chocolate"
      click_button("Add Review")
@@ -27,7 +27,7 @@ describe 'User can ' do
      fill_in 'Email', with: user_1.email
      fill_in 'Password', with: user_1.password
      click_button('Log In')
-     visit '/locations/#{location1.id}'
+     visit '/locations/#{location_1.id}'
      expect(page).to_not have_link('Edit ' + review_2.flavor + ' review')
    end
   end
