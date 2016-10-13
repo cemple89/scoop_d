@@ -42,14 +42,12 @@ class LocationsController < ApplicationController
     else
       @address = @location.address
     end
-    @neighborhoods = ""
-    if @location.neighborhood[1] == "[" || @location.neighborhood != nil 
+    if @location.neighborhood == nil
+      @neighborhoods == ""
+    else @location.neighborhood[1] == "[" || @location.neighborhood != nil
       @neighborhoods = JSON.parse(@location.neighborhood)
       @neighborhoods = @neighborhoods.join(", ")
-    else
-      @neighborhoods == @location.neighborhood
     end
-    binding.pry
     @reviews = @location.reviews
     @reviews.each do |review|
       sum = 0
