@@ -32,7 +32,9 @@ class UsersController < ApplicationController
         review.update_attribute(:user_id, -1)
       end
       @votes = Vote.where("user_id = #{@user.id}")
-      @votes.destroy
+      @votes.each do |vote|
+        vote.destroy
+      end
       @user.destroy
       flash[:notice] = 'User was successfully deleted'
       redirect_to users_path
