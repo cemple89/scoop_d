@@ -38,8 +38,8 @@ List of Features:
  - Ability to upload profile photos with CarrierWave (SH & NW)
  - Ability to search for specific ice cream shops (ED & SH)
  - Ability to write reviews for ice cream shops (CE & SH)
- - User receives an email when another user reviews the same store: (SH & CE)
- - The ability to upvote or downvote a review
+ - User receives an email when another user reviews the same store (SH & CE)
+ - The ability to upvote or downvote a review (ED & CE & NW)
  - Index page that live updates through React (ED & SH)
  - Creation of an admin role that handles user and review deletions (SH & ED)
  - Integration of ice cream shop images into show pages (CE & NW)
@@ -51,14 +51,14 @@ Outline of Technologies:
 - Ruby on Rails
 - React: index page
 - Ajax: index page and voting functionality
-- POSTGRESQL
+- PostgreSQL
 - ActiveRecord
 - Foundation
 - Capybara
 - Factory Girl
 
 
-Heroku link: https://still-cliffs-10828.herokuapp.com/ 
+Heroku link: https://scoopd.herokuapp.com/
 
 To Run Locally:
 ---------------------
