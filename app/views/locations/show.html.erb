@@ -5,9 +5,13 @@
 
 <h3><%= @location.address %><br>
 <%= @location.city %>, <%= @location.state %> <%= @location.zip_code %></h3><br>
-
 <h2>Reviews for <%= @location.name %></h2>
 <% @reviews.each do |review| %>
+  <% @votes_array = review.votes %>
+  <% @vote_score = 0 %>
+  <% @votes_array.each do |single_vote| %>
+    <% @vote_score += single_vote.count %>
+  <% end %>
   <%= Review::RATINGS[review.rating - 1][1] %><br>
   <%= review.flavor %>
   <br>
@@ -26,6 +30,7 @@
         <% @downvote = "" %>
       <% end %>
     <% end %>
+    <h3>Sprinkles <%= @vote_score %></h3>
     <i class= "<%= @upvote %> fa fa-thumbs-o-up js-upvote" id=<%="js-upvote-#{review.id}" %>, data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
     <i class="<%= @downvote %> fa fa-thumbs-o-down js-downvote" id=<%="js-downvote-#{review.id}" %>,  data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "-1", aria-hidden="true"></i>
   <br><br>
