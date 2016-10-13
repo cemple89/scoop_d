@@ -3,7 +3,7 @@ require 'rails_helper'
 require 'factory_girl_rails'
 require 'capybara/rspec'
 
-describe "Up and down votes" do
+describe "Up and down votes", js: true do
 
   let!(:user_1) { create(:user) }
   let!(:user_2) { create(:user) }
