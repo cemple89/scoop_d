@@ -8,7 +8,10 @@ $(document).ready(function() {
         review = self.data('review'),
         count = self.data('value'),
         user = self.data('user');
-    var down_thumb = $("#js-downvote-" + review);
+
+    var vote_total = $("#review-count-" + review);
+    var vote_sprinkles = $("#sprinkles-" + review);
+    var vote_total_num = parseInt(vote_total.html(), 10);
 
     var up_request = $.ajax({
       method: "POST",
@@ -16,19 +19,17 @@ $(document).ready(function() {
       URL: '/locations/`$(location)`/reviews/`$(review)`/vote'
     });
 
-    console.log(down_thumb)
-    console.log(self)
-
     up_request.done(function(data) {
-
       if (data === null) {
-        down_thumb.removeClass('downvote')
-        down_thumb.addClass('novote');
-        self.removeClass('upvote');
+        vote_total.html(vote_total_num -= 1)
+        var x =$("<i class='fa fa-times removed'></i>");
+        $(vote_sprinkles).append(x);
+        x.slideDown(250).delay(2000).slideUp(250);
       } else {
-        down_thumb.removeClass('downvote')
-        down_thumb.addClass('novote');
-        self.addClass('upvote');
+        vote_total.html(vote_total_num += 1)
+        var x =$("<i class='fa fa-cloud-upload added'></i>");
+        $(vote_sprinkles).append(x);
+        x.slideDown(250).delay(2000).slideUp(250)
       }
     })
   });
@@ -41,7 +42,9 @@ $(document).ready(function() {
         review = self.data('review'),
         count = self.data('value'),
         user = self.data('user');
-    var up_thumb = $('#js-upvote-'+review)
+        var vote_total = $("#review-count-" + review);
+        var vote_total_num = parseInt(vote_total.html(), 10)
+    var vote_sprinkles = $("#sprinkles-" + review);
 
     var down_request = $.ajax({
       method: "POST",
@@ -51,11 +54,15 @@ $(document).ready(function() {
 
     down_request.done(function(data) {
       if (data === null) {
-        up_thumb.css('color', 'black');
-        self.css('color', 'black')
+        vote_total.html(vote_total_num += 1)
+        var x =$("<i class='fa fa-times added'></i>");
+        $(vote_sprinkles).append(x);
+        x.slideDown(250).delay(2000).slideUp(250);
       } else {
-        up_thumb.css('color', 'black');
-        self.css('color', 'red')
+        vote_total.html(vote_total_num -= 1)
+        var x =$("<i class='fa fa-cloud-download downvoted'></i>");
+        $(vote_sprinkles).append(x);
+        x.slideDown(250).delay(2000).slideUp(250)
       }
     })
   });

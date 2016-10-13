@@ -19,22 +19,9 @@
   <%= review.user.email %><br>
   <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
 
-  <% @vote = Vote.find_by(review_id: review.id, user_id: current_user.id)  %>
-    <% unless @vote.nil? %>
-      <% if @vote.count == 1 %>
-        <% @upvote = "upvote" %>
-        <% @downvote = "" %>
-      <% elsif @vote.count == -1 %>
-        <% @upvote = "" %>
-        <% @downvote = "downvote" %>
-      <% else %>
-        <% @upvote = "" %>
-        <% @downvote = "" %>
-      <% end %>
-    <% end %>
-    <h3><%= @vote_score %> Sprinkles</h3>
-    <i class= "<%= @upvote %> fa fa-thumbs-o-up js-upvote" id=<%="js-upvote-#{review.id}" %>, data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
-    <i class="<%= @downvote %> fa fa-thumbs-o-down js-downvote" id=<%="js-downvote-#{review.id}" %>,  data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "-1", aria-hidden="true"></i>
+    <h3><span id=<%="review-count-#{review.id}"%>><%= @vote_score %></span><span id=<%="sprinkles-#{review.id}"%>> Sprinkles</span></h3>
+    <i class= "fa fa-thumbs-o-up js-upvote", id=<%="js-upvote-#{review.id}" %>, data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
+    <i class="fa fa-thumbs-o-down js-downvote" id=<%="js-downvote-#{review.id}" %>,  data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "-1", aria-hidden="true"></i>
   <br><br>
   <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
     <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id, review), { method: :delete, id: review.id} %></li>

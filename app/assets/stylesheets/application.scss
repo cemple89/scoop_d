@@ -85,14 +85,17 @@ body {
   margin: 0;
 }
 
-.upvote {
-  color: #458B00;
+.removed {
+  color: $shadow-grey;
+  margin-left: 20px;
 }
 
-.downvote {
-  color: #FF0000
+.downvoted {
+  color: darken($shadow-grey, 50%);
+  margin-left: 20px;
 }
 
-.novote {
-  color: $black;
+.added {
+  color: $dark-pink;
+  margin-left: 20px;
 }
