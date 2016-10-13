@@ -18,10 +18,12 @@ gem 'actionmailer', '~> 5.0', '>= 5.0.0.1'
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 gem 'figaro'
 gem 'fog'
+gem 'pry'
 
 
 group :development, :test do
   gem 'capybara'
+  # gem 'capybara-webkit'
   gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails'

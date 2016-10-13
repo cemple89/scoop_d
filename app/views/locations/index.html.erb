@@ -8,12 +8,7 @@
 <% end %>
 
 <% if @results.nil? %>
-    <h1>All Ice Cream Shops In Boston / Cambridge Area </h1>
-    <ul>
-      <% @locations.each do |location| %>
-        <li><%= link_to location.name, location%></li>
-      <% end %>
-    </ul>
+    <div id="app"/>
 <% else %>
     <h2> Search Results: </h2>
     <% if @results.empty? %>

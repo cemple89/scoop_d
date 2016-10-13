@@ -16,7 +16,7 @@ describe 'Admin can ' do
       fill_in 'Email', with: admin_user.email
       fill_in 'Password', with: admin_user.password
       click_button('Log In')
-      click_link(location_1.name)
+      visit '/locations/' + location_1.id.to_s
       click_link('Delete ' + review_2.flavor + ' review')
       expect(page).to_not have_content(review_2.flavor)
     end
@@ -26,7 +26,7 @@ describe 'Admin can ' do
       fill_in 'Email', with: user_2.email
       fill_in 'Password', with: user_2.password
       click_button('Log In')
-      click_link(location_1.name)
+      visit '/locations/' + location_1.id.to_s
       expect(page).to_not have_link('Delete ' + review_1.flavor + ' review')
     end
   end
