@@ -29,7 +29,8 @@ feature 'User receives email about reviewed item' do
       address: 'Harvard Square',
       city: 'Cambridge',
       state: 'Massachussetts',
-      zip_code: '02138'
+      zip_code: '02138',
+      user: user
     )
   end
 

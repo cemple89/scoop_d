@@ -4,7 +4,7 @@ describe 'User can ' do
 
   let!(:user_1) { create(:user) }
   let!(:user_2) { create(:user) }
-  let!(:location_1) { create(:location) }
+  let!(:location_1) { create(:location, user: user_1) }
   let!(:review_1) { create(:review, user: user_1, location: location_1) }
   let!(:review_2) { create(:review, user: user_2, location: location_1) }
 

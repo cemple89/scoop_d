@@ -1,0 +1,361 @@
+{
+    "region": {
+        "span": {
+            "latitude_delta": 0.01310274558042579,
+            "longitude_delta": 0.007888261586828094
+        },
+        "center": {
+            "latitude": 42.39479669471265,
+            "longitude": -71.12145167912266
+        }
+    },
+    "total": 7,
+    "businesses": [
+        {
+            "is_claimed": false,
+            "rating": 4.5,
+            "mobile_url": "https://m.yelp.com/biz/richardsons-ice-cream-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+            "review_count": 13,
+            "name": "Richardson's Ice Cream",
+            "rating_img_url_small": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+            "url": "https://www.yelp.com/biz/richardsons-ice-cream-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "snippet_text": "How in the world have I not reviewed richardsons? Omg. So good. \n\nI've been coming here my entire life. This farm was the best when I was little and is...",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/yDHGV-LIChmy_MGfwE6m_Q/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/Vwk3HzZYhV_4HUh6EsXnwQ/ms.jpg",
+            "rating_img_url_large": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+            "id": "richardsons-ice-cream-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "55 Davis Sq",
+                    "Davis Square",
+                    "Somerville, MA 02144"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Davis Square"
+                ],
+                "postal_code": "02144",
+                "country_code": "US",
+                "address": [
+                    "55 Davis Sq"
+                ],
+                "coordinate": {
+                    "latitude": 42.3962643742561,
+                    "longitude": -71.1221200972795
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/j-p-licks-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 254,
+            "name": "J.P. Licks",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/j-p-licks-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "menu_date_updated": 1472581564,
+            "phone": "6176665079",
+            "snippet_text": "My go to spot for tasty ice cream. I've been coming here for years. \n\nPros: delicious ice cream (coffee cookies and cream is my favorite) and they have a...",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/mV5AsuFm5W9Pf7RwFr6QLA/ms.jpg",
+            "snippet_image_url": "https://s3-media1.fl.yelpcdn.com/photo/ySUBJujFOZ9xwBFkcYB9hg/ms.jpg",
+            "display_phone": "+1-617-666-5079",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "menu_provider": "single_platform",
+            "id": "j-p-licks-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "4A College Ave",
+                    "Davis Square",
+                    "Somerville, MA 02144"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Davis Square"
+                ],
+                "postal_code": "02144",
+                "country_code": "US",
+                "address": [
+                    "4A College Ave"
+                ],
+                "coordinate": {
+                    "latitude": 42.396965906591,
+                    "longitude": -71.12239648194
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 3.5,
+            "mobile_url": "https://m.yelp.com/biz/orange-leaf-frozen-yogurt-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png",
+            "review_count": 52,
+            "name": "Orange Leaf Frozen Yogurt",
+            "rating_img_url_small": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png",
+            "url": "https://www.yelp.com/biz/orange-leaf-frozen-yogurt-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Do-It-Yourself Food",
+                    "diyfood"
+                ],
+                [
+                    "Desserts",
+                    "desserts"
+                ]
+            ],
+            "phone": "6176165106",
+            "snippet_text": "I love this Orange Leaf location. Before visiting this Orange Leaf, I had a bad experience at another location (I hated the flavors that I got). However,...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/TXpiMVh8tnwjGM43Wx3LSg/ms.jpg",
+            "snippet_image_url": "https://s3-media4.fl.yelpcdn.com/photo/iIBjaPlpGmNIySRV7ASyTQ/ms.jpg",
+            "display_phone": "+1-617-616-5106",
+            "rating_img_url_large": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png",
+            "id": "orange-leaf-frozen-yogurt-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "256 Elm St",
+                    "Unit 103",
+                    "Davis Square",
+                    "Somerville, MA 02143"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Davis Square"
+                ],
+                "postal_code": "02143",
+                "country_code": "US",
+                "address": [
+                    "256 Elm St",
+                    "Unit 103"
+                ],
+                "coordinate": {
+                    "latitude": 42.3956,
+                    "longitude": -71.12233
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/frozen-hoagies-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 35,
+            "name": "Frozen Hoagies",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/frozen-hoagies-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Desserts",
+                    "desserts"
+                ]
+            ],
+            "phone": "6176206810",
+            "snippet_text": "Definitely love this place to get the best homemade cookies without actually making them yourself. i've actually never tried the ice cream, but i've heard...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/7Z0a4VXn1bnhwFJeIr-J0A/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/NY_A8ur00rdcLOz13vOv9Q/ms.jpg",
+            "display_phone": "+1-617-620-6810",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "id": "frozen-hoagies-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "864 Broadway",
+                    "Somerville, MA 02144"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "02144",
+                "country_code": "US",
+                "address": [
+                    "864 Broadway"
+                ],
+                "coordinate": {
+                    "latitude": 42.4007524881583,
+                    "longitude": -71.1178661056741
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": true,
+            "rating": 2.5,
+            "mobile_url": "https://m.yelp.com/biz/iyo-bistro-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c7fb9aff59f9/ico/stars/v1/stars_2_half.png",
+            "review_count": 17,
+            "name": "iYo Bistro",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/8e8633e5f8f0/ico/stars/v1/stars_small_2_half.png",
+            "url": "https://www.yelp.com/biz/iyo-bistro-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Falafel",
+                    "falafel"
+                ],
+                [
+                    "Coffee & Tea",
+                    "coffee"
+                ]
+            ],
+            "menu_date_updated": 1472898485,
+            "phone": "6177645295",
+            "snippet_text": "Smells like falafel in here, but I have only consumed the fro-yo. It's worthwhile! Orange creamsicle was actually really tasty and the fix-ins bar is chock...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CxxUx1L4AHamrg8jqTYKwQ/ms.jpg",
+            "snippet_image_url": "https://s3-media2.fl.yelpcdn.com/photo/fgCsQvDRVS8vL2Pc64fwow/ms.jpg",
+            "display_phone": "+1-617-764-5295",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/d63e3add9901/ico/stars/v1/stars_large_2_half.png",
+            "menu_provider": "eat24",
+            "id": "iyo-bistro-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "234 Elm St",
+                    "Davis Square",
+                    "Somerville, MA 02144"
+                ],
+                "geo_accuracy": 8.0,
+                "neighborhoods": [
+                    "Davis Square"
+                ],
+                "postal_code": "02144",
+                "country_code": "US",
+                "address": [
+                    "234 Elm St"
+                ],
+                "coordinate": {
+                    "latitude": 42.3948597,
+                    "longitude": -71.1217256
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 3.0,
+            "mobile_url": "https://m.yelp.com/biz/emack-and-bolios-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+            "review_count": 76,
+            "name": "Emack & Bolio's Ice Cream",
+            "rating_img_url_small": "https://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+            "url": "https://www.yelp.com/biz/emack-and-bolios-ice-cream-cambridge?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ]
+            ],
+            "menu_date_updated": 1472595155,
+            "phone": "6174921907",
+            "snippet_text": "I know you get hosed at pretty much all ice cream places but when the craving hits you suck it up and pay up. beautiful day why not end it with something...",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/FTPoQq03gAp5aTwidPs-ow/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/-SfK1QyMyzL5PcEozr01rw/ms.jpg",
+            "display_phone": "+1-617-492-1907",
+            "rating_img_url_large": "https://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png",
+            "menu_provider": "single_platform",
+            "id": "emack-and-bolios-ice-cream-cambridge",
+            "is_closed": false,
+            "location": {
+                "city": "Cambridge",
+                "display_address": [
+                    "23 White St",
+                    "Porter Square",
+                    "Cambridge, MA 02140"
+                ],
+                "geo_accuracy": 9.5,
+                "neighborhoods": [
+                    "Porter Square"
+                ],
+                "postal_code": "02140",
+                "country_code": "US",
+                "address": [
+                    "23 White St"
+                ],
+                "coordinate": {
+                    "latitude": 42.388840901267,
+                    "longitude": -71.119047438832
+                },
+                "state_code": "MA"
+            }
+        },
+        {
+            "is_claimed": false,
+            "rating": 4.0,
+            "mobile_url": "https://m.yelp.com/biz/mimos-super-softy-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "rating_img_url": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+            "review_count": 1,
+            "name": "Mimo's Super Softy",
+            "rating_img_url_small": "https://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+            "url": "https://www.yelp.com/biz/mimos-super-softy-somerville?adjust_creative=9w2SQngDZShQV1n0DcnItQ&utm_campaign=yelp_api&utm_medium=api_v2_search&utm_source=9w2SQngDZShQV1n0DcnItQ",
+            "categories": [
+                [
+                    "Ice Cream & Frozen Yogurt",
+                    "icecream"
+                ],
+                [
+                    "Food Trucks",
+                    "foodtrucks"
+                ]
+            ],
+            "snippet_text": "Soft serve. At least two glorious flavors of soft serve, in your choice of a cheap cone with the wrapped stuck to it, blended with milk as a shake (yes, he...",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/J41_fXCKnOR64wRdt6EOuA/ms.jpg",
+            "snippet_image_url": "https://s3-media3.fl.yelpcdn.com/photo/0Byb1I2GvUtKVSaNM-Ip6g/ms.jpg",
+            "rating_img_url_large": "https://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+            "id": "mimos-super-softy-somerville",
+            "is_closed": false,
+            "location": {
+                "city": "Somerville",
+                "display_address": [
+                    "133 Holland St",
+                    "Somerville, MA 02144"
+                ],
+                "geo_accuracy": 9.5,
+                "postal_code": "02144",
+                "country_code": "US",
+                "address": [
+                    "133 Holland St"
+                ],
+                "coordinate": {
+                    "latitude": 42.400081642866,
+                    "longitude": -71.1250372525712
+                },
+                "state_code": "MA"
+            }
+        }
+    ]
+}
