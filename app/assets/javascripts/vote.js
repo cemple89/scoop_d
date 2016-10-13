@@ -55,7 +55,7 @@ $(document).ready(function() {
     down_request.done(function(data) {
       if (data === null) {
         vote_total.html(vote_total_num += 1)
-        var x =$("<i class='fa fa-times added'></i>");
+        var x =$("<i class='fa fa-times removed'></i>");
         $(vote_sprinkles).append(x);
         x.slideDown(250).delay(2000).slideUp(250);
       } else {
