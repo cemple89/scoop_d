@@ -31,10 +31,11 @@ class App extends Component {
     let locations = this.state.locations;
     return (
       <div>
-        <h1>All Ice Cream Shops In Boston / Cambridge Area </h1>
+        <h1 className="locations-title">All Ice Cream Shops In Boston / Cambridge Area </h1>
           <LocationList
             locations={locations}
           />
+          <a href="/locations/new"><h3 className="back-link top-padded">Add New Location</h3></a>
       </div>
     );
   }

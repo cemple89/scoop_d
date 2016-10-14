@@ -1,5 +1,5 @@
-<h1> Review Form for <%= @location.name %> </h1>
+<h1 class="top-list"> Review Form for <%= @location.name %> </h1>
 
 <%= render 'form' %>
 <br>
-<%= link_to 'Back', locations_path %>
+<%= link_to 'Back', locations_path, class:"back-link top-padded" %>

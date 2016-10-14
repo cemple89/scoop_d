@@ -1,3 +1,4 @@
+<div class="no-top-padding">
 <%= form_for(@location) do |q| %>
   <div class="field">
     <%= q.label :name, "Name" %><br>
@@ -28,6 +29,7 @@
     <%= q.text_field :phone_number%>
   </div>
   <div class="actions">
-    <%= q.submit "Add Location" %>
+    <%= q.submit "Add Location", class:"search-button", style:"width: 300px;"%>
   </div>
 <% end %>
+</div>

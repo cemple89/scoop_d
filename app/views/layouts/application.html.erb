@@ -4,35 +4,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <title><%= content_for?(:title) ? yield(:title) : "scoopd" %></title>
+    <link href="https://fonts.googleapis.com/css?family=Hind|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body class="">
 
     <div class="top-bar row">
       <div class="name">
           <h1>scoopd</h1>
       </div>
+      <div class="user-info">
       <% if current_user %>
         <div class="login-name">
           <h4>Signed in as <%= current_user.email %></a></h4>
-          <% if current_user.image.url == nil %>
-            <%= link_to "Add Image", edit_user_path(current_user) %>
-          <% else %>
-            <%= image_tag current_user.image, class:"image-cropper", id:"user-image" %>
-          <% end %>
-          <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
+          <div class="user-buttons">
+            <% if current_user.image.url == nil %>
+              <%= link_to "Add Image", edit_user_path(current_user), class:"add-image-link" %>
+            <% else %>
+              <%= image_tag current_user.image, class:"image-cropper", id:"user-image" %>
+            <% end %>
+            <% if current_user.admin? %>
+              <%= button_to "Users", users_path, { method: :get } %>
+            <% end %>
+            <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
+          </div>
         </div>
       <% end %>
     </div>
+    </div>
     <% flash.each do |key, value| %>
-      <%= value %>
+      <div class="flash-container">
+        <%= value %>
+      </div>
     <% end %>
-    <%= yield %>
+    <div class="main-page">
+      <%= yield %>
+    </div>
   </body>
 </html>
