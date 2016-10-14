@@ -268,3 +268,28 @@ a:visited {
   color: $dark-pink;
   margin-left: 20px;
 }
+
+.signup-form {
+
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  float:none;
+  background-color: inherit;
+
+}
+.new_user {
+  text-align: center;
+  display: inline-block;
+}
+
+.main-page.large-8.columns {
+  text-align: center;
+  height: 100px;
+}
+
+#user_email {
+  height: 20px;
+  width: 300px;
+}

@@ -8,12 +8,13 @@ describe ImageUploader do
 
   let(:user) { User.create(email: 'testemail@gmail.com', password: 'alsoscooped' ) }
   let(:user2) { User.create(email: 'testemail2@gmail.com', password: 'scooped') }
+  let(:user3) { User.create(email: 'testemail3@gmail.com', password: 'scooped') }
   let(:uploader) { ImageUploader.new(user, :image) }
 
   it 'User can see upload link if not added file' do
     visit '/'
-    fill_in 'Email', with: user2.email
-    fill_in 'Password', with: user2.password
+    fill_in 'Email', with: user3.email
+    fill_in 'Password', with: user3.password
     click_button 'Log In'
 
     expect(page).to have_link('Add Image')
@@ -26,10 +27,10 @@ describe ImageUploader do
     click_button 'Log In'
 
     click_link('Add Image')
-    attach_file('image-file', './spec/features/images/doge.jpg')
+    attach_file('upload-here', './spec/features/images/doge.jpg')
 
     click_button('Update User')
-
+    save_and_open_page
     expect(page).to_not have_link('Add Image')
 
     expect(page.find('#user-image')['src']).to have_content('doge.jpg')
