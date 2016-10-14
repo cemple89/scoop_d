@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $('.js-upvote').on('click', function(event){
     event.preventDefault();
-
+    console.log("THIS")
     var self = $(this),
         location = self.data('location'),
         review = self.data('review'),

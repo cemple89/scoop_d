@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 
 $(function() {
-  ReactDOM.render(
-    <App/>,
-    document.getElementById('app')
-  );
+  if (document.getElementById('app') != null) {
+    ReactDOM.render(
+      <App/>,
+      document.getElementById('app')
+    );
+  };
 });

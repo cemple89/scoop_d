@@ -1,4 +1,3 @@
-<div class="location-info">
   <h1 class="location-name"><%= @location.name %></h1><br>
   <% if @location.image_url != nil %>
     <%= image_tag @location.image_url %>
@@ -10,8 +9,7 @@
   <h3><%= @address %><br>
     <%= @location.city %>, <%= @location.state %> <%= @location.zip_code %>
   </h3><br>
-</div>
-<div class="location-reviews">
+
   <h2>Reviews for <%= @location.name %></h2>
     <% @reviews.each do |review| %>
       <% @votes_array = review.votes %>
@@ -19,7 +17,7 @@
       <% @votes_array.each do |single_vote| %>
         <% @vote_score += single_vote.count %>
       <% end %>
-      <div class="single-review">
+
         <%= Review::RATINGS[review.rating - 1][1] %><br>
         <%= review.flavor %>
         <br>
@@ -38,11 +36,10 @@
         <% if current_user.id == review.user_id && !review.id.nil? %>
           <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id }%></li>
         <% end %>
-      </div>
+
       <br><br>
     <% end %>
-</div>
-  <div class="bottom-links">
+
+
     <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
     <%= link_to 'Back to Locations', locations_path %>
-  </div>
