@@ -2,9 +2,9 @@
   </div>
   <div class="field">
     <%= f.label :image %><br>
-    <%= f.file_field :image, id:"image-file"%>
+    <%= f.file_field :image, id:"upload-field", name:"uploader-field" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Update User', :id => 'uploader-button'%>
   </div>
 <% end %>
