@@ -11,6 +11,7 @@
 <% if @results.nil? %>
     <div id="app"/>
 <% else %>
+  <div>
     <h2> Search Results: </h2>
     <% if @results.empty? %>
       <p>
@@ -18,11 +19,26 @@
       </p>
     <% else %>
       <% @results.each do |location| %>
-        <li><%= link_to location.name, location%></li>
+        <a href={url}><div class="location-box">
+          <div class="location-image">
+            <%= image_tag location.image_url %>
+          </div>
+          <div class="location-info">
+            <h3><%= location.name %></h3>
+            <% if location.neighborhood != nil %>
+              <% display = JSON.parse(location.neighborhood) %>
+              <h4><%= display.first %></h4>
+            <% end %>
+          </div>
+        </div>
+        </a>
       <% end %>
     <% end %>
+
+  </div>
+  <div class="back-link top-padded">
     <%= link_to 'Back to Locations', locations_path %>
+    <br>
+    <%= link_to 'Add New Location', new_location_path, method: :get %>
+  </div>
 <% end %>
-
-
-<%= link_to 'Add New Location', new_location_path, method: :get %>

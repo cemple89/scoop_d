@@ -6,7 +6,14 @@ const Location = props => {
   let image = props.image;
   let id = props.id
   let url = "/locations/" + props.id
+  let display = "";
 
+  if (neighborhood !== null && neighborhood[0] === "[") {
+    display = JSON.parse(neighborhood)
+    display = display[0]
+  } else {
+    display = ""
+  };
 
   return (
     <a href={url}><div className="location-box">
@@ -15,7 +22,7 @@ const Location = props => {
       </div>
       <div className="location-info">
         <h3>{location}</h3>
-        <h4>{neighborhood}</h4>
+        <h4>{display}</h4>
       </div>
     </div>
     </a>

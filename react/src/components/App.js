@@ -35,6 +35,7 @@ class App extends Component {
           <LocationList
             locations={locations}
           />
+          <a href="/locations/new"><h3 className="back-link top-padded">Add New Location</h3></a>
       </div>
     );
   }

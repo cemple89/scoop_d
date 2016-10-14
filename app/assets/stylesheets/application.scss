@@ -8,6 +8,7 @@ $dark-green: #a8e6cf;
 $peach: #ffd3b6;
 $charcoal: #323232;
 $ivory: #FDF9F3;
+$jam: #FF6666;
 
 body {
   margin: 0;
@@ -19,7 +20,9 @@ body {
   margin-right: 50px;
   background: $peach;
   box-shadow: 0 -1px 10px 2px $black;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .loginnav {
@@ -50,7 +53,7 @@ body {
   font-weight: lighter;
   letter-spacing: 2px;
   padding-left: 50px;
-  text-shadow: 1px 1px 1px $black;
+  text-shadow: 1px 1px 1px $black, 5px 5px 1px $jam;
 }
 
 .login-name {
@@ -277,27 +280,68 @@ a:visited {
   margin-left: 20px;
 }
 
-.signup-form {
-
+.new_user {
+  width: 40%;
+  margin-top: 60px;
   text-align: center;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   float:none;
-  background-color: inherit;
-
-}
-.new_user {
-  text-align: center;
-  display: inline-block;
+  background-color: $ivory;
+  padding: 50px;
+  border-radius: 10px;
 }
 
-.main-page.large-8.columns {
+// .main-page.large-8.columns {
+//   text-align: center;
+//   height: 100px;
+// }
+
+.back-link {
   text-align: center;
-  height: 100px;
+  color: $charcoal;
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+}
+
+.nav-box {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+}
+
+.top-padded {
+  padding-top: 30px;
+}
+
+.log-in-link {
+  color: $charcoal;
 }
 
 #user_email {
   height: 20px;
   width: 300px;
+  margin: 10px;
+  font-family: 'Hind', sans-serif;
+}
+
+#user_password {
+  height: 20px;
+  width: 300px;
+  margin: 10px;
+}
+
+#user_password_confirmation {
+  height: 20px;
+  width: 300px;
+  margin: 10px;
+}
+
+.flash-container {
+  text-align: center;
+  background: $jam;
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }

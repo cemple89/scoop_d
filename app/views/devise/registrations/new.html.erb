@@ -1,4 +1,4 @@
-<div class="signup-form">
+<div class="center-align">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
@@ -21,10 +21,10 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class:"search-button" %>
   </div>
-  <br><%= link_to "< Back", root_path, { method: :get } %>
+  <br><%= link_to "< Back", root_path, { method: :get, class:"back-link"}  %>
+  <br>
 <% end %>
 
 </div>
-<%= render "devise/shared/links" %>
