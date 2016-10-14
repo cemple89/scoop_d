@@ -1,5 +1,5 @@
 <%= form_for @user, html: { multipart: true } do |f| %>
-  </div>
+  <div class="new_user new_review">
   <div class="field">
     <%= f.label :image %><br>
     <%= f.file_field :image, id:"upload-here"%>
@@ -7,4 +7,5 @@
   <div class="actions">
     <%= f.submit 'Update User', :id => 'uploader-button'%>
   </div>
+</div>
 <% end %>

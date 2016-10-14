@@ -8,52 +8,54 @@
     <%= image_tag "http://www.wpclipart.com/food/desserts_snacks/ice_cream/ice_cream_cones/.cache/ice_cream_cone_1_scoop.png" %>
   <% end %>
   <div class="location-show-address">
-    <h2><%= @neighborhoods %></h2><br>
-
+    <h2><%= @neighborhoods %></h2>
     <h3><%= @address %>,
       <%= @location.city %>, <%= @location.state %> <%= @location.zip_code %>
     </h3>
   </div>
 </div>
-  <h2 class="review-title">Reviews for <%= @location.name %></h2>
+<div>
+  <h2 class="top-list">Reviews for <%= @location.name %></h2>
     <% @reviews.each do |review| %>
       <% @votes_array = review.votes %>
       <% @vote_score = 0 %>
       <% @votes_array.each do |single_vote| %>
         <% @vote_score += single_vote.count %>
       <% end %>
-      <div class="review-object">
-        <div class="user-image">
-          <%= image_tag review.user.image, class:"image-cropper" %>
-        </div>
-        <div class="review-object-title">
-          Rating: <%= Review::RATINGS[review.rating - 1][1] %><br>
-          Flavor: <%= review.flavor %>
-        </div>
-        <hr>
-        <div class="review-body">
-          <em>"<%= review.body %>"</em>
-          <br><br>
-          <%= review.user.email %><br>
-          <% if review.id != nil %>
-            <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
+        <div class="review-object">
+          <div class="user-image">
+            <%= image_tag review.user.image, class:"image-cropper" %>
+          </div>
+          <div class="review-object-title">
+            Rating: <%= Review::RATINGS[review.rating - 1][1] %><br>
+            Flavor: <%= review.flavor %>
+          </div>
+          <hr>
+          <div class="review-body">
+            <em>"<%= review.body %>"</em>
+            <br><br>
+            <%= review.user.email %><br>
+            <% if review.id != nil %>
+              <em><%= review.created_at.strftime("Reviewed on %m/%d/%Y at %I:%M%p") %></em>
+            <% end %>
+          </div>
+          <div class="review-stats">
+            <h4><span id=<%="review-count-#{review.id}"%>><%= @vote_score %></span><span id=<%="sprinkles-#{review.id}"%>> found this review helpful</span></h4>
+            <i class= "fa fa-thumbs-o-up fa-2x js-upvote", id=<%="js-upvote-#{review.id}" %> data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
+            <i class="fa fa-thumbs-o-down fa-2x js-downvote" id=<%="js-downvote-#{review.id}" %>,  data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "-1", aria-hidden="true"></i>
+          </div>
+          <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
+            <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id, review), { method: :delete, id: review.id} %></li>
           <% end %>
-        </div>
-        <div class="review-stats">
-          <h4><span id=<%="review-count-#{review.id}"%>><%= @vote_score %></span><span id=<%="sprinkles-#{review.id}"%>> found this review helpful</span></h4>
-          <i class= "fa fa-thumbs-o-up fa-2x js-upvote", id=<%="js-upvote-#{review.id}" %> data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "1", aria-hidden="true"></i>
-          <i class="fa fa-thumbs-o-down fa-2x js-downvote" id=<%="js-downvote-#{review.id}" %>,  data-location = <%= @location.id %> data-review = <%= review.id %> data-user = <%= current_user.id %> data-value = "-1", aria-hidden="true"></i>
-        </div>
-        <% if review.user_id == current_user.id && !review.id.nil? || current_user.admin? %>
-          <li><%= link_to 'Delete ' + review.flavor + ' review', location_review_path(@location.id, review), { method: :delete, id: review.id} %></li>
-        <% end %>
-        <% if current_user.id == review.user_id && !review.id.nil? %>
-          <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id }%></li>
-        <% end %>
+          <% if current_user.id == review.user_id && !review.id.nil? %>
+            <li><%= link_to 'Edit ' + review.flavor + ' review', edit_location_review_path(@location, review), { id: review.id }%></li>
+          <% end %>
       </div>
       <br>
     <% end %>
+  </div>
 
-
+<div class="back-link top-padded">
     <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
     <%= link_to 'Back to Locations', locations_path %>
+  </div>

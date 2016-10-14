@@ -182,7 +182,7 @@ a:visited {
 
 .location-header {
   background: $light-green;
-  height: 600px;
+  height: 650px;
 }
 
 .location-name {
@@ -215,12 +215,10 @@ a:visited {
   width: 150px;
 }
 
-.review-title {
-  text-align: center;
-  font-size: 30px;
+.top-list {
   font-family: 'Hind', sans-serif;
+  font-size: 30px;
   color: $light-pink;
-  margin-top: 10px;
 }
 
 .review-object {
@@ -268,7 +266,8 @@ a:visited {
 }
 
 .add-image-link {
-  color: white;
+  color: $black;
+  font-size: 16px;
 }
 
 .add-image-link:visited {
@@ -337,6 +336,11 @@ a:visited {
   margin: 10px;
 }
 
+.no-top-padding {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 .flash-container {
   text-align: center;
   background: $jam;
@@ -344,4 +348,16 @@ a:visited {
   font-size: 20px;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.user-info {
+  display: inline-block;
+  float: right;
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  text-align: right;
+}
+
+.user-buttons {
+  display: inline-block;
 }

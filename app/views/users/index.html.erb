@@ -1,8 +1,10 @@
-<h2> List of Users </h2>
+<h2 class="flash-container"> List of Users </h2>
 
 <ul> <% @users.each do |user| %>
-  <li> <%= user.email %> <%= button_to 'Delete User', user, { method: :delete, id: user.email }%> </li>
+  <li class="location-box">
+    <%= user.email %> <%= button_to 'Delete User', user, { method: :delete, id: user.email }%>
+  </li>
 <% end %> </ul>
 
 
-<%= link_to 'Back', locations_path %>
+<%= link_to 'Back', locations_path, class:"back-link top-padded" %>
