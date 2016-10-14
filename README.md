@@ -38,7 +38,7 @@ Things you may want to cover:
 
 Application link: https://scoopd.herokuapp.com/
 
-Scoopd was created as a group project by Charlie Emple, Elizabeth de Moll, Sophie Heller, and Nathan Wright to satisfy curriculum requirements at Launch Academy. It is a review app focused on ice cream shops in Boston and Cambridge. We not only satisfied Launch's group project requirement, but we also created a tool to find the best ice cream Boston has to offer - and allow users to share their thoughts about this very important topic.
+Scoopd was created as a group project by Charlie Emple, Elizabeth de Moll, Sophie Heller, and Nathan Wright to satisfy curriculum requirements at Launch Academy. It is a review app focused on ice cream shops in Boston, Cambridge, and Somerville. We not only satisfied Launch's group project requirement, but we also created a tool to find the best ice cream Boston has to offer - and allow users to share their thoughts about this very important topic.
 
 List of Features:
 ------------------
