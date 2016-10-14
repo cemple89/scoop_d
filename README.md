@@ -4,35 +4,6 @@
 ![Code Climate](https://codeclimate.com/github/cemple89/scoop_d.png)
 ![Coverage Status](https://coveralls.io/repos/cemple89/scoop_d/badge.png)
 
-
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> master
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # scoopd
 ==========
 
