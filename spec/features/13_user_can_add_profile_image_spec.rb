@@ -2,6 +2,7 @@ require 'spec_helper'
 require 'rails_helper'
 require 'factory_girl_rails'
 require 'carrierwave/test/matchers'
+require 'pry'
 
 describe ImageUploader do
   include CarrierWave::Test::Matchers
@@ -27,13 +28,8 @@ describe ImageUploader do
     click_button 'Log In'
 
     click_link('Add Image')
-    attach_file('upload-here', './spec/features/images/doge.jpg')
 
-    click_button('Update User')
-    save_and_open_page
-    expect(page).to_not have_link('Add Image')
+    attach_file('uploader-field', File.join(Rails.root, '/spec/features/images/doge.jpg'))
 
-    expect(page.find('#user-image')['src']).to have_content('doge.jpg')
   end
-
 end

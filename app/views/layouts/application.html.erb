@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "scoopd" %></title>
     <link href="https://fonts.googleapis.com/css?family=Hind|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag "application" %>
@@ -22,7 +22,7 @@
         <div class="login-name">
           <h4>Signed in as <%= current_user.email %></a></h4>
           <% if current_user.image.url == nil %>
-            <%= link_to "Add Image", edit_user_path(current_user) %>
+            <%= link_to "Add Image", edit_user_path(current_user), class:"add-image-link" %>
           <% else %>
             <%= image_tag current_user.image, class:"image-cropper", id:"user-image" %>
           <% end %>
