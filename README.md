@@ -5,6 +5,12 @@
 ![Coverage Status](https://coveralls.io/repos/cemple89/scoop_d/badge.png)
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> master
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -30,7 +36,9 @@ Things you may want to cover:
 # scoopd
 ==========
 
-Scoopd was created as a group project by Charlie Emple, Elizabeth de Moll, Sophie Heller, and Nathan Wright to satisfy curriculum requirements at Launch Academy. It is a review app focused on ice cream shops in the greater Boston area. We not only satisfied Launch's group project requirement, but we also created a tool to find the best ice cream Boston has to offer - and allow users to share their thoughts about this very important topic.
+Application link: https://scoopd.herokuapp.com/
+
+Scoopd was created as a group project by Charlie Emple, Elizabeth de Moll, Sophie Heller, and Nathan Wright to satisfy curriculum requirements at Launch Academy. It is a review app focused on ice cream shops in Boston and Cambridge. We not only satisfied Launch's group project requirement, but we also created a tool to find the best ice cream Boston has to offer - and allow users to share their thoughts about this very important topic.
 
 List of Features:
 ------------------
@@ -45,12 +53,11 @@ List of Features:
  - Integration of ice cream shop images into show pages (CE & NW)
 
 
-
 Outline of Technologies:
 ------------------------
-- Ruby on Rails
-- React: index page
-- Ajax: index page and voting functionality
+- Ruby on Rails (2.3.1)
+- React (index page)
+- Ajax (index page and review upvote/downvote)
 - PostgreSQL
 - ActiveRecord
 - Foundation & CSS
@@ -58,11 +65,10 @@ Outline of Technologies:
 - Factory Girl
 
 
-Heroku link: https://scoopd.herokuapp.com/
-
 To Run Locally:
 ---------------------
 1. Run rake db:migrate to acquire databases.
 2. Run rake db:seed in order to populate the site with Boston area ice cream shops.
 3. Make sure to bundle to install any Ruby dependencies.
 4. Run npm install for any React dependencies.
+5. Run rails server and webpack-dev-server simultaneously.

@@ -82,6 +82,9 @@ EmptyLiteral:
 Encoding:
   Enabled: false
 
+eslint:
+  Enabled: false
+
 EvenOdd:
   Enabled: false
 

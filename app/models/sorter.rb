@@ -1,0 +1,30 @@
+[
+  "",
+  "Allston/Brighton",
+  "Back Bay",
+  "Beacon Hill",
+  "Brookline Village",
+  "Central Square",
+  "Coolidge Corner",
+  "Davis Square",
+  "Dorchester",
+  "Downtown",
+  "East Cambridge",
+  "Fenway",
+  "Harvard Square",
+  "Inman Square",
+  "Jamaica Plain",
+  "Kendall Square/MIT",
+  "Mission Hill",
+  "North Cambridge",
+  "North End",
+  "Porter Square",
+  "Roxbury",
+  "Seaport",
+  "South Boston",
+  "South End",
+  "Union",
+  "West End"
+]
+
+puts n.sort.inspect

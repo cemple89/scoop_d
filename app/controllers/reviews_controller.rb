@@ -64,7 +64,6 @@ def destroy
 end
 
   private
-
   def review_params
     params.require(:review).permit(:current_user, :flavor, :rating, :body, :location_id, :review_id)
   end

@@ -11,6 +11,8 @@ class Review < ActiveRecord::Base
   belongs_to :location
   belongs_to :user
 
+  has_many :votes 
+
   validates :user_id, presence: true
   validates :rating, numericality: { only_integer: true },
   inclusion: { in: RATINGS.map { |rating| rating[0] } }
