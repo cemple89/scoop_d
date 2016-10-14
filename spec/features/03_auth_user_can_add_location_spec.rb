@@ -35,7 +35,7 @@ describe 'User can ' do
       fill_in 'Email', with: user_1.email
       fill_in 'Password', with: user_1.password
       click_button 'Log In'
-      click_link 'Add New Location'
+      visit new_location_path
       click_button 'Add Location'
       expect(page).to have_content 'Name can\'t be blank'
       expect(page).to have_content 'Address can\'t be blank'

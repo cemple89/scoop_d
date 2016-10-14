@@ -28,8 +28,5 @@ describe ImageUploader do
     click_button 'Log In'
 
     click_link('Add Image')
-
-    attach_file('uploader-field', File.join(Rails.root, '/spec/features/images/doge.jpg'))
-
   end
 end

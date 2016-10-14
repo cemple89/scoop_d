@@ -16,9 +16,11 @@
     <% else %>
       <% @results.each do |location| %>
         <a href={url}><div class="location-box">
+          <% if location.image_url != nil %>
           <div class="location-image">
             <%= image_tag location.image_url %>
           </div>
+          <% end %>
           <div class="location-info">
             <h3><%= location.name %></h3>
             <% if location.neighborhood != nil %>
