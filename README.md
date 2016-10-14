@@ -53,7 +53,7 @@ Outline of Technologies:
 - Ajax: index page and voting functionality
 - PostgreSQL
 - ActiveRecord
-- Foundation
+- Foundation & CSS
 - Capybara
 - Factory Girl
 
