@@ -5,7 +5,9 @@
       <%= image_tag @location.image_url, class:"image-actual" %>
     </div>
   <% else %>
-    <%= image_tag "http://www.wpclipart.com/food/desserts_snacks/ice_cream/ice_cream_cones/.cache/ice_cream_cone_1_scoop.png" %>
+  <div class="location-show-image">
+    <h2>No Location Image!</h2>
+  </div>
   <% end %>
   <div class="location-show-address">
     <h2><%= @neighborhoods %></h2>
