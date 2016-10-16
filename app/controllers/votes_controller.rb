@@ -7,6 +7,7 @@ class VotesController < ApplicationController
     value = params[:count]
     vote = Vote.find_by(review: review.id, user: user.id)
 
+
     if vote.present?
       if vote.count != value.to_i
         vote.destroy
@@ -32,4 +33,8 @@ class VotesController < ApplicationController
       end
     end
 
+      def destroy
+        @vote = Vote.find(params[:id])
+        @vote.destroy
+      end
 end

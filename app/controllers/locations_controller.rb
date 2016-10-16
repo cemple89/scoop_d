@@ -1,3 +1,4 @@
+require 'pry'
 # frozen_string_literal: true
 class LocationsController < ApplicationController
 
@@ -34,6 +35,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
+    @current_user = current_user
 
     if @location.address == nil
       @address = ""
@@ -63,6 +65,22 @@ class LocationsController < ApplicationController
       review.update_attribute(:total, sum)
     end
     @reviews = @location.reviews.order(total: :desc)
+  end
+
+  def destroy
+    @location = Location.find(params[:id])
+
+    reviews = @location.reviews
+
+    reviews.each do |review|
+      y = Review.find(review.id)
+      votes = y.votes
+      votes.destroy
+      y.destory
+    end
+
+    @location.destory
+    redirect_to root_path
   end
 
  private

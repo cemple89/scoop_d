@@ -60,4 +60,7 @@
 <div class="back-link top-padded">
     <%= link_to 'Add a Review', new_location_review_path(@location) %><br>
     <%= link_to 'Back to Locations', locations_path %>
+    <% if @current_user.admin == true %>
+      <%= button_to 'Delete Location', location_path(@location), {method: :destroy, id: @location.id } %>
+    <% end %>
   </div>
