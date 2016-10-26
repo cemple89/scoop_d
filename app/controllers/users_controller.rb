@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   def index
     if current_user.admin?
       @users = User.all
+      @locations = Location.all
     end
   end
 

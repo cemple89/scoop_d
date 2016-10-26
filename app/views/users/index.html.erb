@@ -4,7 +4,15 @@
   <li class="location-box">
     <%= user.email %> <%= button_to 'Delete User', user, { method: :delete, id: user.email }%>
   </li>
-<% end %> </ul>
+<% end %>
+</ul>
+
+<ul> <% @locations.each do |location| %>
+  <li class="location-box">
+    <%= location.name %> <%= button_to 'Delete Location', location, { method: :delete }%>
+  </li>
+<% end %>
+</ul>
 
 
 <%= link_to 'Back', locations_path, class:"back-link top-padded" %>
