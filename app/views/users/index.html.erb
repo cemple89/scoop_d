@@ -9,7 +9,7 @@
 
 <ul> <% @locations.each do |location| %>
   <li class="location-box">
-    <%= location.name %> <%= button_to 'Delete Location', location, { method: :delete }%>
+    <%= location.name %> <%= button_to 'Delete Location', location_path(location), { method: :delete }%>
   </li>
 <% end %>
 </ul>

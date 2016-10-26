@@ -65,6 +65,15 @@ class LocationsController < ApplicationController
     @reviews = @location.reviews.order(total: :desc)
   end
 
+  def destroy
+    if current_user.admin?
+      @location = Location.find(params[:id])
+      @location.destroy
+      flash[:notice] = 'Location was successfully deleted'
+      redirect_to users_path
+    end
+  end
+
  private
 
  def location_params
